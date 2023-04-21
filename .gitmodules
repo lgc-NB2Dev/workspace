@@ -1,0 +1,24 @@
+[submodule "nonebot-plugin-akinator"]
+	path = nonebot-plugin-akinator
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
+[submodule "nonebot-plugin-bawiki"]
+	path = nonebot-plugin-bawiki
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
+[submodule "nonebot-plugin-fuckyou"]
+	path = nonebot-plugin-fuckyou
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
+[submodule "nonebot-plugin-picmcstat"]
+	path = nonebot-plugin-picmcstat
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
+[submodule "nonebot-plugin-rimofun"]
+	path = nonebot-plugin-rimofun
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
+[submodule "nonebot-plugin-autoreply"]
+	path = nonebot-plugin-autoreply
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
+[submodule "nonebot-plugin-picstatus"]
+	path = nonebot-plugin-picstatus
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
+[submodule "readme"]
+	path = readme
+	url = https://github.com/lgc-NB2Dev/readme
