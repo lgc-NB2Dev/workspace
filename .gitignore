@@ -1,2 +1,3 @@
 .venv/
 .pdm-python
+__pypackages__/
