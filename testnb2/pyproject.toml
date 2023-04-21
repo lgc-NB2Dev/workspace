@@ -14,14 +14,6 @@ readme = "README.md"
 adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
 ]
-plugins = [
-    "nonebot_plugin_akinator",
-    "nonebot_plugin_autoreply",
-    "nonebot_plugin_bawiki",
-    "nonebot_plugin_fuckyou",
-    "nonebot_plugin_picmcstat",
-    "nonebot_plugin_picstatus",
-    "nonebot_plugin_rimofun",
-]
+plugins = ["nonebot_plugin_autoreply"]
 plugin_dirs = []
 # preload_plugins = []

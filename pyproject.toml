@@ -18,6 +18,7 @@ dev = [
     "isort>=5.12.0",
     "nb-cli>=1.1.2",
     "nonebot-adapter-onebot>=2.2.2",
+    "nonebot2[aiohttp]>=2.0.0rc4",
 ]
 
 [tool.ruff]
@@ -27,6 +28,7 @@ ignore = [
     "E722",
     "B008",
     "TRY002",
+    "TRY003",
     "RUF001",
     "RUF002",
     "RUF003",

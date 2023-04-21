@@ -1,0 +1,19 @@
+{
+  "name": "nb2-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "commit": "node ./scripts/commit-push-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgc-NB2Dev/workspace.git"
+  },
+  "author": "student_2333 <lgc2333@126.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lgc-NB2Dev/workspace/issues"
+  },
+  "homepage": "https://github.com/lgc-NB2Dev/workspace#readme",
+  "devDependencies": {}
+}
