@@ -43,7 +43,6 @@ select = [
     "A",
     "COM",
     "C4",
-    "DTZ",
     "ISC",
     "PIE",
     "PYI",
