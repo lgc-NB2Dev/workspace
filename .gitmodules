@@ -30,3 +30,7 @@
 	path = readme
 	url = https://github.com/lgc-NB2Dev/readme
 	branch = main
+[submodule "nonebot-plugin-callapi"]
+	path = nonebot-plugin-callapi
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi.git
+	branch = master
