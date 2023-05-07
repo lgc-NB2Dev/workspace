@@ -21,6 +21,9 @@ dev = [
     "nonebot2[aiohttp]>=2.0.0rc4",
 ]
 
+[tool.pyright]
+pythonVersion = "3.8"
+
 [tool.ruff]
 extend-exclude = []
 ignore = [

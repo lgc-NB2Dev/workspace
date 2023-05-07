@@ -4,3 +4,4 @@ __pypackages__/
 .vscode/settings.json
 all.log
 error.log
+private/
