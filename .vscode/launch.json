@@ -11,7 +11,7 @@
       "program": "${workspaceFolder}/testnb2/bot.py",
       "cwd": "${workspaceFolder}/testnb2",
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": false
     }
   ]
 }

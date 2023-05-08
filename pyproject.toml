@@ -24,6 +24,10 @@ dev = [
 [tool.pyright]
 pythonVersion = "3.8"
 
+[tool.ruff.per-file-ignores]
+"private/**/*.py" = ["I001", "A001", "A002", "A003", "N818", "ARG001", "ARG004"]
+"private/adapter-telegram/*.py" = ["B010", "SLF001"]
+
 [tool.ruff]
 extend-exclude = []
 ignore = [
@@ -36,6 +40,7 @@ ignore = [
     "RUF001",
     "RUF002",
     "RUF003",
+    "RUF006",
     "RUF100",
     "PGH003",
 ]
