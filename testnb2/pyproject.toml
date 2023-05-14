@@ -12,9 +12,9 @@ readme = "README.md"
 
 [tool.nonebot]
 adapters = [
-    # { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
-    { name = "Telegram", module_name = "nonebot.adapters.telegram", project_link = "nonebot-adapter-telegram", desc = "Telegram 协议" },
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+    # { name = "Telegram", module_name = "nonebot.adapters.telegram", project_link = "nonebot-adapter-telegram", desc = "Telegram 协议" },
 ]
-plugins = ["nonebot_plugin_callapi"]
+plugins = ["nonebot_plugin_multincm"]
 plugin_dirs = ["src/plugins"]
 # preload_plugins = []
