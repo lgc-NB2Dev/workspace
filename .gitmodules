@@ -34,3 +34,6 @@
 	path = nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi.git
 	branch = master
+[submodule "nonebot-plugin-multincm"]
+	path = nonebot-plugin-multincm
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm.git
