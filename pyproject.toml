@@ -34,6 +34,7 @@ pythonVersion = "3.8"
     "ARG001",
     "ARG004",
     "COM812",
+    "SLF001",
 ]
 "private/adapter-telegram/*.py" = ["B010", "SLF001", "COM812"]
 
