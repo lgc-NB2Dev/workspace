@@ -6,3 +6,5 @@ all.log
 error.log
 private/
 .coverage
+/test/
+/out/
