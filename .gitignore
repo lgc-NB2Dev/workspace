@@ -8,3 +8,4 @@ private/
 .coverage
 /test/
 /out/
+/testnb2/
