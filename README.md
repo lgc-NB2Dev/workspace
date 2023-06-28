@@ -25,7 +25,7 @@ git submodule update --remote
 使用 `pdm` 来安装依赖
 
 ```bash
-pdm install --group dev --no-self
+pdm install --no-self
 ```
 
 ## 联系我
