@@ -8,7 +8,14 @@ requires-python = ">=3.8"
 license = { text = "MIT" }
 
 [tool.pdm.dev-dependencies]
-dev = ["nb-cli>=1.0.5", "black>=23.3.0", "ruff>=0.0.260", "isort>=5.12.0"]
+dev = [
+    "setuptools>=68.0.0",
+    "pip>=23.2",
+    "nb-cli>=1.0.5",
+    "black>=23.3.0",
+    "ruff>=0.0.260",
+    "isort>=5.12.0",
+]
 
 [tool.black]
 extend-exclude = "(nonebot-plugin-rimofun/(bnhhsh|not_translator))"
@@ -49,7 +56,7 @@ extend-exclude = [
 ]
 ignore = [
     "E501",
-    "E722",
+    # "E722",
     "B008",
     "B905",
     "TID252",
