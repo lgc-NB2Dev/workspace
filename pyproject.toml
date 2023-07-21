@@ -3,7 +3,7 @@ name = "nb2-workspace"
 version = "0.1.0"
 description = ""
 authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
-dependencies = []
+dependencies = ["ruff>=0.0.278"]
 requires-python = ">=3.8"
 license = { text = "MIT" }
 
@@ -12,7 +12,7 @@ dev = [
     "setuptools>=68.0.0",
     "pip>=23.2",
     "black>=23.3.0",
-    "ruff>=0.0.260",
+    "ruff>=0.0.278",
     "isort>=5.12.0",
     "nb-cli>=1.0.5",
     "nonebot2[all]>=2.0.0",
@@ -73,14 +73,14 @@ ignore = [
 select = [
     "A",
     "ARG",
-    "ASYNC",
+    # "ASYNC",
     "B",
     "C4",
     "COM",
     "E",
     "F",
     "FBT",
-    "FLY",
+    # "FLY",
     "I",
     "ISC",
     "N",
