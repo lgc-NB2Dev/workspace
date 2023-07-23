@@ -40,3 +40,6 @@
 [submodule "nonebot-plugin-eitherchoice"]
 	path = nonebot-plugin-eitherchoice
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice.git
+[submodule "nonebot-plugin-sekai-stickers"]
+	path = nonebot-plugin-sekai-stickers
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-sekai-stickers
