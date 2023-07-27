@@ -23,6 +23,9 @@ dev = [
 [tool.black]
 extend-exclude = "(nonebot-plugin-rimofun/(bnhhsh|not_translator))"
 
+[tool.isort]
+profile = "black"
+
 [tool.pyright]
 pythonVersion = "3.8"
 
@@ -61,6 +64,7 @@ ignore = [
     "B008",
     "B905",
     "E501",
+    "FBT002",
     "PGH003",
     "RUF001",
     "RUF002",

@@ -40,3 +40,6 @@
 [submodule "nonebot-plugin-eitherchoice"]
 	path = nonebot-plugin-eitherchoice
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice.git
+[submodule "nonebot-plugin-nonememe"]
+	path = nonebot-plugin-nonememe
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-nonememe
