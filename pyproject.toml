@@ -29,6 +29,9 @@ profile = "black"
 [tool.pyright]
 pythonVersion = "3.8"
 
+[tool.ruff.isort]
+extra-standard-library = ["typing_extensions"]
+
 [tool.ruff.per-file-ignores]
 "private/nonebot-plugin-send-anything-anywhere/*.py" = [
     "I001",
