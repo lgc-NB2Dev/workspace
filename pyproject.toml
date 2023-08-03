@@ -3,7 +3,7 @@ name = "nb2-workspace"
 version = "0.1.0"
 description = ""
 authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
-dependencies = ["ruff>=0.0.278"]
+dependencies = []
 requires-python = ">=3.8"
 license = { text = "MIT" }
 
