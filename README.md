@@ -11,7 +11,7 @@
 可以使用以下命令来克隆本工作区进行插件开发
 
 ```bash
-git clone --recurse-submodules --depth=1 https://github.com/lgc-LLSEDev/workspace
+git clone --recurse-submodules --depth=1 https://github.com/lgc-NB2Dev/workspace
 ```
 
 可以使用下面的命令更新所有子模块
