@@ -23,7 +23,7 @@
       "name": "scripts.tools.future_crop_test",
       "type": "python",
       "request": "launch",
-      "cwd": "${workspaceFolder}/nonebot-plugin-bawiki/bawiki-data",
+      "cwd": "${workspaceFolder}/private/bawiki-data",
       "module": "scripts.tools.future_crop_test",
       "justMyCode": true
     },
@@ -31,7 +31,7 @@
       "name": "scripts.tools.check_wiki",
       "type": "python",
       "request": "launch",
-      "cwd": "${workspaceFolder}/nonebot-plugin-bawiki/bawiki-data",
+      "cwd": "${workspaceFolder}/private/bawiki-data",
       "module": "scripts.tools.check_wiki",
       "justMyCode": true
     }
