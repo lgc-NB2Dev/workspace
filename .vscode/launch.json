@@ -34,6 +34,14 @@
       "cwd": "${workspaceFolder}/private/bawiki-data",
       "module": "scripts.tools.check_wiki",
       "justMyCode": true
+    },
+    {
+      "name": "scripts.pre_deploy.gen_gacha_data",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/private/bawiki-data",
+      "module": "scripts.pre_deploy.gen_gacha_data",
+      "justMyCode": true
     }
   ]
 }
