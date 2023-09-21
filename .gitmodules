@@ -1,45 +1,39 @@
 [submodule "nonebot-plugin-akinator"]
 	path = nonebot-plugin-akinator
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
-	branch = master
 [submodule "nonebot-plugin-bawiki"]
 	path = nonebot-plugin-bawiki
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
-	branch = master
 [submodule "nonebot-plugin-fuckyou"]
 	path = nonebot-plugin-fuckyou
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
-	branch = master
 [submodule "nonebot-plugin-picmcstat"]
 	path = nonebot-plugin-picmcstat
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
-	branch = master
 [submodule "nonebot-plugin-rimofun"]
 	path = nonebot-plugin-rimofun
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
-	branch = master
 [submodule "nonebot-plugin-autoreply"]
 	path = nonebot-plugin-autoreply
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
-	branch = master
 [submodule "nonebot-plugin-picstatus"]
 	path = nonebot-plugin-picstatus
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
-	branch = master
 [submodule "readme"]
 	path = readme
 	url = https://github.com/lgc-NB2Dev/readme
-	branch = main
 [submodule "nonebot-plugin-callapi"]
 	path = nonebot-plugin-callapi
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi.git
-	branch = master
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
 [submodule "nonebot-plugin-multincm"]
 	path = nonebot-plugin-multincm
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm.git
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm
 [submodule "nonebot-plugin-eitherchoice"]
 	path = nonebot-plugin-eitherchoice
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice.git
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice
 [submodule "nonebot-plugin-nonememe"]
 	path = nonebot-plugin-nonememe
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-nonememe
+[submodule "nonebot-plugin-ottohzys"]
+	path = nonebot-plugin-ottohzys
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-ottohzys
