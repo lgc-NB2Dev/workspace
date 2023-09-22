@@ -37,3 +37,6 @@
 [submodule "nonebot-plugin-ottohzys"]
 	path = nonebot-plugin-ottohzys
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-ottohzys
+[submodule "nonebot-plugin-pjsk"]
+	path = nonebot-plugin-pjsk
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
