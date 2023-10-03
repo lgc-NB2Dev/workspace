@@ -30,6 +30,7 @@ profile = "black"
 pythonVersion = "3.8"
 
 [tool.ruff.isort]
+detect-same-package = true
 extra-standard-library = ["typing_extensions"]
 
 [tool.ruff.per-file-ignores]
