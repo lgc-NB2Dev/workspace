@@ -1,7 +1,6 @@
 .venv/
 .pdm-python
 __pypackages__/
-.vscode/settings.json
 all.log
 error.log
 private/

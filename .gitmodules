@@ -40,3 +40,9 @@
 [submodule "nonebot-plugin-pjsk"]
 	path = nonebot-plugin-pjsk
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
+[submodule "nonebot-plugin-color"]
+	path = nonebot-plugin-color
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
+[submodule "bawiki-data"]
+	path = bawiki-data
+	url = https://github.com/lgc-NB2Dev/bawiki-data
