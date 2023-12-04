@@ -46,3 +46,6 @@
 [submodule "bawiki-data"]
 	path = bawiki-data
 	url = https://github.com/lgc-NB2Dev/bawiki-data
+[submodule "nb-cli-plugin-bootstrap"]
+	path = nb-cli-plugin-bootstrap
+	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
