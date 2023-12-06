@@ -49,3 +49,6 @@
 [submodule "nb-cli-plugin-bootstrap"]
 	path = nb-cli-plugin-bootstrap
 	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
+[submodule "nonebot-plugin-cnrail"]
+	path = nonebot-plugin-cnrail
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
