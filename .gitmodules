@@ -52,3 +52,6 @@
 [submodule "nonebot-plugin-cnrail"]
 	path = nonebot-plugin-cnrail
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
+[submodule "nonebot-plugin-clash"]
+	path = nonebot-plugin-clash
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash

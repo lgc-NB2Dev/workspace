@@ -9,3 +9,4 @@ private/
 /out/
 /testnb2/
 node_modules/
+pyrightconfig.json
