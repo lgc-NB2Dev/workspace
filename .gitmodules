@@ -55,3 +55,6 @@
 [submodule "nonebot-plugin-clash"]
 	path = nonebot-plugin-clash
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash
+[submodule "nonebot-plugin-riffusion"]
+	path = nonebot-plugin-riffusion
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
