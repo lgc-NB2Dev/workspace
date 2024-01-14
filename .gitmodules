@@ -58,3 +58,6 @@
 [submodule "nonebot-plugin-riffusion"]
 	path = nonebot-plugin-riffusion
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
+[submodule "nonebot-plugin-pingti"]
+	path = nonebot-plugin-pingti
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
