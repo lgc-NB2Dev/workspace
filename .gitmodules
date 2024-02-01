@@ -61,6 +61,9 @@
 [submodule "nonebot-plugin-pingti"]
 	path = nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
+[submodule "cnrail-data"]
+	path = cnrail-data
+	url = https://github.com/lgc-NB2Dev/cnrail-data
 [submodule "nonebot-plugin-bmclapi"]
 	path = nonebot-plugin-bmclapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bmclapi
