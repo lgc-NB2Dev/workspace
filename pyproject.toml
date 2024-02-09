@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
 dependencies = []
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license = { text = "MIT" }
 
 [tool.pdm.dev-dependencies]
@@ -13,7 +13,6 @@ dev = [
     "pip>=23.2",
     "black>=23.3.0",
     "ruff>=0.0.278",
-    "isort>=5.12.0",
     "nb-cli>=1.0.5",
     "nonebot2[all]>=2.0.0",
     "nonebot-adapter-onebot>=2.2.2",
@@ -27,7 +26,7 @@ extend-exclude = "(nonebot-plugin-rimofun/(bnhhsh|not_translator))"
 profile = "black"
 
 [tool.pyright]
-pythonVersion = "3.8"
+pythonVersion = "3.9"
 
 [tool.ruff.isort]
 detect-same-package = true
