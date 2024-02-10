@@ -6,14 +6,17 @@ license = { text = "MIT" }
 
 [tool.pdm.dev-dependencies]
 dev = [
+    # pip
     "setuptools>=68.0.0",
     "pip>=23.2",
+    # tools
     "black>=23.3.0",
     "ruff>=0.0.278",
+    # nonebot
     "nonebot2[all]>=2.2.0",
     "nonebot-adapter-onebot>=2.2.2",
     "nonebot-plugin-guild-patch>=0.2.3",
-    # submodules
+    # packages
     "-e nb-cli-plugin-bootstrap @ file:///${PROJECT_ROOT}/packages/nb-cli-plugin-bootstrap",
     "-e nonebot-plugin-akinator @ file:///${PROJECT_ROOT}/packages/nonebot-plugin-akinator",
     "-e nonebot-plugin-autoreply @ file:///${PROJECT_ROOT}/packages/nonebot-plugin-autoreply",
@@ -39,11 +42,19 @@ dev = [
 [tool.black]
 extend-exclude = "(nonebot-plugin-rimofun/(bnhhsh|not_translator))"
 
-[tool.isort]
-profile = "black"
-
 [tool.pyright]
 pythonVersion = "3.9"
+include = ["packages/**/*"]
+exclude = [
+    "**/node_modules",
+    "**/.venv",
+    "bawiki-data",
+    "cnrail-data",
+    "nb-cli-plugin-bootstrap",
+    "nonebot-plugin-akinator/nonebot_plugin_akinator/akinator",
+    "nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
+    "nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
+]
 
 [tool.ruff.isort]
 detect-same-package = true

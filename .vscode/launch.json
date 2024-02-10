@@ -5,8 +5,8 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "NoneBot2",
-      "type": "python",
+      "name": "Run TestNB2",
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/testnb2/bot.py",
       "cwd": "${workspaceFolder}/testnb2",
@@ -15,31 +15,31 @@
     },
     {
       "name": "Debug Unit Test",
-      "type": "python",
+      "type": "debugpy",
       "request": "test",
       "justMyCode": false
     },
     {
-      "name": "scripts.tools.future_crop_test",
-      "type": "python",
+      "name": "bawiki-data: Test Global Future Image Crop",
+      "type": "debugpy",
       "request": "launch",
-      "cwd": "${workspaceFolder}/bawiki-data",
+      "cwd": "${workspaceFolder}/others/bawiki-data",
       "module": "scripts.tools.future_crop_test",
       "justMyCode": true
     },
     {
-      "name": "scripts.tools.check_wiki",
-      "type": "python",
+      "name": "bawiki-data: Pre Deploy",
+      "type": "debugpy",
       "request": "launch",
-      "cwd": "${workspaceFolder}/bawiki-data",
-      "module": "scripts.tools.check_wiki",
+      "cwd": "${workspaceFolder}/others/bawiki-data",
+      "module": "scripts.pre_deploy",
       "justMyCode": true
     },
     {
-      "name": "scripts.pre_deploy.gen_gacha_data",
-      "type": "python",
+      "name": "bawiki-data: Pre Deploy: Gen Gacha Data",
+      "type": "debugpy",
       "request": "launch",
-      "cwd": "${workspaceFolder}/bawiki-data",
+      "cwd": "${workspaceFolder}/others/bawiki-data",
       "module": "scripts.pre_deploy.gen_gacha_data",
       "justMyCode": true
     }
