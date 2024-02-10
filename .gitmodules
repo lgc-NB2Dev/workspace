@@ -1,69 +1,69 @@
 [submodule "nonebot-plugin-akinator"]
-	path = nonebot-plugin-akinator
+	path = packages/nonebot-plugin-akinator
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
 [submodule "nonebot-plugin-bawiki"]
-	path = nonebot-plugin-bawiki
+	path = packages/nonebot-plugin-bawiki
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
 [submodule "nonebot-plugin-fuckyou"]
-	path = nonebot-plugin-fuckyou
+	path = packages/nonebot-plugin-fuckyou
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
 [submodule "nonebot-plugin-picmcstat"]
-	path = nonebot-plugin-picmcstat
+	path = packages/nonebot-plugin-picmcstat
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
 [submodule "nonebot-plugin-rimofun"]
-	path = nonebot-plugin-rimofun
+	path = packages/nonebot-plugin-rimofun
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
 [submodule "nonebot-plugin-autoreply"]
-	path = nonebot-plugin-autoreply
+	path = packages/nonebot-plugin-autoreply
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
 [submodule "nonebot-plugin-picstatus"]
-	path = nonebot-plugin-picstatus
+	path = packages/nonebot-plugin-picstatus
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
 [submodule "readme"]
-	path = readme
+	path = others/readme
 	url = https://github.com/lgc-NB2Dev/readme
 [submodule "nonebot-plugin-callapi"]
-	path = nonebot-plugin-callapi
+	path = packages/nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
 [submodule "nonebot-plugin-multincm"]
-	path = nonebot-plugin-multincm
+	path = packages/nonebot-plugin-multincm
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm
 [submodule "nonebot-plugin-eitherchoice"]
-	path = nonebot-plugin-eitherchoice
+	path = packages/nonebot-plugin-eitherchoice
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice
 [submodule "nonebot-plugin-nonememe"]
-	path = nonebot-plugin-nonememe
+	path = packages/nonebot-plugin-nonememe
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-nonememe
 [submodule "nonebot-plugin-ottohzys"]
-	path = nonebot-plugin-ottohzys
+	path = packages/nonebot-plugin-ottohzys
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-ottohzys
 [submodule "nonebot-plugin-pjsk"]
-	path = nonebot-plugin-pjsk
+	path = packages/nonebot-plugin-pjsk
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
 [submodule "nonebot-plugin-color"]
-	path = nonebot-plugin-color
+	path = packages/nonebot-plugin-color
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
 [submodule "bawiki-data"]
-	path = bawiki-data
+	path = others/bawiki-data
 	url = https://github.com/lgc-NB2Dev/bawiki-data
 [submodule "nb-cli-plugin-bootstrap"]
-	path = nb-cli-plugin-bootstrap
+	path = packages/nb-cli-plugin-bootstrap
 	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
 [submodule "nonebot-plugin-cnrail"]
-	path = nonebot-plugin-cnrail
+	path = packages/nonebot-plugin-cnrail
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
 [submodule "nonebot-plugin-clash"]
-	path = nonebot-plugin-clash
+	path = packages/nonebot-plugin-clash
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash
 [submodule "nonebot-plugin-riffusion"]
-	path = nonebot-plugin-riffusion
+	path = packages/nonebot-plugin-riffusion
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
 [submodule "nonebot-plugin-pingti"]
-	path = nonebot-plugin-pingti
+	path = packages/nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
 [submodule "cnrail-data"]
-	path = cnrail-data
+	path = others/cnrail-data
 	url = https://github.com/lgc-NB2Dev/cnrail-data
 [submodule "nonebot-plugin-bmclapi"]
-	path = nonebot-plugin-bmclapi
+	path = packages/nonebot-plugin-bmclapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bmclapi

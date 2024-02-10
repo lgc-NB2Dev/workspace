@@ -17,7 +17,7 @@ git clone --recurse-submodules --depth=1 https://github.com/lgc-NB2Dev/workspace
 可以使用下面的命令更新所有子模块
 
 ```bash
-git submodule update --remote
+git submodule foreach git pull
 ```
 
 ### 安装工作区开发依赖
@@ -25,7 +25,7 @@ git submodule update --remote
 使用 `pdm` 来安装依赖
 
 ```bash
-pdm install --no-self
+pdm install --group all --no-self
 ```
 
 ## 联系我

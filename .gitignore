@@ -10,3 +10,4 @@ private/
 /testnb2/
 node_modules/
 pyrightconfig.json
+pnpm-lock.yaml
