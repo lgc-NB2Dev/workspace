@@ -84,7 +84,6 @@ ignore = [
     "S311",
     "S404",
     "SIM117",
-    "SIM118",  #conflicts with PERF102
     "TRY002",
     "TRY003",
 ]

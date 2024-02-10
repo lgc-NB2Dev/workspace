@@ -36,6 +36,14 @@
       "justMyCode": true
     },
     {
+      "name": "bawiki-data: Pre Deploy: Update Stu Aliases",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/others/bawiki-data",
+      "module": "scripts.pre_deploy.update_stu_alias_list",
+      "justMyCode": true
+    },
+    {
       "name": "bawiki-data: Pre Deploy: Gen Gacha Data",
       "type": "debugpy",
       "request": "launch",
