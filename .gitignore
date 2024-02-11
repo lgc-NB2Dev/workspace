@@ -1,13 +1,6 @@
 .venv/
 .pdm-python
 __pypackages__/
-all.log
-error.log
-private/
 .coverage
-/test/
-/out/
-/testnb2/
 node_modules/
 pyrightconfig.json
-pnpm-lock.yaml

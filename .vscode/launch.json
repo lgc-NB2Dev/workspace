@@ -8,8 +8,8 @@
       "name": "Run TestNB2",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/testnb2/bot.py",
-      "cwd": "${workspaceFolder}/testnb2",
+      "program": "${workspaceFolder}/private/test-nb2/bot.py",
+      "cwd": "${workspaceFolder}/private/test-nb2",
       "console": "integratedTerminal",
       "justMyCode": false
     },
