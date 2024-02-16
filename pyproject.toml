@@ -15,8 +15,8 @@ dev = [
     "ruff>=0.0.278",
     # nonebot
     "nonebot2[all]>=2.2.0",
-    "nonebot-adapter-onebot>=2.2.2",
-    "nonebot-plugin-guild-patch>=0.2.3",
+    "nonebot-adapter-onebot>=2.4.0",
+    # "nonebot-plugin-guild-patch>=0.2.3",
     # others
     "-e file:///${PROJECT_ROOT}/others/bawiki-data",
     # packages
