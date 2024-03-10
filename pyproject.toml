@@ -29,7 +29,6 @@ dev = [
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-clash",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-cnrail",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-color",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-eitherchoice",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-fuckyou",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-multincm",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-nonememe",
