@@ -15,6 +15,9 @@ jobs:
         with:
           submodules: true
 
+      - name: Update submodules
+        run: git submodule update --remote --init --recursive
+
       - name: Setup PDM
         uses: pdm-project/setup-pdm@v3
 
