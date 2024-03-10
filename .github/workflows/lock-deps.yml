@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-          submodules: true
+          submodules: recursive
 
       - name: Update submodules
         run: git submodule update --remote --init --recursive
