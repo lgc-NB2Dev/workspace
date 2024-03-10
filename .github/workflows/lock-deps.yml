@@ -1,7 +1,9 @@
 name: Lock workspace dependencies
 
 on:
-  - push
+  push:
+  schedule:
+    - cron: '0 8 * * *'
 
 permissions: write-all
 
