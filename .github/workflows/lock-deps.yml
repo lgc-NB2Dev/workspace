@@ -3,6 +3,8 @@ name: Lock workspace dependencies
 on:
   - push
 
+permissions: write-all
+
 jobs:
   lock:
     runs-on: ubuntu-latest
