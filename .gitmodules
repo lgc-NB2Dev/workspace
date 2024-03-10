@@ -64,3 +64,9 @@
 [submodule "nonebot-plugin-bmclapi"]
 	path = packages/nonebot-plugin-bmclapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bmclapi
+[submodule "packages/cookit"]
+	path = packages/cookit
+	url = https://github.com/lgc2333/cookit
+[submodule "packages/cookit-nonebot"]
+	path = packages/cookit-nonebot
+	url = https://github.com/lgc-NB2Dev/cookit-nonebot
