@@ -58,9 +58,6 @@
 [submodule "nonebot-plugin-pingti"]
 	path = packages/nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
-[submodule "cnrail-data"]
-	path = others/cnrail-data
-	url = https://github.com/lgc-NB2Dev/cnrail-data
 [submodule "nonebot-plugin-bmclapi"]
 	path = packages/nonebot-plugin-bmclapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bmclapi
@@ -70,3 +67,6 @@
 [submodule "packages/cookit-nonebot"]
 	path = packages/cookit-nonebot
 	url = https://github.com/lgc-NB2Dev/cookit-nonebot
+[submodule "packages/nonebot-plugin-kawaii-robot"]
+	path = packages/nonebot-plugin-kawaii-robot
+	url = https://github.com/KarisAya/nonebot_plugin_kawaii_robot
