@@ -1895,6 +1895,7 @@ summary = "使用 Kyomotoi/AnimeThesaurus 的 NoneBot2 的回复（文i）插件
 groups = ["dev"]
 dependencies = [
     "anyio>=3.7.1",
+    "cookit>=0.1.0",
     "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-session>=0.3.1",
     "nonebot-plugin-userinfo>=0.2.2",
