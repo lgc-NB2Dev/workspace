@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:1eaba3d6fa2b18d95cf7baa284571a5c0b248253c344767ba07c9e474a1ef9df"
+content_hash = "sha256:4f13d64564de63f00658f9235b004b1750c73534e826d93478d8e9bca81f2976"
 
 [[package]]
 name = "aiodns"
@@ -1689,7 +1689,7 @@ summary = "Internet Genius - Akinator"
 groups = ["dev"]
 dependencies = [
     "aiohttp>=3.8.4",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-session>=0.1.0",
     "nonebot2>=2.2.0",
     "pil-utils>=0.1.6",
@@ -1778,7 +1778,7 @@ summary = "Get OpenBMCLAPI status in chat apps."
 groups = ["dev"]
 dependencies = [
     "humanize>=4.9.0",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
 ]
 
@@ -1792,7 +1792,7 @@ summary = "Use bot command to call its API"
 groups = ["dev"]
 dependencies = [
     "Pygments>=2.15.1",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
     "pil-utils>=0.1.7",
 ]
@@ -1809,7 +1809,7 @@ dependencies = [
     "httpx>=0.24",
     "jinja2>=3.1.2",
     "matplotlib>=3.7.4",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-htmlrender>=0.2.2",
     "nonebot2>=2.2.0",
     "numpy>=1.24.4",
@@ -1828,7 +1828,7 @@ groups = ["dev"]
 dependencies = [
     "httpx>=0.24",
     "jinja2>=3.1.2",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-htmlrender>=0.2.2",
     "nonebot2>=2.2.0",
     "pytz>=2023.3.post1",
@@ -1843,7 +1843,7 @@ path = "./packages/nonebot-plugin-color"
 summary = "A specified color image generator for Nonebot2"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
     "pil-utils>=0.1.8",
 ]
@@ -1882,6 +1882,20 @@ files = [
 ]
 
 [[package]]
+name = "nonebot-plugin-kawaii-robot"
+version = "0.0.0"
+requires_python = "<4.0,>=3.8"
+editable = true
+path = "./packages/nonebot-plugin-kawaii-robot"
+summary = "使用 Kyomotoi/AnimeThesaurus 的 NoneBot2 的回复（文i）插件"
+groups = ["dev"]
+dependencies = [
+    "anyio>=3.7.1",
+    "nonebot-plugin-alconna>=0.40.1",
+    "nonebot2>=2.0.0",
+]
+
+[[package]]
 name = "nonebot-plugin-multincm"
 version = "0.5.0.dev9"
 requires_python = "<4.0,>=3.9"
@@ -1913,7 +1927,7 @@ dependencies = [
     "anyio>=3.6.2",
     "httpx>=0.24.1",
     "json5>=0.9.14",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-apscheduler>=0.3.0",
     "nonebot2>=2.2.0",
     "typing-extensions>=4.7.1",
@@ -1931,7 +1945,7 @@ dependencies = [
     "anyio>=3.6.2",
     "async-lru>=2.0.4",
     "httpx>=0.25.0",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
     "numpy>=1.24.4",
     "psola>=0.0.1",
@@ -1950,7 +1964,7 @@ groups = ["dev"]
 dependencies = [
     "dnspython>=2.4.2",
     "mcstatus>=11.1.0",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
     "pil-utils>=0.1.6",
     "punycode>=0.2.1",
@@ -1968,7 +1982,7 @@ dependencies = [
     "anyio>=3.6.2",
     "httpx>=0.25.0",
     "jinja2>=3.1.2",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-htmlrender>=0.2.3",
     "nonebot-plugin-userinfo>=0.1.3",
     "nonebot2>=2.2.0",
@@ -1987,7 +2001,7 @@ summary = "Shop with lower prices by searching with alternative keywords."
 groups = ["dev"]
 dependencies = [
     "httpx>=0.26.0",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
 ]
 
@@ -2003,7 +2017,7 @@ dependencies = [
     "anyio>=3.6.2",
     "httpx>=0.25.1",
     "jinja2>=3.1.3",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot-plugin-htmlrender>=0.2.3",
     "nonebot2>=2.2.0",
     "yarl>=1.9.4",
@@ -2019,7 +2033,7 @@ summary = "Let AI riff a song for you."
 groups = ["dev"]
 dependencies = [
     "httpx>=0.24",
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
 ]
 
@@ -2032,7 +2046,7 @@ path = "./packages/nonebot-plugin-rimofun"
 summary = "Use RimoChan's stuff to do some interesting things"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-alconna>=0.40.0rc1",
+    "nonebot-plugin-alconna>=0.40.1",
     "nonebot2>=2.2.0",
     "pypinyin>=0.48.0",
     "unvcode>=1.0.0",
@@ -2674,7 +2688,7 @@ files = [
 
 [[package]]
 name = "pyncm"
-version = "1.6.14"
+version = "1.6.15"
 requires_python = ">=3.6"
 summary = "NeteaseCloudMusic APIs for Python 3.x 适用于 Python 3 的网易云音乐 API"
 groups = ["dev"]
@@ -2682,8 +2696,8 @@ dependencies = [
     "requests",
 ]
 files = [
-    {file = "pyncm-1.6.14-py3-none-any.whl", hash = "sha256:5613b9ef5652f5ac1d03d2bf73d5518204ce48e16f44968d6529e9f91dbd3095"},
-    {file = "pyncm-1.6.14.tar.gz", hash = "sha256:a82d54732c756bb3d5745423facd95493c1c62d1040af6847cb14f76ee7e71d7"},
+    {file = "pyncm-1.6.15-py3-none-any.whl", hash = "sha256:d167d71471b8f897c0e2885b5b36bf29e96aec1bd223e44d883cff9ab3b5d48e"},
+    {file = "pyncm-1.6.15.tar.gz", hash = "sha256:44676a60d05e2715066adec5760570fafcafa1deacc822e8603c30b687d94ea2"},
 ]
 
 [[package]]
@@ -2880,13 +2894,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "69.1.1"
+version = "69.2.0"
 requires_python = ">=3.8"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["dev"]
 files = [
-    {file = "setuptools-69.1.1-py3-none-any.whl", hash = "sha256:02fa291a0471b3a18b2b2481ed902af520c69e8ae0919c13da936542754b4c56"},
-    {file = "setuptools-69.1.1.tar.gz", hash = "sha256:5c0806c7d9af348e6dd3777b4f4dbb42c7ad85b190104837488eab9a7c945cf8"},
+    {file = "setuptools-69.2.0-py3-none-any.whl", hash = "sha256:c21c49fb1042386df081cb5d86759792ab89efca84cf114889191cd09aacc80c"},
+    {file = "setuptools-69.2.0.tar.gz", hash = "sha256:0ff4183f8f42cd8fa3acea16c45205521a4ef28f73c6391d8a25e92893134f2e"},
 ]
 
 [[package]]
