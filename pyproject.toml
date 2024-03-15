@@ -13,6 +13,8 @@ dev = [
     "pip>=23.2",
     # tools
     "ruff>=0.0.278",
+    "pytest>=8.1.1",
+    "pytest-asyncio>=0.23.5.post1",
     # nonebot
     "nonebot2[all]>=2.2.0",
     "nonebot-adapter-onebot>=2.4.0",
@@ -56,6 +58,9 @@ exclude = [
     "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
     "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
 ]
+defineConstant = { PYDANTIC_V2 = true }
+typeCheckingMode = "basic"
+reportShadowedImports = false
 
 [tool.ruff]
 extend-exclude = [
