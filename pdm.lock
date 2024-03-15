@@ -1400,7 +1400,7 @@ files = [
 
 [[package]]
 name = "markdown"
-version = "3.5.2"
+version = "3.6"
 requires_python = ">=3.8"
 summary = "Python implementation of John Gruber's Markdown."
 groups = ["dev"]
@@ -1408,8 +1408,8 @@ dependencies = [
     "importlib-metadata>=4.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "Markdown-3.5.2-py3-none-any.whl", hash = "sha256:d43323865d89fc0cb9b20c75fc8ad313af307cc087e84b657d9eec768eddeadd"},
-    {file = "Markdown-3.5.2.tar.gz", hash = "sha256:e1ac7b3dc550ee80e602e71c1d168002f062e49f1b11e26a36264dafd4df2ef8"},
+    {file = "Markdown-3.6-py3-none-any.whl", hash = "sha256:48f276f4d8cfb8ce6527c8f79e2ee29708508bf4d40aa410fbc3b4ee832c850f"},
+    {file = "Markdown-3.6.tar.gz", hash = "sha256:ed4f41f6daecbeeb96e576ce414c41d2d876daa9a16cb35fa8ed8c2ddfad0224"},
 ]
 
 [[package]]
@@ -1866,7 +1866,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-htmlrender"
-version = "0.3.0"
+version = "0.3.1"
 requires_python = "<4.0,>=3.8"
 summary = "通过浏览器渲染图片"
 groups = ["dev"]
@@ -1881,8 +1881,8 @@ dependencies = [
     "python-markdown-math>=0.8",
 ]
 files = [
-    {file = "nonebot_plugin_htmlrender-0.3.0-py3-none-any.whl", hash = "sha256:c05588bad4738421a49a47a7db974359adeb624c1ed6af49d6237023fa014bcf"},
-    {file = "nonebot_plugin_htmlrender-0.3.0.tar.gz", hash = "sha256:34b4ff5b898ea47480d3488a2a0b01c46e0ca3d938ab4b891d1db91a70d83d2d"},
+    {file = "nonebot_plugin_htmlrender-0.3.1-py3-none-any.whl", hash = "sha256:5c3b0fa143086d07f63ae9daedf2adadcba40b1c4b8af547e00bfbd1707b5b8b"},
+    {file = "nonebot_plugin_htmlrender-0.3.1.tar.gz", hash = "sha256:9aad5509de343ff7867442e5c859e7c5e817129f493c780d45b69e726d096d80"},
 ]
 
 [[package]]
@@ -3498,12 +3498,12 @@ files = [
 
 [[package]]
 name = "zipp"
-version = "3.18.0"
+version = "3.18.1"
 requires_python = ">=3.8"
 summary = "Backport of pathlib-compatible object wrapper for zip files"
 groups = ["dev"]
 marker = "python_version < \"3.10\""
 files = [
-    {file = "zipp-3.18.0-py3-none-any.whl", hash = "sha256:c1bb803ed69d2cce2373152797064f7e79bc43f0a3748eb494096a867e0ebf79"},
-    {file = "zipp-3.18.0.tar.gz", hash = "sha256:df8d042b02765029a09b157efd8e820451045890acc30f8e37dd2f94a060221f"},
+    {file = "zipp-3.18.1-py3-none-any.whl", hash = "sha256:206f5a15f2af3dbaee80769fb7dc6f249695e940acca08dfb2a4769fe61e538b"},
+    {file = "zipp-3.18.1.tar.gz", hash = "sha256:2884ed22e7d8961de1c9a05142eb69a247f120291bc0206a00a7642f09b5b715"},
 ]
