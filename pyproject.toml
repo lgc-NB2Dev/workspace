@@ -18,10 +18,8 @@ dev = [
     # nonebot
     "nonebot2[all]>=2.2.0",
     "nonebot-adapter-onebot>=2.4.0",
-    # "nonebot-plugin-guild-patch>=0.2.3",
     # cookit
     "-e file:///${PROJECT_ROOT}/packages/cookit",
-    "-e file:///${PROJECT_ROOT}/packages/cookit-nonebot",
     # others
     "-e file:///${PROJECT_ROOT}/others/bawiki-data",
     # packages
