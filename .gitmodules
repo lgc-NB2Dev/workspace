@@ -64,9 +64,6 @@
 [submodule "packages/cookit"]
 	path = packages/cookit
 	url = https://github.com/lgc2333/cookit
-[submodule "packages/cookit-nonebot"]
-	path = packages/cookit-nonebot
-	url = https://github.com/lgc-NB2Dev/cookit-nonebot
 [submodule "packages/nonebot-plugin-kawaii-robot"]
 	path = packages/nonebot-plugin-kawaii-robot
 	url = https://github.com/KarisAya/nonebot_plugin_kawaii_robot

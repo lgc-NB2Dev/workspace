@@ -14,12 +14,6 @@
       "justMyCode": false
     },
     {
-      "name": "Debug Unit Test",
-      "type": "debugpy",
-      "request": "test",
-      "justMyCode": false
-    },
-    {
       "name": "bawiki-data: Test Global Future Image Crop",
       "type": "debugpy",
       "request": "launch",
