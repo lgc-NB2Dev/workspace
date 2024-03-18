@@ -1681,7 +1681,7 @@ files = [
 
 [[package]]
 name = "nonebot-adapter-onebot"
-version = "2.4.2"
+version = "2.4.3"
 requires_python = ">=3.8,<4.0"
 summary = "OneBot(CQHTTP) adapter for nonebot2"
 groups = ["dev"]
@@ -1692,8 +1692,8 @@ dependencies = [
     "typing-extensions<5.0.0,>=4.0.0",
 ]
 files = [
-    {file = "nonebot_adapter_onebot-2.4.2-py3-none-any.whl", hash = "sha256:7e97a08300c7dc0a9ba2c7fb4b7dda8b0038fa4e73f5c730932da5d12c4972be"},
-    {file = "nonebot_adapter_onebot-2.4.2.tar.gz", hash = "sha256:7ef7eca7b3eaf60f503c7e4f8df8ab0c58506645bbcca8297a9b93159ce98033"},
+    {file = "nonebot_adapter_onebot-2.4.3-py3-none-any.whl", hash = "sha256:e3a38695653226b39d50d1f4f0c4283c63a0a083a07db15d3fc1857fe0f0fa61"},
+    {file = "nonebot_adapter_onebot-2.4.3.tar.gz", hash = "sha256:7a1a9476ce1814eb11599ffcae770c66401e7e8cbec626eb84ed5617d0223020"},
 ]
 
 [[package]]
@@ -1714,7 +1714,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.40.1"
+version = "0.41.0"
 requires_python = ">=3.8"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
@@ -1725,8 +1725,8 @@ dependencies = [
     "nonebot2>=2.2.1",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.40.1-py3-none-any.whl", hash = "sha256:6f4bd7576e6df65710a7f920c93cb5400a8eef66abaff06189b532930b376330"},
-    {file = "nonebot_plugin_alconna-0.40.1.tar.gz", hash = "sha256:10b52ee800dd10ffa033208d2dbac6d459b3573dbfeaf53efadc50f62c1213f2"},
+    {file = "nonebot_plugin_alconna-0.41.0-py3-none-any.whl", hash = "sha256:9aed8468ad7ec82d1849bf5d4010e08765239e6add1c7f2e744dc0b35ce8ce57"},
+    {file = "nonebot_plugin_alconna-0.41.0.tar.gz", hash = "sha256:29d4c7f39b629d14652274e0b26cf5b1e1d558d87df0334d738d969172c0d7d7"},
 ]
 
 [[package]]
@@ -1992,7 +1992,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "2.0.0"
+version = "2.0.0.post2"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-picstatus"
