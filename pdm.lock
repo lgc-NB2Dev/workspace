@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:6caa19d719c643458888a0e90e2ad29a80bdee434e4dca53f710675fae010182"
+content_hash = "sha256:783af878d635a31222044cd4cb264b98b41f497e80b16fc715bccf0ab0ebfd1d"
 
 [[package]]
 name = "aiodns"
@@ -322,6 +322,20 @@ groups = ["dev"]
 files = [
     {file = "attrs-23.2.0-py3-none-any.whl", hash = "sha256:99b87a485a5820b23b879f04c2305b44b951b502fd64be915879d77a7e8fc6f1"},
     {file = "attrs-23.2.0.tar.gz", hash = "sha256:935dc3b529c262f6cf76e50877d35a4bd3c1de194fd41f47a2b7ae8f19971f30"},
+]
+
+[[package]]
+name = "basedpyright"
+version = "1.6.1"
+requires_python = ">=3.8"
+summary = "static type checking for Python (but based)"
+groups = ["dev"]
+dependencies = [
+    "nodejs-bin>=18.4.0a4",
+]
+files = [
+    {file = "basedpyright-1.6.1-py3-none-any.whl", hash = "sha256:35439e258f306c9716a2da210a2e810a8e3d194f3e248380e2d26cbaf12d0ecb"},
+    {file = "basedpyright-1.6.1.tar.gz", hash = "sha256:87891c3d70cd33dacb14d60850c08acac6464888a3d066a0275e90798ae6a9a8"},
 ]
 
 [[package]]
@@ -1680,6 +1694,22 @@ files = [
 ]
 
 [[package]]
+name = "nodejs-bin"
+version = "18.4.0a4"
+requires_python = "~=3.5"
+summary = "       Node.js is an open-source, cross-platform, back-end JavaScript\nruntime environment that runs on the V8 engine and executes JavaScript code\noutside a web browser."
+groups = ["dev"]
+files = [
+    {file = "nodejs_bin-18.4.0a4-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:16cb1abf7fe8c11c574e1e474d9f934a0df49a480290eae6e733d8bb09512e22"},
+    {file = "nodejs_bin-18.4.0a4-py3-none-macosx_11_0_arm64.whl", hash = "sha256:068ca987ed83ea1123775fafe5dc22d8f2ff920d7d31571e1bfe6fb1093833eb"},
+    {file = "nodejs_bin-18.4.0a4-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:06cfeaa4d26eec94d8edb9927525ce94eb96dadc81f7d1daed42d1a7d003a4c9"},
+    {file = "nodejs_bin-18.4.0a4-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:431ee3529f4fb226ddcfd4f14cb37e7df31238c42dfd051f4bf8f0c21029b133"},
+    {file = "nodejs_bin-18.4.0a4-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:21f1f77ddc8fe05353bb6d6ee8e5a62edb3a8dcdb2740a5f9307fd8d9eef6691"},
+    {file = "nodejs_bin-18.4.0a4-py3-none-win32.whl", hash = "sha256:59671fdc563dabb8be8a0b6dae4169d780482b3c9e0fba3f9aa2b7ee8d2261ac"},
+    {file = "nodejs_bin-18.4.0a4-py3-none-win_amd64.whl", hash = "sha256:cbd509218b4b17f75ee7841f9c21d5cacc1626d3b823a652a6627dbad18228ec"},
+]
+
+[[package]]
 name = "nonebot-adapter-onebot"
 version = "2.4.3"
 requires_python = ">=3.8,<4.0"
@@ -1823,6 +1853,7 @@ path = "./packages/nonebot-plugin-clash"
 summary = "Manage your clash core using NoneBot2"
 groups = ["dev"]
 dependencies = [
+    "cookit[pydantic]>=0.2.0",
     "httpx>=0.24",
     "jinja2>=3.1.2",
     "matplotlib>=3.7.4",
