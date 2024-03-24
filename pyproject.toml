@@ -12,6 +12,7 @@ dev = [
     "setuptools>=68.0.0",
     "pip>=23.2",
     # tools
+    "basedpyright>=1.6.1",
     "ruff>=0.0.278",
     "pytest>=8.1.1",
     "pytest-asyncio>=0.23.5.post1",
@@ -48,17 +49,17 @@ dev = [
 [tool.pdm]
 distribution = false
 
-[tool.pyright]
+[tool.basedpyright]
 pythonVersion = "3.9"
+defineConstant = { PYDANTIC_V2 = true }
+typeCheckingMode = "standard"
+reportShadowedImports = false
 exclude = [
     "**/node_modules",
     "**/.venv",
     "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
     "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
 ]
-defineConstant = { PYDANTIC_V2 = true }
-typeCheckingMode = "basic"
-reportShadowedImports = false
 
 [tool.ruff]
 extend-exclude = [
