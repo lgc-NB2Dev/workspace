@@ -50,9 +50,9 @@ dev = [
 distribution = false
 
 [tool.pdm.scripts]
+
 [tool.pdm.scripts.pull]
 shell = "git pull && git submodule foreach --recursive git pull && pdm install -G:all"
-
 
 [tool.basedpyright]
 pythonVersion = "3.9"
