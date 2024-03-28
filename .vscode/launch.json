@@ -14,6 +14,15 @@
       "justMyCode": false
     },
     {
+      "name": "Python: Debug Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "purpose": ["debug-test"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
       "name": "bawiki-data: Test Global Future Image Crop",
       "type": "debugpy",
       "request": "launch",

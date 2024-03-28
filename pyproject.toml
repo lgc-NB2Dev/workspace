@@ -17,7 +17,7 @@ dev = [
     "pytest>=8.1.1",
     "pytest-asyncio>=0.23.5.post1",
     # nonebot
-    "nonebot2[all]>=2.2.0",
+    "nonebot2[all]>=2.2.1",
     "nonebot-adapter-onebot>=2.4.0",
     # cookit
     "-e file:///${PROJECT_ROOT}/packages/cookit",
@@ -48,6 +48,11 @@ dev = [
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.scripts]
+[tool.pdm.scripts.pull]
+shell = "git pull && git submodule foreach --recursive git pull && pdm install -G:all"
+
 
 [tool.basedpyright]
 pythonVersion = "3.9"
