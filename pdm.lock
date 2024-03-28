@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:61edcc3c48dabf639211d9167eb5d379cb4d780ac02ebb5e01febefa99703350"
+content_hash = "sha256:783af878d635a31222044cd4cb264b98b41f497e80b16fc715bccf0ab0ebfd1d"
 
 [[package]]
 name = "aiodns"
