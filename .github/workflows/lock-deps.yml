@@ -17,16 +17,19 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Update submodules
+        run: git submodule update --remote --init --recursive
+
       - name: Setup PDM
         uses: pdm-project/setup-pdm@v3
 
-      - name: Update deps
-        run: pdm run pull
+      - name: Lock Deps
+        run: pdm lock -G:all
 
       - name: Commit changes
         run: |
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
           git add .
-          git commit -m "update deps" || exit 0
+          git commit -m "lock deps" || exit 0
           git push
