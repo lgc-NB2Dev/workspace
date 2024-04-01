@@ -169,3 +169,4 @@ select = [
 combine-as-imports = true
 detect-same-package = true
 extra-standard-library = ["typing_extensions"]
+split-on-trailing-comma = true
