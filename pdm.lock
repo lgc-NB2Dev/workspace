@@ -247,7 +247,7 @@ files = [
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.6"
+version = "1.8.7"
 requires_python = ">=3.8"
 summary = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 groups = ["dev"]
@@ -257,8 +257,8 @@ dependencies = [
     "typing-extensions>=4.5.0",
 ]
 files = [
-    {file = "arclet_alconna-1.8.6-py3-none-any.whl", hash = "sha256:bac7f075328365b9727ae75eab83bb3884cbca40a725a6b2367d5af6c30ce6b5"},
-    {file = "arclet_alconna-1.8.6.tar.gz", hash = "sha256:ae0006335c41d1ad847f7a847f99523720c2a3605259833066133f08bc8feaf0"},
+    {file = "arclet_alconna-1.8.7-py3-none-any.whl", hash = "sha256:4f4feb9d8a9f6195057d37dfeeef45f6753b395361903b40defbd19477083756"},
+    {file = "arclet_alconna-1.8.7.tar.gz", hash = "sha256:98486ae09907dcbb35b8516f29772111acf333e785e055a21183be53acf433f4"},
 ]
 
 [[package]]
@@ -1923,7 +1923,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-cnrail"
-version = "0.2.1"
+version = "0.2.2.dev1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-cnrail"
