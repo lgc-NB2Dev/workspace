@@ -2015,6 +2015,7 @@ groups = ["dev"]
 dependencies = [
     "anyio>=3.6.2",
     "bbcode>=1.1.0",
+    "cookit[pydantic]>=0.4.1",
     "httpx>=0.24.0",
     "jinja2>=3.1.2",
     "nonebot-adapter-onebot>=2.2.0",
