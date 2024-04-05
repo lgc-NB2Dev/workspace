@@ -263,17 +263,17 @@ files = [
 
 [[package]]
 name = "arclet-alconna-tools"
-version = "0.7.1"
+version = "0.7.2"
 requires_python = ">=3.8"
 summary = "Builtin Tools for Alconna"
 groups = ["dev"]
 dependencies = [
-    "arclet-alconna>=1.8.6",
+    "arclet-alconna>=1.8.7",
     "nepattern<1.0.0,>=0.6.5",
 ]
 files = [
-    {file = "arclet-alconna-tools-0.7.1.tar.gz", hash = "sha256:d27d08f76d8ba807aa624725944b5404f86adef94f1536db5de2a40aad2c959b"},
-    {file = "arclet_alconna_tools-0.7.1-py3-none-any.whl", hash = "sha256:0a972f5e843522216cbbfe0e77b715a673dd30e5146d3b235c20d15d1875a1d6"},
+    {file = "arclet_alconna_tools-0.7.2-py3-none-any.whl", hash = "sha256:69739aab07c039537cd72b4ab6d37aff896cd794031a8ff8157e5f85e842ed9b"},
+    {file = "arclet_alconna_tools-0.7.2.tar.gz", hash = "sha256:98a6aad6284efd8af34b10cd35667bd5885f530327b9ac9ea2944bf6325d0d6f"},
 ]
 
 [[package]]
