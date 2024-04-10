@@ -1784,7 +1784,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-akinator"
-version = "0.2.0"
+version = "0.2.0.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-akinator"
@@ -1887,7 +1887,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-callapi"
-version = "0.2.0"
+version = "0.2.0.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-callapi"
@@ -1989,7 +1989,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-kawaii-robot"
-version = "4.1.0.post1"
+version = "4.1.0.post2"
 requires_python = "<4.0,>=3.8"
 editable = true
 path = "./packages/nonebot-plugin-kawaii-robot"
@@ -2082,7 +2082,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "2.0.0.post2"
+version = "2.0.0.post3"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-picstatus"
