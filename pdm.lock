@@ -1254,13 +1254,13 @@ files = [
 
 [[package]]
 name = "json5"
-version = "0.9.24"
+version = "0.9.25"
 requires_python = ">=3.8"
 summary = "A Python implementation of the JSON5 data format."
 groups = ["dev"]
 files = [
-    {file = "json5-0.9.24-py3-none-any.whl", hash = "sha256:4ca101fd5c7cb47960c055ef8f4d0e31e15a7c6c48c3b6f1473fc83b6c462a13"},
-    {file = "json5-0.9.24.tar.gz", hash = "sha256:0c638399421da959a20952782800e5c1a78c14e08e1dc9738fa10d8ec14d58c8"},
+    {file = "json5-0.9.25-py3-none-any.whl", hash = "sha256:34ed7d834b1341a86987ed52f3f76cd8ee184394906b6e22a1e0deb9ab294e8f"},
+    {file = "json5-0.9.25.tar.gz", hash = "sha256:548e41b9be043f9426776f05df8635a00fe06104ea51ed24b67f908856e151ae"},
 ]
 
 [[package]]
@@ -2826,15 +2826,15 @@ files = [
 
 [[package]]
 name = "pypar"
-version = "0.0.5"
+version = "0.0.6"
 summary = "Python phoneme alignment representation"
 groups = ["dev"]
 dependencies = [
     "numpy",
 ]
 files = [
-    {file = "pypar-0.0.5-py3-none-any.whl", hash = "sha256:221062d6b037c18f418037390560a234b4fffc6ec695db610178daba273aecd1"},
-    {file = "pypar-0.0.5.tar.gz", hash = "sha256:17c050fcdca088f456edef6fc9bd500067a032acac73084434ba2b1b8678e86d"},
+    {file = "pypar-0.0.6-py3-none-any.whl", hash = "sha256:11552805766a522a9b4631a52fc8388884ef7c7fcdfbf6501e95f8af6fc6fff1"},
+    {file = "pypar-0.0.6.tar.gz", hash = "sha256:e69a3c3e974451ae29bf0889fb22b5b93ff17209f035dbdb63373a89f495e971"},
 ]
 
 [[package]]
