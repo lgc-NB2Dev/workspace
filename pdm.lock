@@ -1800,7 +1800,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.42.3"
+version = "0.42.4"
 requires_python = ">=3.8"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
@@ -1811,8 +1811,8 @@ dependencies = [
     "nonebot2>=2.2.1",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.42.3-py3-none-any.whl", hash = "sha256:dfb8c22293e7f78e584830c593904153731f58ffd3f77021c745967add73ab47"},
-    {file = "nonebot_plugin_alconna-0.42.3.tar.gz", hash = "sha256:2304121c2ad2996a741cbe45840cc24f7d6e2cc53694aa661eaae515639c8d99"},
+    {file = "nonebot_plugin_alconna-0.42.4-py3-none-any.whl", hash = "sha256:8dd843f37c1d4a13bf58966a6d592c7f685ec6346954d774b12b53e0864b98b0"},
+    {file = "nonebot_plugin_alconna-0.42.4.tar.gz", hash = "sha256:5fe0ea1374bacbf2eaae6eb4a0e41fd8ebc983bab6f0224a4e64fba5984e219d"},
 ]
 
 [[package]]
@@ -3051,13 +3051,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "69.2.0"
+version = "69.5.1"
 requires_python = ">=3.8"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["dev"]
 files = [
-    {file = "setuptools-69.2.0-py3-none-any.whl", hash = "sha256:c21c49fb1042386df081cb5d86759792ab89efca84cf114889191cd09aacc80c"},
-    {file = "setuptools-69.2.0.tar.gz", hash = "sha256:0ff4183f8f42cd8fa3acea16c45205521a4ef28f73c6391d8a25e92893134f2e"},
+    {file = "setuptools-69.5.1-py3-none-any.whl", hash = "sha256:c636ac361bc47580504644275c9ad802c50415c7522212252c033bd15f301f32"},
+    {file = "setuptools-69.5.1.tar.gz", hash = "sha256:6c1fccdac05a97e598fb0ae3bbed5904ccb317337a51139dcd51453611bbb987"},
 ]
 
 [[package]]
