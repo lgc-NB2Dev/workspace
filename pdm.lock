@@ -1183,7 +1183,6 @@ version = "7.1.0"
 requires_python = ">=3.8"
 summary = "Read metadata from Python packages"
 groups = ["dev"]
-marker = "python_version < \"3.10\""
 dependencies = [
     "zipp>=0.5",
 ]
@@ -1800,19 +1799,20 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.45.0"
+version = "0.45.3"
 requires_python = ">=3.9"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
 dependencies = [
     "arclet-alconna-tools>=0.7.3",
-    "arclet-alconna>=1.8.10",
-    "nepattern>=0.7.0",
-    "nonebot2>=2.2.1",
+    "arclet-alconna>=1.8.11",
+    "importlib-metadata>=4.13.0",
+    "nepattern>=0.7.2",
+    "nonebot2>=2.3.0",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.45.0-py3-none-any.whl", hash = "sha256:3394961dc27f2322e8ebb8e5f700b567b3749262689c3a0f85fab55112bc050e"},
-    {file = "nonebot_plugin_alconna-0.45.0.tar.gz", hash = "sha256:6fa530ef6df02c3b8c2a67979ac55d6978cc647df2ce5a393c87f42e919be641"},
+    {file = "nonebot_plugin_alconna-0.45.3-py3-none-any.whl", hash = "sha256:1e6ff5e99464ea2acad03df8b9fc48949b7d40a7c8d1976c53a934eafb8d3bf0"},
+    {file = "nonebot_plugin_alconna-0.45.3.tar.gz", hash = "sha256:7667df82fdae02842b0fa28b39d61daf501f1af41d6fecf288fb8bb38a35ff9d"},
 ]
 
 [[package]]
@@ -2200,8 +2200,8 @@ files = [
 
 [[package]]
 name = "nonebot2"
-version = "2.2.1"
-requires_python = ">=3.8,<4.0"
+version = "2.3.0"
+requires_python = "<4.0,>=3.9"
 summary = "An asynchronous python bot framework."
 groups = ["dev"]
 dependencies = [
@@ -2214,15 +2214,15 @@ dependencies = [
     "yarl<2.0.0,>=1.7.2",
 ]
 files = [
-    {file = "nonebot2-2.2.1-py3-none-any.whl", hash = "sha256:88f2bb456bf90922925bbe489a9effe3b09300f3aa50bfa75ee50d8a83d7330f"},
-    {file = "nonebot2-2.2.1.tar.gz", hash = "sha256:fe57692300571b00724999238545d8d894523460e6835a11b326a2e1cdf98fc4"},
+    {file = "nonebot2-2.3.0-py3-none-any.whl", hash = "sha256:ecde620a96197189f9f9b719ab8493b5115e5973cba0bd07ed3d737ce7418462"},
+    {file = "nonebot2-2.3.0.tar.gz", hash = "sha256:0e4ebdb0eaab96008619aa4890171ea6e7e7af25eb9d1a4e753e58544c46681e"},
 ]
 
 [[package]]
 name = "nonebot2"
-version = "2.2.1"
+version = "2.3.0"
 extras = ["all"]
-requires_python = ">=3.8,<4.0"
+requires_python = "<4.0,>=3.9"
 summary = "An asynchronous python bot framework."
 groups = ["dev"]
 dependencies = [
@@ -2230,30 +2230,30 @@ dependencies = [
     "aiohttp[speedups]<4.0.0,>=3.9.0b0",
     "fastapi<1.0.0,>=0.93.0",
     "httpx[http2]<1.0.0,>=0.20.0",
-    "nonebot2==2.2.1",
+    "nonebot2==2.3.0",
     "uvicorn[standard]<1.0.0,>=0.20.0",
     "websockets>=10.0",
 ]
 files = [
-    {file = "nonebot2-2.2.1-py3-none-any.whl", hash = "sha256:88f2bb456bf90922925bbe489a9effe3b09300f3aa50bfa75ee50d8a83d7330f"},
-    {file = "nonebot2-2.2.1.tar.gz", hash = "sha256:fe57692300571b00724999238545d8d894523460e6835a11b326a2e1cdf98fc4"},
+    {file = "nonebot2-2.3.0-py3-none-any.whl", hash = "sha256:ecde620a96197189f9f9b719ab8493b5115e5973cba0bd07ed3d737ce7418462"},
+    {file = "nonebot2-2.3.0.tar.gz", hash = "sha256:0e4ebdb0eaab96008619aa4890171ea6e7e7af25eb9d1a4e753e58544c46681e"},
 ]
 
 [[package]]
 name = "nonebot2"
-version = "2.2.1"
+version = "2.3.0"
 extras = ["fastapi"]
-requires_python = ">=3.8,<4.0"
+requires_python = "<4.0,>=3.9"
 summary = "An asynchronous python bot framework."
 groups = ["dev"]
 dependencies = [
     "fastapi<1.0.0,>=0.93.0",
-    "nonebot2==2.2.1",
+    "nonebot2==2.3.0",
     "uvicorn[standard]<1.0.0,>=0.20.0",
 ]
 files = [
-    {file = "nonebot2-2.2.1-py3-none-any.whl", hash = "sha256:88f2bb456bf90922925bbe489a9effe3b09300f3aa50bfa75ee50d8a83d7330f"},
-    {file = "nonebot2-2.2.1.tar.gz", hash = "sha256:fe57692300571b00724999238545d8d894523460e6835a11b326a2e1cdf98fc4"},
+    {file = "nonebot2-2.3.0-py3-none-any.whl", hash = "sha256:ecde620a96197189f9f9b719ab8493b5115e5973cba0bd07ed3d737ce7418462"},
+    {file = "nonebot2-2.3.0.tar.gz", hash = "sha256:0e4ebdb0eaab96008619aa4890171ea6e7e7af25eb9d1a4e753e58544c46681e"},
 ]
 
 [[package]]
@@ -3652,7 +3652,6 @@ version = "3.18.1"
 requires_python = ">=3.8"
 summary = "Backport of pathlib-compatible object wrapper for zip files"
 groups = ["dev"]
-marker = "python_version < \"3.10\""
 files = [
     {file = "zipp-3.18.1-py3-none-any.whl", hash = "sha256:206f5a15f2af3dbaee80769fb7dc6f249695e940acca08dfb2a4769fe61e538b"},
     {file = "zipp-3.18.1.tar.gz", hash = "sha256:2884ed22e7d8961de1c9a05142eb69a247f120291bc0206a00a7642f09b5b715"},
