@@ -802,16 +802,16 @@ files = [
 
 [[package]]
 name = "emoji"
-version = "2.12.0"
+version = "2.12.1"
 requires_python = ">=3.7"
 summary = "Emoji for Python"
 groups = ["dev"]
 dependencies = [
-    "typing-extensions",
+    "typing-extensions>=4.7.0",
 ]
 files = [
-    {file = "emoji-2.12.0-py3-none-any.whl", hash = "sha256:0ae2dc891101313bc7c275bc29371180e95a05ccf3029791413d364d3f830911"},
-    {file = "emoji-2.12.0.tar.gz", hash = "sha256:8f0a3907f1235810a3e9f0880230d6c519f3c0e649a9285867e19a2feec3721e"},
+    {file = "emoji-2.12.1-py3-none-any.whl", hash = "sha256:a00d62173bdadc2510967a381810101624a2f0986145b8da0cffa42e29430235"},
+    {file = "emoji-2.12.1.tar.gz", hash = "sha256:4aa0488817691aa58d83764b6c209f8a27c0b3ab3f89d1b8dceca1a62e4973eb"},
 ]
 
 [[package]]
