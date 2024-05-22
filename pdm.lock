@@ -247,7 +247,7 @@ files = [
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.12"
+version = "1.8.13"
 requires_python = ">=3.8"
 summary = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 groups = ["dev"]
@@ -257,8 +257,8 @@ dependencies = [
     "typing-extensions>=4.5.0",
 ]
 files = [
-    {file = "arclet_alconna-1.8.12-py3-none-any.whl", hash = "sha256:627f88b4933727a85cda6dd9247449033ad55dfc522876f357e379b018da1cc3"},
-    {file = "arclet_alconna-1.8.12.tar.gz", hash = "sha256:c99e7ea166f85919ba49fd1c424c1e2ecce80d6f83d4811a6fe505bf4954d6a5"},
+    {file = "arclet_alconna-1.8.13-py3-none-any.whl", hash = "sha256:7a85d51aa588c40e525f5df3a2e23db757cd051e06dd266401ddb6346cc857db"},
+    {file = "arclet_alconna-1.8.13.tar.gz", hash = "sha256:19aba65958578b3287af9afcf051da903104553460c6198d3f9398de4b8371f7"},
 ]
 
 [[package]]
@@ -1867,7 +1867,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.46.0"
+version = "0.46.2"
 requires_python = ">=3.9"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
@@ -1875,12 +1875,12 @@ dependencies = [
     "arclet-alconna-tools>=0.7.4",
     "arclet-alconna>=1.8.12",
     "importlib-metadata>=4.13.0",
-    "nepattern>=0.7.3",
+    "nepattern>=0.7.4",
     "nonebot2>=2.3.0",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.46.0-py3-none-any.whl", hash = "sha256:fb19b89ae1cde976c7b38832e1df41fc380e6d3277c38439b9b02f85ece0cd82"},
-    {file = "nonebot_plugin_alconna-0.46.0.tar.gz", hash = "sha256:9a82491d8589b1626059d3a7c728be616cde845f8b42657a6a8e6cdd82b51ae5"},
+    {file = "nonebot_plugin_alconna-0.46.2-py3-none-any.whl", hash = "sha256:b081077f742d277a6e1e6798adee3da7c0f866aa9b923af380d0b8fd12a3cbcf"},
+    {file = "nonebot_plugin_alconna-0.46.2.tar.gz", hash = "sha256:37e83219669e4245b676bdc03d710cfe932084fc4402405e4bfd670bdbf77e29"},
 ]
 
 [[package]]
@@ -3133,7 +3133,7 @@ files = [
 
 [[package]]
 name = "requests"
-version = "2.32.1"
+version = "2.32.2"
 requires_python = ">=3.8"
 summary = "Python HTTP for Humans."
 groups = ["dev"]
@@ -3144,8 +3144,8 @@ dependencies = [
     "urllib3<3,>=1.21.1",
 ]
 files = [
-    {file = "requests-2.32.1-py3-none-any.whl", hash = "sha256:21ac9465cdf8c1650fe1ecde8a71669a93d4e6f147550483a2967d08396a56a5"},
-    {file = "requests-2.32.1.tar.gz", hash = "sha256:eb97e87e64c79e64e5b8ac75cee9dd1f97f49e289b083ee6be96268930725685"},
+    {file = "requests-2.32.2-py3-none-any.whl", hash = "sha256:fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c"},
+    {file = "requests-2.32.2.tar.gz", hash = "sha256:dd951ff5ecf3e3b3aa26b40703ba77495dab41da839ae72ef3c8e5d8e2433289"},
 ]
 
 [[package]]
@@ -3191,13 +3191,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "69.5.1"
+version = "70.0.0"
 requires_python = ">=3.8"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["dev"]
 files = [
-    {file = "setuptools-69.5.1-py3-none-any.whl", hash = "sha256:c636ac361bc47580504644275c9ad802c50415c7522212252c033bd15f301f32"},
-    {file = "setuptools-69.5.1.tar.gz", hash = "sha256:6c1fccdac05a97e598fb0ae3bbed5904ccb317337a51139dcd51453611bbb987"},
+    {file = "setuptools-70.0.0-py3-none-any.whl", hash = "sha256:54faa7f2e8d2d11bcd2c07bed282eef1046b5c080d1c32add737d7b5817b1ad4"},
+    {file = "setuptools-70.0.0.tar.gz", hash = "sha256:f211a66637b8fa059bb28183da127d4e86396c991a942b028c6650d4319c3fd0"},
 ]
 
 [[package]]
