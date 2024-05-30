@@ -329,7 +329,7 @@ files = [
 
 [[package]]
 name = "basedpyright"
-version = "1.12.3"
+version = "1.12.4"
 requires_python = ">=3.8"
 summary = "static type checking for Python (but based)"
 groups = ["dev"]
@@ -337,8 +337,8 @@ dependencies = [
     "nodejs-wheel-binaries>=20.13.1",
 ]
 files = [
-    {file = "basedpyright-1.12.3-py3-none-any.whl", hash = "sha256:dab6b70bedfd6e352098f28319d46c202de419f9c56129b9c086e412a97727a0"},
-    {file = "basedpyright-1.12.3.tar.gz", hash = "sha256:6d4885d4f258c175b0fb31289f61f2733231093bf24724cc08e1a1eef33a7eea"},
+    {file = "basedpyright-1.12.4-py3-none-any.whl", hash = "sha256:3910c542255f5958801c8e23cef1659a499d063fff97f842b92d4ce91b138ad0"},
+    {file = "basedpyright-1.12.4.tar.gz", hash = "sha256:0fb972aabe7c1461ce4bfd6f304fd70aacdd5199ec8eb58473143ae75d78ca79"},
 ]
 
 [[package]]
@@ -3151,7 +3151,7 @@ files = [
 
 [[package]]
 name = "requests"
-version = "2.32.2"
+version = "2.32.3"
 requires_python = ">=3.8"
 summary = "Python HTTP for Humans."
 groups = ["dev"]
@@ -3162,8 +3162,8 @@ dependencies = [
     "urllib3<3,>=1.21.1",
 ]
 files = [
-    {file = "requests-2.32.2-py3-none-any.whl", hash = "sha256:fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c"},
-    {file = "requests-2.32.2.tar.gz", hash = "sha256:dd951ff5ecf3e3b3aa26b40703ba77495dab41da839ae72ef3c8e5d8e2433289"},
+    {file = "requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"},
+    {file = "requests-2.32.3.tar.gz", hash = "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"},
 ]
 
 [[package]]
