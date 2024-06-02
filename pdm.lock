@@ -247,7 +247,7 @@ files = [
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.13"
+version = "1.8.14"
 requires_python = ">=3.8"
 summary = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 groups = ["dev"]
@@ -257,8 +257,8 @@ dependencies = [
     "typing-extensions>=4.5.0",
 ]
 files = [
-    {file = "arclet_alconna-1.8.13-py3-none-any.whl", hash = "sha256:7a85d51aa588c40e525f5df3a2e23db757cd051e06dd266401ddb6346cc857db"},
-    {file = "arclet_alconna-1.8.13.tar.gz", hash = "sha256:19aba65958578b3287af9afcf051da903104553460c6198d3f9398de4b8371f7"},
+    {file = "arclet_alconna-1.8.14-py3-none-any.whl", hash = "sha256:e74ec1d0ca6829592a15768f48c6af9e5d9bb75a4476a763550d71594f7019d7"},
+    {file = "arclet_alconna-1.8.14.tar.gz", hash = "sha256:77b4b15b1c6b9873554b0990310f587016d9982b086680150febc21fa17390d6"},
 ]
 
 [[package]]
@@ -503,13 +503,13 @@ files = [
 
 [[package]]
 name = "certifi"
-version = "2024.2.2"
+version = "2024.6.2"
 requires_python = ">=3.6"
 summary = "Python package for providing Mozilla's CA Bundle."
 groups = ["dev"]
 files = [
-    {file = "certifi-2024.2.2-py3-none-any.whl", hash = "sha256:dc383c07b76109f368f6106eee2b593b04a011ea4d55f652c6ca24a754d1cdd1"},
-    {file = "certifi-2024.2.2.tar.gz", hash = "sha256:0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f"},
+    {file = "certifi-2024.6.2-py3-none-any.whl", hash = "sha256:ddc6c8ce995e6987e7faf5e3f1b02b302836a0e5d98ece18392cb1a36c72ad56"},
+    {file = "certifi-2024.6.2.tar.gz", hash = "sha256:3cd43f1c6fa7dedc5899d69d3ad0398fd018ad1a17fba83ddaf78aa46c747516"},
 ]
 
 [[package]]
@@ -2040,8 +2040,8 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-htmlrender"
-version = "0.3.1"
-requires_python = "<4.0,>=3.8"
+version = "0.3.2"
+requires_python = "<4.0,>=3.9"
 summary = "通过浏览器渲染图片"
 groups = ["dev"]
 dependencies = [
@@ -2055,8 +2055,8 @@ dependencies = [
     "python-markdown-math>=0.8",
 ]
 files = [
-    {file = "nonebot_plugin_htmlrender-0.3.1-py3-none-any.whl", hash = "sha256:5c3b0fa143086d07f63ae9daedf2adadcba40b1c4b8af547e00bfbd1707b5b8b"},
-    {file = "nonebot_plugin_htmlrender-0.3.1.tar.gz", hash = "sha256:9aad5509de343ff7867442e5c859e7c5e817129f493c780d45b69e726d096d80"},
+    {file = "nonebot_plugin_htmlrender-0.3.2-py3-none-any.whl", hash = "sha256:6de89ce6427faa1c5096de9b64565c66293e319813da04267954dd362707c0ed"},
+    {file = "nonebot_plugin_htmlrender-0.3.2.tar.gz", hash = "sha256:acddfe12a2a82784e32e1d2b00d22de2ad75da5452fa1290fb8aa89f0d415e7d"},
 ]
 
 [[package]]
@@ -3415,13 +3415,13 @@ files = [
 
 [[package]]
 name = "typing-extensions"
-version = "4.12.0"
+version = "4.12.1"
 requires_python = ">=3.8"
 summary = "Backported and Experimental Type Hints for Python 3.8+"
 groups = ["dev"]
 files = [
-    {file = "typing_extensions-4.12.0-py3-none-any.whl", hash = "sha256:b349c66bea9016ac22978d800cfff206d5f9816951f12a7d0ec5578b0a819594"},
-    {file = "typing_extensions-4.12.0.tar.gz", hash = "sha256:8cbcdc8606ebcb0d95453ad7dc5065e6237b6aa230a31e81d0f440c30fed5fd8"},
+    {file = "typing_extensions-4.12.1-py3-none-any.whl", hash = "sha256:6024b58b69089e5a89c347397254e35f1bf02a907728ec7fee9bf0fe837d203a"},
+    {file = "typing_extensions-4.12.1.tar.gz", hash = "sha256:915f5e35ff76f56588223f15fdd5938f9a1cf9195c0de25130c627e4d597f6d1"},
 ]
 
 [[package]]
