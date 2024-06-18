@@ -737,30 +737,31 @@ files = [
 
 [[package]]
 name = "cookit"
-version = "0.4.1"
+version = "0.4.2"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/cookit"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
+    "fleep>=1.0.1",
     "typing-extensions>=4.10.0",
 ]
 
 [[package]]
 name = "cookit"
-version = "0.4.1"
+version = "0.4.2"
 extras = ["pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.4.1",
+    "cookit==0.4.2",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.4.1-py3-none-any.whl", hash = "sha256:5d47c48676a418dc15e31bc43aa2ec0977e9d017375a857dd50d3c220f0fe785"},
-    {file = "cookit-0.4.1.tar.gz", hash = "sha256:ec9c666b9c6bbe6349a117e9d637907e1627e45cd91d0bd75b0a4aadc33cffbe"},
+    {file = "cookit-0.4.2-py3-none-any.whl", hash = "sha256:58151fa464cc916cb1ded82c4451679eca9e37386215d98201a08cf511e762fc"},
+    {file = "cookit-0.4.2.tar.gz", hash = "sha256:922642f92b3a2d6c89df289d6e89be943882fda7945981f8f4732b7ad19bf08b"},
 ]
 
 [[package]]
@@ -881,6 +882,16 @@ dependencies = [
 files = [
     {file = "flask-3.0.3-py3-none-any.whl", hash = "sha256:34e815dfaa43340d1d15a5c3a02b8476004037eb4840b34910c6e21679d288f3"},
     {file = "flask-3.0.3.tar.gz", hash = "sha256:ceb27b0af3823ea2737928a4d99d125a06175b8512c445cbd9a9ce200ef76842"},
+]
+
+[[package]]
+name = "fleep"
+version = "1.0.1"
+requires_python = ">=3.1"
+summary = "File format determination library"
+groups = ["dev"]
+files = [
+    {file = "fleep-1.0.1.tar.gz", hash = "sha256:c8f62b258ee5364d7f6c1ed1f3f278e99020fc3f0a60a24ad1e10846e31d104c"},
 ]
 
 [[package]]
