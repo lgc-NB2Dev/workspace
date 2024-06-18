@@ -737,7 +737,7 @@ files = [
 
 [[package]]
 name = "cookit"
-version = "0.4.2"
+version = "0.5.0.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/cookit"
@@ -750,18 +750,18 @@ dependencies = [
 
 [[package]]
 name = "cookit"
-version = "0.4.2"
+version = "0.5.0.post1"
 extras = ["pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.4.2",
+    "cookit==0.5.0.post1",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.4.2-py3-none-any.whl", hash = "sha256:58151fa464cc916cb1ded82c4451679eca9e37386215d98201a08cf511e762fc"},
-    {file = "cookit-0.4.2.tar.gz", hash = "sha256:922642f92b3a2d6c89df289d6e89be943882fda7945981f8f4732b7ad19bf08b"},
+    {file = "cookit-0.5.0.post1-py3-none-any.whl", hash = "sha256:6f6da7fd908a78bd2cd4ffd69cffcc2a6ef681881ff70eda4feebed70cea5e5d"},
+    {file = "cookit-0.5.0.post1.tar.gz", hash = "sha256:3fdd322328e49cc08cbd99108267b0f1086e056d32e79e684a132584dc565717"},
 ]
 
 [[package]]
