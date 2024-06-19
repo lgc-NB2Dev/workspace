@@ -737,7 +737,7 @@ files = [
 
 [[package]]
 name = "cookit"
-version = "0.6.0"
+version = "0.6.1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/cookit"
@@ -750,42 +750,54 @@ dependencies = [
 
 [[package]]
 name = "cookit"
-version = "0.6.0"
+version = "0.6.1"
 extras = ["jinja", "loguru", "nonebot-alconna", "pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.6.0",
+    "cookit==0.6.1",
     "cookit[nonebot-base]",
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
     "nonebot-plugin-alconna>=0.40.1",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
+files = [
+    {file = "cookit-0.6.1-py3-none-any.whl", hash = "sha256:2fa86c740d54cef416f6a5b4b1c10a68d1195013b0c94d39fdf87a44710cad97"},
+    {file = "cookit-0.6.1.tar.gz", hash = "sha256:14388c6b9d93326f7e8a1690cfe61d0a29379ac49d7e4e8abe9439803e73e1ea"},
+]
 
 [[package]]
 name = "cookit"
-version = "0.6.0"
+version = "0.6.1"
 extras = ["nonebot-base"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.6.0",
+    "cookit==0.6.1",
     "nonebot2>=2.2.0",
+]
+files = [
+    {file = "cookit-0.6.1-py3-none-any.whl", hash = "sha256:2fa86c740d54cef416f6a5b4b1c10a68d1195013b0c94d39fdf87a44710cad97"},
+    {file = "cookit-0.6.1.tar.gz", hash = "sha256:14388c6b9d93326f7e8a1690cfe61d0a29379ac49d7e4e8abe9439803e73e1ea"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.6.0"
+version = "0.6.1"
 extras = ["pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.6.0",
+    "cookit==0.6.1",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+]
+files = [
+    {file = "cookit-0.6.1-py3-none-any.whl", hash = "sha256:2fa86c740d54cef416f6a5b4b1c10a68d1195013b0c94d39fdf87a44710cad97"},
+    {file = "cookit-0.6.1.tar.gz", hash = "sha256:14388c6b9d93326f7e8a1690cfe61d0a29379ac49d7e4e8abe9439803e73e1ea"},
 ]
 
 [[package]]
