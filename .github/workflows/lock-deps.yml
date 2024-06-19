@@ -18,10 +18,14 @@ jobs:
           submodules: recursive
 
       - name: Update submodules
-        run: git submodule update --remote --init --recursive
+        run: |-
+          git submodule foreach --recursive git fetch --all
+          git submodule update --remote --init --recursive
 
       - name: Setup PDM
-        uses: pdm-project/setup-pdm@v3
+        uses: pdm-project/setup-pdm@v4
+        with:
+          cache: true
 
       - name: Lock Deps
         run: pdm lock -G:all
