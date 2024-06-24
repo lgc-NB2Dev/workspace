@@ -33,7 +33,7 @@
 [submodule "nonebot-plugin-multincm"]
 	path = packages/nonebot-plugin-multincm
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm
-	branch = refactor
+	branch = master
 [submodule "nonebot-plugin-nonememe"]
 	path = packages/nonebot-plugin-nonememe
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-nonememe
