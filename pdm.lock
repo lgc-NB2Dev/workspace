@@ -4,8 +4,8 @@
 [metadata]
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
-lock_version = "4.4.1"
-content_hash = "sha256:61edcc3c48dabf639211d9167eb5d379cb4d780ac02ebb5e01febefa99703350"
+lock_version = "4.4.2"
+content_hash = "sha256:ae932eac568cf7f03d1dc408e1fa7bedc108e32ce2ef9f0e7a39ade1cf57ca84"
 
 [[package]]
 name = "aiodns"
@@ -2125,7 +2125,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-multincm"
-version = "1.0.0"
+version = "1.0.0a1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-multincm"
