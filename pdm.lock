@@ -329,7 +329,7 @@ files = [
 
 [[package]]
 name = "basedpyright"
-version = "1.13.0"
+version = "1.13.1"
 requires_python = ">=3.8"
 summary = "static type checking for Python (but based)"
 groups = ["dev"]
@@ -337,8 +337,8 @@ dependencies = [
     "nodejs-wheel-binaries>=20.13.1",
 ]
 files = [
-    {file = "basedpyright-1.13.0-py3-none-any.whl", hash = "sha256:e298dcbdafdfb87216a6e9288b57b14728ef0cd82385a9d151bb5ad9d3017312"},
-    {file = "basedpyright-1.13.0.tar.gz", hash = "sha256:155dc07645ad8df39d20a67c3c637c565273c21e0d9c4cfdd6fb2031d852372d"},
+    {file = "basedpyright-1.13.1-py3-none-any.whl", hash = "sha256:c8cc378a0c42d6f80a5148da1cc733d285cc69828904003768ecb2071f31590f"},
+    {file = "basedpyright-1.13.1.tar.gz", hash = "sha256:de8196e5e4ec7db7f482280b45d45444f57caeff3d1a1f4a1ae3aa941274c2d1"},
 ]
 
 [[package]]
@@ -1271,7 +1271,7 @@ files = [
 
 [[package]]
 name = "importlib-metadata"
-version = "7.2.1"
+version = "8.0.0"
 requires_python = ">=3.8"
 summary = "Read metadata from Python packages"
 groups = ["dev"]
@@ -1279,8 +1279,8 @@ dependencies = [
     "zipp>=0.5",
 ]
 files = [
-    {file = "importlib_metadata-7.2.1-py3-none-any.whl", hash = "sha256:ffef94b0b66046dd8ea2d619b701fe978d9264d38f3998bc4c27ec3b146a87c8"},
-    {file = "importlib_metadata-7.2.1.tar.gz", hash = "sha256:509ecb2ab77071db5137c655e24ceb3eee66e7bbc6574165d0d114d9fc4bbe68"},
+    {file = "importlib_metadata-8.0.0-py3-none-any.whl", hash = "sha256:15584cf2b1bf449d98ff8a6ff1abef57bf20f3ac6454f431736cd3e660921b2f"},
+    {file = "importlib_metadata-8.0.0.tar.gz", hash = "sha256:188bd24e4c346d3f0a933f275c2fec67050326a856b9a359881d7c2a697e8812"},
 ]
 
 [[package]]
