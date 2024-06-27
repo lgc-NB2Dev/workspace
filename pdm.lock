@@ -247,7 +247,7 @@ files = [
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.15"
+version = "1.8.16"
 requires_python = ">=3.8"
 summary = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 groups = ["dev"]
@@ -257,8 +257,8 @@ dependencies = [
     "typing-extensions>=4.5.0",
 ]
 files = [
-    {file = "arclet_alconna-1.8.15-py3-none-any.whl", hash = "sha256:9cc010e42f00a5201439318df3b2000234dce27fdc90d26813c3a295125e54e8"},
-    {file = "arclet_alconna-1.8.15.tar.gz", hash = "sha256:713a57bdfed3c3959600384e46358154ce33eec012615554beb5634d436507bc"},
+    {file = "arclet_alconna-1.8.16-py3-none-any.whl", hash = "sha256:b04241904d3f3a9d3eae30c5d1af7e264528b5a87b729fee5f408b2d93cef035"},
+    {file = "arclet_alconna-1.8.16.tar.gz", hash = "sha256:57bdc42c8626846ad536c19a24804790005554db4ad3300b7d4607c684cd25f3"},
 ]
 
 [[package]]
@@ -1917,21 +1917,22 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.47.2"
+version = "0.48.0"
 requires_python = ">=3.9"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
 dependencies = [
     "arclet-alconna-tools>=0.7.6",
-    "arclet-alconna>=1.8.15",
+    "arclet-alconna>=1.8.16",
     "importlib-metadata>=4.13.0",
     "nepattern>=0.7.4",
     "nonebot-plugin-waiter>=0.6.0",
     "nonebot2>=2.3.0",
+    "tarina>=0.5.4",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.47.2-py3-none-any.whl", hash = "sha256:ba46d6ed7438985b0322681c398cc98cf7dceab3713214a8eb7f2e65f6fc141a"},
-    {file = "nonebot_plugin_alconna-0.47.2.tar.gz", hash = "sha256:3bbe5df1b859b8720c648f4d6338d586dac2a78459b07894c62699a80196a0d6"},
+    {file = "nonebot_plugin_alconna-0.48.0-py3-none-any.whl", hash = "sha256:02dcdca744934368246d48373393bcd475d7e4c7182a56a777b0bc45586d557a"},
+    {file = "nonebot_plugin_alconna-0.48.0.tar.gz", hash = "sha256:f5a8a3b9da42f3a6ef2b387d9b5194023178c135d03381b1aa60eead9363d6cc"},
 ]
 
 [[package]]
@@ -2125,7 +2126,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-multincm"
-version = "1.0.0a2"
+version = "1.0.0a3"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-multincm"
@@ -2608,13 +2609,13 @@ files = [
 
 [[package]]
 name = "pip"
-version = "24.1"
+version = "24.1.1"
 requires_python = ">=3.8"
 summary = "The PyPA recommended tool for installing Python packages."
 groups = ["dev"]
 files = [
-    {file = "pip-24.1-py3-none-any.whl", hash = "sha256:a775837439bf5da2c1a0c2fa43d5744854497c689ddbd9344cf3ea6d00598540"},
-    {file = "pip-24.1.tar.gz", hash = "sha256:bdae551038c0ce6a83030b4aedef27fc95f0daa683593fea22fa05e55ed8e317"},
+    {file = "pip-24.1.1-py3-none-any.whl", hash = "sha256:efca15145a95e95c00608afeab66311d40bfb73bb2266a855befd705e6bb15a0"},
+    {file = "pip-24.1.1.tar.gz", hash = "sha256:5aa64f65e1952733ee0a9a9b1f52496ebdb3f3077cc46f80a16d983b58d1180a"},
 ]
 
 [[package]]
