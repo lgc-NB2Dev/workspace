@@ -1937,8 +1937,8 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-apscheduler"
-version = "0.4.0"
-requires_python = ">=3.8,<4.0"
+version = "0.5.0"
+requires_python = "<4.0,>=3.9"
 summary = "APScheduler Support for NoneBot2"
 groups = ["dev"]
 dependencies = [
@@ -1947,8 +1947,8 @@ dependencies = [
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "nonebot_plugin_apscheduler-0.4.0-py3-none-any.whl", hash = "sha256:f01bb418a5ecf9f04dcadbbc2ff5ba565a48177eb0a758c8c46b13048ac5680c"},
-    {file = "nonebot_plugin_apscheduler-0.4.0.tar.gz", hash = "sha256:ba91e68809a38e6dbe28906366d47f37f754ded360944b938cd5ac62029a0eb6"},
+    {file = "nonebot_plugin_apscheduler-0.5.0-py3-none-any.whl", hash = "sha256:8b99b5ee60c4bc195d4df2fd27dab3d6963691e3332f6cee31a06eb4277c307f"},
+    {file = "nonebot_plugin_apscheduler-0.5.0.tar.gz", hash = "sha256:6c0230e99765f275dc83d6639ff33bd6f71203fa10cd1b8a204b0f95530cda86"},
 ]
 
 [[package]]
@@ -2126,7 +2126,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-multincm"
-version = "1.0.0a4"
+version = "1.0.0"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-multincm"
