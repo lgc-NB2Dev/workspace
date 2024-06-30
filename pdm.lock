@@ -2187,18 +2187,18 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picmcstat"
-version = "0.6.0"
+version = "0.6.1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-picmcstat"
 summary = "A NoneBot2 plugin generates a pic from a Minecraft server's MOTD"
 groups = ["dev"]
 dependencies = [
-    "dnspython>=2.4.2",
-    "mcstatus>=11.1.0",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
-    "pil-utils>=0.1.6",
+    "dnspython>=2.6.1",
+    "mcstatus>=11.1.1",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
+    "pil-utils>=0.1.10",
     "punycode>=0.2.1",
 ]
 
