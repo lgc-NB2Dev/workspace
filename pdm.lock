@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.2"
-content_hash = "sha256:ae932eac568cf7f03d1dc408e1fa7bedc108e32ce2ef9f0e7a39ade1cf57ca84"
+content_hash = "sha256:c75a46fbfedc42ec3c69e7b176d9e36593e2812809ac56eccb0d1556d6230228"
 
 [[package]]
 name = "aiodns"
@@ -350,11 +350,11 @@ path = "./others/bawiki-data"
 summary = ""
 groups = ["dev"]
 dependencies = [
-    "aiohttp>=3.9.3",
-    "anyio>=3.6.2",
+    "aiohttp>=3.9.5",
+    "anyio>=4.4.0",
     "beautifulsoup4>=4.12.3",
     "cn-sort>=0.8.0",
-    "lxml>=5.1.0",
+    "lxml>=5.2.2",
 ]
 
 [[package]]
@@ -745,7 +745,7 @@ summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
     "fleep>=1.0.1",
-    "typing-extensions>=4.10.0",
+    "typing-extensions>=4.12.2",
 ]
 
 [[package]]
@@ -760,8 +760,8 @@ dependencies = [
     "cookit[nonebot-base]",
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
-    "nonebot-plugin-alconna>=0.40.1",
-    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "pydantic>=2.7.4",
 ]
 files = [
     {file = "cookit-0.6.5-py3-none-any.whl", hash = "sha256:4776fd97a9603114b543dc1c4479e501895e7ac28f6b802aa6051c4a5f7ec686"},
@@ -777,7 +777,7 @@ summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
     "cookit==0.6.5",
-    "nonebot2>=2.2.0",
+    "nonebot2>=2.3.1",
 ]
 files = [
     {file = "cookit-0.6.5-py3-none-any.whl", hash = "sha256:4776fd97a9603114b543dc1c4479e501895e7ac28f6b802aa6051c4a5f7ec686"},
@@ -793,7 +793,7 @@ summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
     "cookit==0.6.5",
-    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+    "pydantic>=2.7.4",
 ]
 files = [
     {file = "cookit-0.6.5-py3-none-any.whl", hash = "sha256:4776fd97a9603114b543dc1c4479e501895e7ac28f6b802aa6051c4a5f7ec686"},
@@ -1908,11 +1908,11 @@ path = "./packages/nonebot-plugin-akinator"
 summary = "Internet Genius - Akinator"
 groups = ["dev"]
 dependencies = [
-    "aiohttp>=3.8.4",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot-plugin-session>=0.1.0",
-    "nonebot2>=2.2.0",
-    "pil-utils>=0.1.6",
+    "aiohttp>=3.9.5",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot-plugin-session>=0.3.1",
+    "nonebot2>=2.3.1",
+    "pil-utils>=0.1.10",
 ]
 
 [[package]]
@@ -1960,11 +1960,11 @@ path = "./packages/nonebot-plugin-autoreply"
 summary = "A powerful auto reply plugin for NoneBot2"
 groups = ["dev"]
 dependencies = [
-    "PyYAML>=6.0",
-    "anyio>=3.6.2",
-    "nonebot-adapter-onebot>=2.2.3",
-    "nonebot2>=2.2.0",
-    "typing-extensions>=4.4.0",
+    "PyYAML>=6.0.1",
+    "anyio>=4.4.0",
+    "nonebot-adapter-onebot>=2.4.3",
+    "nonebot2>=2.3.1",
+    "typing-extensions>=4.12.2",
 ]
 
 [[package]]
@@ -1977,18 +1977,18 @@ summary = "A nonebot2 plugin for Blue Archive."
 groups = ["dev"]
 dependencies = [
     "async-lru>=2.0.4",
-    "beautifulsoup4>=4.11.1",
-    "httpx>=0.24",
-    "lxml>=4.9.1",
-    "matplotlib>=3.7.4",
-    "nonebot-adapter-onebot>=2.3.1",
-    "nonebot-plugin-apscheduler>=0.3.0",
-    "nonebot-plugin-htmlrender>=0.2.2",
-    "nonebot2>=2.2.0",
-    "pil-utils>=0.1.4",
-    "pypinyin>=0.49.0",
-    "pytz>=2023.3.post1",
-    "yarl>=1.9.2",
+    "beautifulsoup4>=4.12.3",
+    "httpx>=0.27.0",
+    "lxml>=5.2.2",
+    "matplotlib>=3.9.0",
+    "nonebot-adapter-onebot>=2.4.3",
+    "nonebot-plugin-apscheduler>=0.5.0",
+    "nonebot-plugin-htmlrender>=0.3.2",
+    "nonebot2>=2.3.1",
+    "pil-utils>=0.1.10",
+    "pypinyin>=0.51.0",
+    "pytz>=2024.1",
+    "yarl>=1.9.4",
 ]
 
 [[package]]
@@ -2001,8 +2001,8 @@ summary = "Get OpenBMCLAPI status in chat apps."
 groups = ["dev"]
 dependencies = [
     "humanize>=4.9.0",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
 ]
 
 [[package]]
@@ -2014,10 +2014,10 @@ path = "./packages/nonebot-plugin-callapi"
 summary = "Use bot command to call its API"
 groups = ["dev"]
 dependencies = [
-    "Pygments>=2.15.1",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
-    "pil-utils>=0.1.7",
+    "Pygments>=2.18.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
+    "pil-utils>=0.1.10",
 ]
 
 [[package]]
@@ -2029,14 +2029,14 @@ path = "./packages/nonebot-plugin-clash"
 summary = "Manage your clash core using NoneBot2"
 groups = ["dev"]
 dependencies = [
-    "cookit[pydantic]>=0.2.0",
-    "httpx>=0.24",
-    "jinja2>=3.1.2",
-    "matplotlib>=3.7.4",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot-plugin-htmlrender>=0.2.2",
-    "nonebot2>=2.2.0",
-    "numpy>=1.24.4",
+    "cookit[pydantic]>=0.6.5",
+    "httpx>=0.27.0",
+    "jinja2>=3.1.4",
+    "matplotlib>=3.9.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot-plugin-htmlrender>=0.3.2",
+    "nonebot2>=2.3.1",
+    "numpy>=1.26.4",
     "websockets>=12.0",
     "yarl>=1.9.4",
 ]
@@ -2050,12 +2050,12 @@ path = "./packages/nonebot-plugin-cnrail"
 summary = "NoneBot2 plugin for query the train time table"
 groups = ["dev"]
 dependencies = [
-    "httpx>=0.24",
-    "jinja2>=3.1.2",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot-plugin-htmlrender>=0.2.2",
-    "nonebot2>=2.2.0",
-    "pytz>=2023.3.post1",
+    "httpx>=0.27.0",
+    "jinja2>=3.1.4",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot-plugin-htmlrender>=0.3.2",
+    "nonebot2>=2.3.1",
+    "pytz>=2024.1",
 ]
 
 [[package]]
@@ -2067,9 +2067,9 @@ path = "./packages/nonebot-plugin-color"
 summary = "A specified color image generator for Nonebot2"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
-    "pil-utils>=0.1.8",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
+    "pil-utils>=0.1.10",
 ]
 
 [[package]]
@@ -2081,9 +2081,9 @@ path = "./packages/nonebot-plugin-fuckyou"
 summary = "A NoneBot2 plugin designed for curse users"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-alconna>=0.41.1",
+    "nonebot-plugin-alconna>=0.48.0",
     "nonebot-plugin-session>=0.3.1",
-    "nonebot2>=2.2.0",
+    "nonebot2>=2.3.1",
 ]
 
 [[package]]
@@ -2110,18 +2110,18 @@ files = [
 [[package]]
 name = "nonebot-plugin-kawaii-robot"
 version = "4.1.0.post2"
-requires_python = "<4.0,>=3.8"
+requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-kawaii-robot"
 summary = "使用 Kyomotoi/AnimeThesaurus 的 NoneBot2 的回复（文i）插件"
 groups = ["dev"]
 dependencies = [
-    "anyio>=3.7.1",
-    "cookit>=0.1.0",
-    "nonebot-plugin-alconna>=0.40.1",
+    "anyio>=4.4.0",
+    "cookit>=0.6.5",
+    "nonebot-plugin-alconna>=0.48.0",
     "nonebot-plugin-session>=0.3.1",
-    "nonebot-plugin-userinfo>=0.2.2",
-    "nonebot2>=2.0.0",
+    "nonebot-plugin-userinfo>=0.2.4",
+    "nonebot2>=2.3.1",
 ]
 
 [[package]]
@@ -2135,15 +2135,15 @@ groups = ["dev"]
 dependencies = [
     "cachetools>=5.3.3",
     "cookit[jinja,loguru,nonebot-alconna,pydantic]>=0.6.5",
-    "httpx>=0.24.0",
-    "jinja2>=3.1.2",
+    "httpx>=0.27.0",
+    "jinja2>=3.1.4",
     "nonebot-plugin-alconna>=0.48.0",
-    "nonebot-plugin-htmlrender>=0.2.0.3",
+    "nonebot-plugin-htmlrender>=0.3.2",
     "nonebot-plugin-waiter>=0.6.2",
-    "nonebot2>=2.2.0",
-    "pyncm>=1.6.8.9.1",
+    "nonebot2>=2.3.1",
+    "pyncm>=1.6.15",
     "silk-python>=0.2.6",
-    "typing-extensions>=4.5.0",
+    "typing-extensions>=4.12.2",
     "yarl>=1.9.4",
 ]
 
@@ -2156,13 +2156,13 @@ path = "./packages/nonebot-plugin-nonememe"
 summary = "The daily life of the NoneBot group members"
 groups = ["dev"]
 dependencies = [
-    "anyio>=3.6.2",
-    "httpx>=0.24.1",
-    "json5>=0.9.14",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot-plugin-apscheduler>=0.3.0",
-    "nonebot2>=2.2.0",
-    "typing-extensions>=4.7.1",
+    "anyio>=4.4.0",
+    "httpx>=0.27.0",
+    "json5>=0.9.25",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot-plugin-apscheduler>=0.5.0",
+    "nonebot2>=2.3.1",
+    "typing-extensions>=4.12.2",
 ]
 
 [[package]]
@@ -2174,14 +2174,14 @@ path = "./packages/nonebot-plugin-ottohzys"
 summary = "otto!"
 groups = ["dev"]
 dependencies = [
-    "anyio>=3.6.2",
+    "anyio>=4.4.0",
     "async-lru>=2.0.4",
-    "httpx>=0.25.0",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
-    "numpy>=1.24.4",
+    "httpx>=0.27.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
+    "numpy>=1.26.4",
     "psola>=0.0.1",
-    "pypinyin>=0.49.0",
+    "pypinyin>=0.51.0",
     "soundfile>=0.12.1",
 ]
 
@@ -2211,16 +2211,16 @@ path = "./packages/nonebot-plugin-picstatus"
 summary = "A NoneBot2 plugin generates a picture which shows the status of current device"
 groups = ["dev"]
 dependencies = [
-    "anyio>=3.6.2",
-    "cookit[pydantic]>=0.2.0",
-    "httpx>=0.25.0",
-    "jinja2>=3.1.2",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot-plugin-apscheduler>=0.4.0",
-    "nonebot-plugin-htmlrender>=0.2.3",
-    "nonebot-plugin-userinfo>=0.1.3",
-    "nonebot2>=2.2.0",
-    "psutil>=5.9.2",
+    "anyio>=4.4.0",
+    "cookit[pydantic]>=0.6.5",
+    "httpx>=0.27.0",
+    "jinja2>=3.1.4",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot-plugin-apscheduler>=0.5.0",
+    "nonebot-plugin-htmlrender>=0.3.2",
+    "nonebot-plugin-userinfo>=0.2.4",
+    "nonebot2>=2.3.1",
+    "psutil>=6.0.0",
     "py-cpuinfo>=9.0.0",
     "yarl>=1.9.4",
 ]
@@ -2234,9 +2234,9 @@ path = "./packages/nonebot-plugin-pingti"
 summary = "Shop with lower prices by searching with alternative keywords."
 groups = ["dev"]
 dependencies = [
-    "httpx>=0.26.0",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
+    "httpx>=0.27.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
 ]
 
 [[package]]
@@ -2248,12 +2248,12 @@ path = "./packages/nonebot-plugin-pjsk"
 summary = "Project Sekai Sticker Creator for NoneBot2."
 groups = ["dev"]
 dependencies = [
-    "anyio>=3.6.2",
-    "httpx>=0.25.1",
-    "jinja2>=3.1.3",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot-plugin-htmlrender>=0.2.3",
-    "nonebot2>=2.2.0",
+    "anyio>=4.4.0",
+    "httpx>=0.27.0",
+    "jinja2>=3.1.4",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot-plugin-htmlrender>=0.3.2",
+    "nonebot2>=2.3.1",
     "yarl>=1.9.4",
 ]
 
@@ -2266,9 +2266,9 @@ path = "./packages/nonebot-plugin-riffusion"
 summary = "Let AI riff a song for you."
 groups = ["dev"]
 dependencies = [
-    "httpx>=0.24",
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
+    "httpx>=0.27.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
 ]
 
 [[package]]
@@ -2280,9 +2280,9 @@ path = "./packages/nonebot-plugin-rimofun"
 summary = "Use RimoChan's stuff to do some interesting things"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-alconna>=0.40.1",
-    "nonebot2>=2.2.0",
-    "pypinyin>=0.48.0",
+    "nonebot-plugin-alconna>=0.48.0",
+    "nonebot2>=2.3.1",
+    "pypinyin>=0.51.0",
     "unvcode>=1.0.0",
     "yinglish>=1.0.1",
 ]

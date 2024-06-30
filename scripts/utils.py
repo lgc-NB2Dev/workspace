@@ -22,4 +22,5 @@ def system_no_fail(*args: str, **kwargs: Any):
 def iter_packages():
     for p in (*PACKAGES_PATH.iterdir(), *OTHERS_PATH.iterdir()):
         if p.is_dir() and (p / "pyproject.toml").exists():
+            print(f"Entering {p.relative_to(ROOT_PATH)}")
             yield p
