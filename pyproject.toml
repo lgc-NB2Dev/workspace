@@ -50,9 +50,9 @@ dev = [
 distribution = false
 
 [tool.pdm.scripts]
-
-[tool.pdm.scripts.pull]
-shell = "git pull && git submodule foreach --recursive git pull && pdm install -G:all"
+pull = { call = "scripts.pull:main" }
+dep = { call = "scripts.dep:main" }
+up = { call = "scripts.up:main" }
 
 [tool.basedpyright]
 pythonVersion = "3.9"
@@ -67,6 +67,7 @@ exclude = [
 ]
 
 [tool.ruff]
+target-version = "py39"
 extend-exclude = [
     "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
     "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",

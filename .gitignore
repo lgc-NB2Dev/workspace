@@ -4,3 +4,4 @@ __pypackages__/
 .coverage
 node_modules/
 pyrightconfig.json
+__pycache__/
