@@ -1,76 +1,76 @@
-[submodule "nonebot-plugin-akinator"]
+[submodule "packages/nonebot-plugin-akinator"]
 	path = packages/nonebot-plugin-akinator
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
 	branch = master
-[submodule "nonebot-plugin-bawiki"]
+[submodule "packages/nonebot-plugin-bawiki"]
 	path = packages/nonebot-plugin-bawiki
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
 	branch = master
-[submodule "nonebot-plugin-fuckyou"]
+[submodule "packages/nonebot-plugin-fuckyou"]
 	path = packages/nonebot-plugin-fuckyou
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
 	branch = master
-[submodule "nonebot-plugin-picmcstat"]
+[submodule "packages/nonebot-plugin-picmcstat"]
 	path = packages/nonebot-plugin-picmcstat
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
 	branch = master
-[submodule "nonebot-plugin-rimofun"]
+[submodule "packages/nonebot-plugin-rimofun"]
 	path = packages/nonebot-plugin-rimofun
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
 	branch = master
-[submodule "nonebot-plugin-autoreply"]
+[submodule "packages/nonebot-plugin-autoreply"]
 	path = packages/nonebot-plugin-autoreply
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
 	branch = master
-[submodule "nonebot-plugin-picstatus"]
+[submodule "packages/nonebot-plugin-picstatus"]
 	path = packages/nonebot-plugin-picstatus
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
 	branch = master
-[submodule "nonebot-plugin-callapi"]
+[submodule "packages/nonebot-plugin-callapi"]
 	path = packages/nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
 	branch = master
-[submodule "nonebot-plugin-multincm"]
+[submodule "packages/nonebot-plugin-multincm"]
 	path = packages/nonebot-plugin-multincm
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm
 	branch = master
-[submodule "nonebot-plugin-nonememe"]
+[submodule "packages/nonebot-plugin-nonememe"]
 	path = packages/nonebot-plugin-nonememe
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-nonememe
 	branch = master
-[submodule "nonebot-plugin-ottohzys"]
+[submodule "packages/nonebot-plugin-ottohzys"]
 	path = packages/nonebot-plugin-ottohzys
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-ottohzys
 	branch = master
-[submodule "nonebot-plugin-pjsk"]
+[submodule "packages/nonebot-plugin-pjsk"]
 	path = packages/nonebot-plugin-pjsk
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
 	branch = main
-[submodule "nonebot-plugin-color"]
+[submodule "packages/nonebot-plugin-color"]
 	path = packages/nonebot-plugin-color
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
 	branch = main
-[submodule "nb-cli-plugin-bootstrap"]
+[submodule "packages/nb-cli-plugin-bootstrap"]
 	path = packages/nb-cli-plugin-bootstrap
 	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
 	branch = master
-[submodule "nonebot-plugin-cnrail"]
+[submodule "packages/nonebot-plugin-cnrail"]
 	path = packages/nonebot-plugin-cnrail
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
 	branch = master
-[submodule "nonebot-plugin-clash"]
+[submodule "packages/nonebot-plugin-clash"]
 	path = packages/nonebot-plugin-clash
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash
 	branch = master
-[submodule "nonebot-plugin-riffusion"]
+[submodule "packages/nonebot-plugin-riffusion"]
 	path = packages/nonebot-plugin-riffusion
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
 	branch = master
-[submodule "nonebot-plugin-pingti"]
+[submodule "packages/nonebot-plugin-pingti"]
 	path = packages/nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
 	branch = master
-[submodule "nonebot-plugin-bmclapi"]
+[submodule "packages/nonebot-plugin-bmclapi"]
 	path = packages/nonebot-plugin-bmclapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bmclapi
 	branch = master
@@ -84,11 +84,11 @@
 	url = https://github.com/lgc2333/cookit
 	branch = main
 
-[submodule "bawiki-data"]
+[submodule "others/bawiki-data"]
 	path = others/bawiki-data
 	url = https://github.com/lgc-NB2Dev/bawiki-data
 	branch = main
-[submodule "readme"]
+[submodule "others/readme"]
 	path = others/readme
 	url = https://github.com/lgc-NB2Dev/readme
 	branch = main
