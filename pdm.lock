@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.2"
-content_hash = "sha256:f10e884ccd26cec5b495af94d40525bcd8ceab0b4491dbfac86852dcf4122c98"
+content_hash = "sha256:85409975245a403cb41b28ab15bd75bd20266ce1665f6862de51a1690436f792"
 
 [[package]]
 name = "aiodns"
@@ -791,7 +791,7 @@ dependencies = [
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
     "nonebot-plugin-alconna>=0.48.0",
-    "pydantic>=2.7.4",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
     {file = "cookit-0.6.5-py3-none-any.whl", hash = "sha256:4776fd97a9603114b543dc1c4479e501895e7ac28f6b802aa6051c4a5f7ec686"},
@@ -823,7 +823,7 @@ summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
     "cookit==0.6.5",
-    "pydantic>=2.7.4",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
     {file = "cookit-0.6.5-py3-none-any.whl", hash = "sha256:4776fd97a9603114b543dc1c4479e501895e7ac28f6b802aa6051c4a5f7ec686"},
