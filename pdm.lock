@@ -767,7 +767,7 @@ files = [
 
 [[package]]
 name = "cookit"
-version = "0.6.6"
+version = "0.6.7"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/cookit"
@@ -780,13 +780,13 @@ dependencies = [
 
 [[package]]
 name = "cookit"
-version = "0.6.6"
+version = "0.6.7"
 extras = ["jinja", "loguru", "nonebot-alconna", "pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.6.6",
+    "cookit==0.6.7",
     "cookit[nonebot-base]",
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
@@ -794,40 +794,40 @@ dependencies = [
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.6.6-py3-none-any.whl", hash = "sha256:85cac3ad9a9b74bcbb3edb2047aa4c991635df241f61222a4ac0ed828951cae4"},
-    {file = "cookit-0.6.6.tar.gz", hash = "sha256:272100aaa63f0e1c4f01cd28d4789dc446b2f1712b4bab8a714f363e57af7d2e"},
+    {file = "cookit-0.6.7-py3-none-any.whl", hash = "sha256:3b450d501cc1092ffe13769c92c7f535fdd7d75561dffb6c120dc48cf9eb2cff"},
+    {file = "cookit-0.6.7.tar.gz", hash = "sha256:579ebc2284f2d8485e565e4349bd524d3cd1f86af748369da0a8dd03862b0b30"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.6.6"
+version = "0.6.7"
 extras = ["nonebot-base"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.6.6",
+    "cookit==0.6.7",
     "nonebot2>=2.3.1",
 ]
 files = [
-    {file = "cookit-0.6.6-py3-none-any.whl", hash = "sha256:85cac3ad9a9b74bcbb3edb2047aa4c991635df241f61222a4ac0ed828951cae4"},
-    {file = "cookit-0.6.6.tar.gz", hash = "sha256:272100aaa63f0e1c4f01cd28d4789dc446b2f1712b4bab8a714f363e57af7d2e"},
+    {file = "cookit-0.6.7-py3-none-any.whl", hash = "sha256:3b450d501cc1092ffe13769c92c7f535fdd7d75561dffb6c120dc48cf9eb2cff"},
+    {file = "cookit-0.6.7.tar.gz", hash = "sha256:579ebc2284f2d8485e565e4349bd524d3cd1f86af748369da0a8dd03862b0b30"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.6.6"
+version = "0.6.7"
 extras = ["pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.6.6",
+    "cookit==0.6.7",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.6.6-py3-none-any.whl", hash = "sha256:85cac3ad9a9b74bcbb3edb2047aa4c991635df241f61222a4ac0ed828951cae4"},
-    {file = "cookit-0.6.6.tar.gz", hash = "sha256:272100aaa63f0e1c4f01cd28d4789dc446b2f1712b4bab8a714f363e57af7d2e"},
+    {file = "cookit-0.6.7-py3-none-any.whl", hash = "sha256:3b450d501cc1092ffe13769c92c7f535fdd7d75561dffb6c120dc48cf9eb2cff"},
+    {file = "cookit-0.6.7.tar.gz", hash = "sha256:579ebc2284f2d8485e565e4349bd524d3cd1f86af748369da0a8dd03862b0b30"},
 ]
 
 [[package]]
