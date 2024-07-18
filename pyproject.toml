@@ -29,7 +29,6 @@ dev = [
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-bawiki#egg=nonebot-plugin-bawiki",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-bmclapi#egg=nonebot-plugin-bmclapi",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-clash#egg=nonebot-plugin-clash",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",
