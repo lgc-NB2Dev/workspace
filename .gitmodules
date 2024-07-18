@@ -70,10 +70,6 @@
 	path = packages/nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
 	branch = master
-[submodule "packages/nonebot-plugin-bmclapi"]
-	path = packages/nonebot-plugin-bmclapi
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bmclapi
-	branch = master
 [submodule "packages/nonebot-plugin-kawaii-robot"]
 	path = packages/nonebot-plugin-kawaii-robot
 	url = https://github.com/lgc-NB2Dev/nonebot_plugin_kawaii_robot
