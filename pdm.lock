@@ -2384,7 +2384,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-waiter"
-version = "0.6.2"
+version = "0.7.0"
 requires_python = ">=3.9"
 summary = "An alternative for got-and-reject in Nonebot"
 groups = ["dev"]
@@ -2392,8 +2392,8 @@ dependencies = [
     "nonebot2>=2.3.0",
 ]
 files = [
-    {file = "nonebot_plugin_waiter-0.6.2-py3-none-any.whl", hash = "sha256:599251f02d074ab7142e2144f68d63f41104bddcd359051f63979a8163538eac"},
-    {file = "nonebot_plugin_waiter-0.6.2.tar.gz", hash = "sha256:02017a1613d1273be3535b28a4d8e823f2dbaba26fab524bc8207f50a25ec8e4"},
+    {file = "nonebot_plugin_waiter-0.7.0-py3-none-any.whl", hash = "sha256:e0f98472b68479765e99e7f6a242611cb7d38e77dd2b74d103a02857f95a68e1"},
+    {file = "nonebot_plugin_waiter-0.7.0.tar.gz", hash = "sha256:698b1a031a154dcf88634f484a33f926966da97b3f055027a948acf6c074914d"},
 ]
 
 [[package]]
