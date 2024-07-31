@@ -23,6 +23,15 @@
       "justMyCode": false
     },
     {
+      "name": "cookit: Standalone tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tests_standalone",
+      "cwd": "${workspaceFolder}/packages/cookit",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
       "name": "bawiki-data: Test Global Future Image Crop",
       "type": "debugpy",
       "request": "launch",
