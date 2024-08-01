@@ -785,7 +785,7 @@ files = [
 
 [[package]]
 name = "cooaki"
-version = "0.1.0"
+version = "0.2.0"
 requires_python = "<4.0,>=3.9"
 summary = "Another Async Akinator API Wrapper"
 groups = ["dev"]
@@ -794,8 +794,8 @@ dependencies = [
     "httpx>=0.27.0",
 ]
 files = [
-    {file = "cooaki-0.1.0-py3-none-any.whl", hash = "sha256:6383c4deba3d90c884e3fcf656ed58bdf907e3b2cd86ba5730c61e7d6eac3148"},
-    {file = "cooaki-0.1.0.tar.gz", hash = "sha256:d4109ff63702b7ed42fcf497068f06b562469d2fd5573ef2d29ac39409a6a991"},
+    {file = "cooaki-0.2.0-py3-none-any.whl", hash = "sha256:4d346f6c6db79eb6c60f67c59fbbc57582e3952aea1efe2ed1ffafc0dd96dff9"},
+    {file = "cooaki-0.2.0.tar.gz", hash = "sha256:789735cd6dd3b5c5e731f59135e6677d3abb63b2e2a04dca2b91f6413dc50539"},
 ]
 
 [[package]]
@@ -835,15 +835,15 @@ files = [
 [[package]]
 name = "cookit"
 version = "0.7.3"
-extras = ["jinja", "loguru", "pw"]
+extras = ["loguru", "nonebot-alconna"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
     "cookit==0.7.3",
-    "cookit[playwright]",
-    "jinja2>=3.1.4",
+    "cookit[nonebot-base]",
     "loguru>=0.7.2",
+    "nonebot-plugin-alconna>=0.48.0",
 ]
 files = [
     {file = "cookit-0.7.3-py3-none-any.whl", hash = "sha256:697e38ea32d79041cdfb01776b7361be2fe3c2a85ff8a89ae6c77fc1c0d18a6f"},
@@ -860,22 +860,6 @@ groups = ["dev"]
 dependencies = [
     "cookit==0.7.3",
     "nonebot2>=2.3.1",
-]
-files = [
-    {file = "cookit-0.7.3-py3-none-any.whl", hash = "sha256:697e38ea32d79041cdfb01776b7361be2fe3c2a85ff8a89ae6c77fc1c0d18a6f"},
-    {file = "cookit-0.7.3.tar.gz", hash = "sha256:7996ac820990359f7b230d07c95b09d6236253cefb45fc75a590e94eb65a1017"},
-]
-
-[[package]]
-name = "cookit"
-version = "0.7.3"
-extras = ["playwright"]
-requires_python = "<4.0,>=3.9"
-summary = "A toolkit for self use."
-groups = ["dev"]
-dependencies = [
-    "cookit==0.7.3",
-    "playwright>=1.45.1",
 ]
 files = [
     {file = "cookit-0.7.3-py3-none-any.whl", hash = "sha256:697e38ea32d79041cdfb01776b7361be2fe3c2a85ff8a89ae6c77fc1c0d18a6f"},
@@ -2002,15 +1986,15 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-akinator"
-version = "1.0.0"
+version = "1.0.1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-akinator"
 summary = "Internet Genius - Akinator"
 groups = ["dev"]
 dependencies = [
-    "cooaki>=0.1.0",
-    "cookit[jinja,loguru,pw]>=0.7.3",
+    "cooaki>=0.2.0",
+    "cookit[loguru,nonebot-alconna]>=0.7.3",
     "nonebot-plugin-alconna>=0.48.0",
     "nonebot-plugin-waiter>=0.7.1",
     "nonebot2>=2.3.1",
