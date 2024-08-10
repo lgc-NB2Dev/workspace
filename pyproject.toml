@@ -44,6 +44,7 @@ dev = [
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-pjsk#egg=nonebot-plugin-pjsk",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-riffusion#egg=nonebot-plugin-riffusion",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-rimofun#egg=nonebot-plugin-rimofun",
+    "-e file:///${PROJECT_ROOT}/packages/YetAnotherPicSearch#egg=YetAnotherPicSearch",
 ]
 
 [tool.pdm]

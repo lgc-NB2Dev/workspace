@@ -88,3 +88,6 @@
 	path = others/readme
 	url = https://github.com/lgc-NB2Dev/readme
 	branch = main
+[submodule "packages/YetAnotherPicSearch"]
+	path = packages/YetAnotherPicSearch
+	url = https://github.com/lgc-NB2Dev/YetAnotherPicSearch
