@@ -554,13 +554,13 @@ files = [
 
 [[package]]
 name = "cachetools"
-version = "5.4.0"
+version = "5.5.0"
 requires_python = ">=3.7"
 summary = "Extensible memoizing collections and decorators"
 groups = ["dev"]
 files = [
-    {file = "cachetools-5.4.0-py3-none-any.whl", hash = "sha256:3ae3b49a3d5e28a77a0be2b37dbcb89005058959cb2323858c2657c4a8cab474"},
-    {file = "cachetools-5.4.0.tar.gz", hash = "sha256:b8adc2e7c07f105ced7bc56dbb6dfbe7c4a00acce20e2227b3f355be89bc6827"},
+    {file = "cachetools-5.5.0-py3-none-any.whl", hash = "sha256:02134e8439cdc2ffb62023ce1debca2944c3f289d66bb17ead3ab3dede74b292"},
+    {file = "cachetools-5.5.0.tar.gz", hash = "sha256:2cc24fb4cbe39633fb7badd9db9ca6295d766d9c2995f245725a46715d050f2a"},
 ]
 
 [[package]]
@@ -2606,18 +2606,18 @@ files = [
 
 [[package]]
 name = "picimagesearch"
-version = "3.10.7"
-requires_python = "<4.0,>=3.9"
+version = "3.10.8"
+requires_python = ">=3.9"
 summary = "PicImageSearch APIs for Python 3.x 适用于 Python 3 以图搜源整合API"
 groups = ["dev"]
 dependencies = [
-    "httpx<0.28.0,>=0.27.0",
-    "lxml<6.0.0,>=5.2.2",
-    "pyquery<3.0.0,>=2.0.0",
+    "httpx>=0.27.0",
+    "lxml>=5.3.0",
+    "pyquery>=2.0.0",
 ]
 files = [
-    {file = "picimagesearch-3.10.7-py3-none-any.whl", hash = "sha256:060b539a4e6bb380860f7e85be07f40718c3b5361515473dd46f3acce218fb43"},
-    {file = "picimagesearch-3.10.7.tar.gz", hash = "sha256:c6e5027a7fd6699dcc1c415ec260a96b2ecc812be95e8b5a1c612f6110c07dfd"},
+    {file = "picimagesearch-3.10.8-py3-none-any.whl", hash = "sha256:6578e32511916f443a5d734aa1d55cab3c5073e27d2bcdd052f28012d817ac21"},
+    {file = "picimagesearch-3.10.8.tar.gz", hash = "sha256:5f8f5be7310074a454c41a9be9c482947ec0d0fcd72a1d7c90b96ce86744dc33"},
 ]
 
 [[package]]
