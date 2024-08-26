@@ -9,17 +9,17 @@ license = { text = "MIT" }
 [tool.pdm.dev-dependencies]
 dev = [
     # pip
-    "setuptools>=70.1.1",
-    "pip>=24.1.1",
+    "setuptools>=73.0.1",
+    "pip>=24.2",
     # tools
-    "basedpyright>=1.13.1",
-    "ruff>=0.5.0",
-    "pytest>=8.2.2",
-    "pytest-asyncio>=0.23.7",
+    "basedpyright>=1.17.0",
+    "ruff>=0.6.2",
+    "pytest>=8.3.2",
+    "pytest-asyncio>=0.24.0",
     # nonebot
-    "nonebot2[all]>=2.3.1",
-    "nonebot-adapter-onebot>=2.4.3",
-    "nonebot-plugin-orm[sqlite]>=0.7.4",
+    "nonebot2[all]>=2.3.3",
+    "nonebot-adapter-onebot>=2.4.4",
+    "nonebot-plugin-orm[sqlite]>=0.7.6",
     # cookit
     "-e file:///${PROJECT_ROOT}/packages/cookit#egg=cookit",
     # packages
