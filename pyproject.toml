@@ -42,6 +42,7 @@ dev = [
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-picstatus#egg=nonebot-plugin-picstatus",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-pingti#egg=nonebot-plugin-pingti",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-pjsk#egg=nonebot-plugin-pjsk",
+    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-random-stereotypes#egg=nonebot-plugin-random-stereotypes",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-riffusion#egg=nonebot-plugin-riffusion",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-rimofun#egg=nonebot-plugin-rimofun",
     "-e file:///${PROJECT_ROOT}/packages/YetAnotherPicSearch#egg=YetAnotherPicSearch",
