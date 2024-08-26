@@ -22,8 +22,6 @@ dev = [
     "nonebot-plugin-orm[sqlite]>=0.7.4",
     # cookit
     "-e file:///${PROJECT_ROOT}/packages/cookit#egg=cookit",
-    # others
-    "-e file:///${PROJECT_ROOT}/others/bawiki-data#egg=bawiki-data",
     # packages
     # "-e file:///${PROJECT_ROOT}/packages/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
     "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
