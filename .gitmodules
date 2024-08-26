@@ -80,10 +80,6 @@
 	url = https://github.com/lgc2333/cookit
 	branch = main
 
-[submodule "others/bawiki-data"]
-	path = others/bawiki-data
-	url = https://github.com/lgc-NB2Dev/bawiki-data
-	branch = main
 [submodule "others/readme"]
 	path = others/readme
 	url = https://github.com/lgc-NB2Dev/readme
