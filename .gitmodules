@@ -74,6 +74,9 @@
 	path = packages/nonebot-plugin-kawaii-robot
 	url = https://github.com/lgc-NB2Dev/nonebot_plugin_kawaii_robot
 	branch = master
+[submodule "packages/nonebot-plugin-random-stereotypes"]
+	path = packages/nonebot-plugin-random-stereotypes
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes
 
 [submodule "packages/cookit"]
 	path = packages/cookit
