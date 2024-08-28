@@ -2444,7 +2444,7 @@ groups = ["dev"]
 dependencies = [
     "cookit>=0.8.0",
     "nonebot-plugin-alconna>=0.52.1",
-    "nonebot-plugin-userinfo>=0.2.5",
+    "nonebot-plugin-userinfo>=0.2.6",
     "nonebot-plugin-waiter>=0.7.1",
     "nonebot2>=2.3.3",
 ]
