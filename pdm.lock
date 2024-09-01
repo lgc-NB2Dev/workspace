@@ -328,18 +328,18 @@ files = [
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.28"
+version = "1.8.29"
 requires_python = ">=3.8"
 summary = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 groups = ["dev"]
 dependencies = [
     "nepattern<1.0.0,>=0.7.6",
-    "tarina>=0.5.5",
+    "tarina>=0.5.8",
     "typing-extensions>=4.5.0",
 ]
 files = [
-    {file = "arclet_alconna-1.8.28-py3-none-any.whl", hash = "sha256:e1819e063b2f53b94765d93d269e9e7dbf5c39e275f24d7428374a1e7bf0a654"},
-    {file = "arclet_alconna-1.8.28.tar.gz", hash = "sha256:1cc6c0fe3c04d33c63148d3a606f309de6f79e18861f69e01e1e7f068c852ac9"},
+    {file = "arclet_alconna-1.8.29-py3-none-any.whl", hash = "sha256:8f71a129ff55f8ffb017bd1ad87d1f709df44e483bf8b851a83332bcb052f7ff"},
+    {file = "arclet_alconna-1.8.29.tar.gz", hash = "sha256:99bd65c509050909fc5e3ae5948daa3c8238dd7665b7090fe4632c63ee2eac11"},
 ]
 
 [[package]]
@@ -3649,7 +3649,7 @@ files = [
 
 [[package]]
 name = "starlette"
-version = "0.38.2"
+version = "0.38.3"
 requires_python = ">=3.8"
 summary = "The little ASGI library that shines."
 groups = ["dev"]
@@ -3658,8 +3658,8 @@ dependencies = [
     "typing-extensions>=3.10.0; python_version < \"3.10\"",
 ]
 files = [
-    {file = "starlette-0.38.2-py3-none-any.whl", hash = "sha256:4ec6a59df6bbafdab5f567754481657f7ed90dc9d69b0c9ff017907dd54faeff"},
-    {file = "starlette-0.38.2.tar.gz", hash = "sha256:c7c0441065252160993a1a37cf2a73bb64d271b17303e0b0c1eb7191cfb12d75"},
+    {file = "starlette-0.38.3-py3-none-any.whl", hash = "sha256:0e4af343a4e59324b96fbe0f3c6ad8c3a908d73f12f5c80a797803a6c3ad4687"},
+    {file = "starlette-0.38.3.tar.gz", hash = "sha256:f674450f0f46a790be1f3a128f386080600b58fa358f8e320d93dbef6d7f676c"},
 ]
 
 [[package]]
