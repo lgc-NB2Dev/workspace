@@ -74,9 +74,14 @@
 	path = packages/nonebot-plugin-kawaii-robot
 	url = https://github.com/lgc-NB2Dev/nonebot_plugin_kawaii_robot
 	branch = master
+[submodule "packages/YetAnotherPicSearch"]
+	path = packages/YetAnotherPicSearch
+	url = https://github.com/lgc-NB2Dev/YetAnotherPicSearch
+	branch = main
 [submodule "packages/nonebot-plugin-random-stereotypes"]
 	path = packages/nonebot-plugin-random-stereotypes
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes
+	branch = master
 
 [submodule "packages/cookit"]
 	path = packages/cookit
@@ -87,6 +92,3 @@
 	path = others/readme
 	url = https://github.com/lgc-NB2Dev/readme
 	branch = main
-[submodule "packages/YetAnotherPicSearch"]
-	path = packages/YetAnotherPicSearch
-	url = https://github.com/lgc-NB2Dev/YetAnotherPicSearch
