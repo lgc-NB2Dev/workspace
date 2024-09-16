@@ -4277,7 +4277,7 @@ files = [
 
 [[package]]
 name = "yetanotherpicsearch"
-version = "2.0.1.post2"
+version = "2.0.2"
 requires_python = "<4,>=3.9"
 editable = true
 path = "./packages/YetAnotherPicSearch"
