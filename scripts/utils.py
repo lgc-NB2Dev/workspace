@@ -19,8 +19,17 @@ def system_no_fail(*args: str, **kwargs: Any):
         raise RuntimeError(f"command {args} failed with code {c}")
 
 
-def iter_packages():
+def iter_modules(tip: bool = True):
     for p in (*PACKAGES_PATH.iterdir(), *OTHERS_PATH.iterdir()):
-        if p.is_dir() and (p / "pyproject.toml").exists():
-            print(f"Entering {p.relative_to(ROOT_PATH)}")
+        if p.is_dir() and (p / ".git").exists():
+            if tip:
+                print(f"Entering {p.relative_to(ROOT_PATH)}")
+            yield p
+
+
+def iter_packages(tip: bool = True):
+    for p in iter_modules(tip=False):
+        if (p / "pyproject.toml").exists():
+            if tip:
+                print(f"Entering {p.relative_to(ROOT_PATH)}")
             yield p

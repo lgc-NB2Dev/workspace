@@ -72,7 +72,7 @@
 	branch = master
 [submodule "packages/nonebot-plugin-kawaii-robot"]
 	path = packages/nonebot-plugin-kawaii-robot
-	url = https://github.com/lgc-NB2Dev/nonebot_plugin_kawaii_robot
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-kawaii-robot
 	branch = master
 [submodule "packages/YetAnotherPicSearch"]
 	path = packages/YetAnotherPicSearch
