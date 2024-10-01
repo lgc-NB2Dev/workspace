@@ -37,13 +37,13 @@ files = [
 
 [[package]]
 name = "aiohappyeyeballs"
-version = "2.4.2"
+version = "2.4.3"
 requires_python = ">=3.8"
 summary = "Happy Eyeballs for asyncio"
 groups = ["dev"]
 files = [
-    {file = "aiohappyeyeballs-2.4.2-py3-none-any.whl", hash = "sha256:8522691d9a154ba1145b157d6d5c15e5c692527ce6a53c5e5f9876977f6dab2f"},
-    {file = "aiohappyeyeballs-2.4.2.tar.gz", hash = "sha256:4ca893e6c5c1f5bf3888b04cb5a3bee24995398efef6e0b9f747b5e89d84fd74"},
+    {file = "aiohappyeyeballs-2.4.3-py3-none-any.whl", hash = "sha256:8a7a83727b2756f394ab2895ea0765a0a8c475e3c71e98d43d76f22b4b435572"},
+    {file = "aiohappyeyeballs-2.4.3.tar.gz", hash = "sha256:75cf88a15106a5002a8eb1dab212525c00d1f4c0fa96e551c9fbe6f09a621586"},
 ]
 
 [[package]]
@@ -431,7 +431,7 @@ files = [
 
 [[package]]
 name = "basedpyright"
-version = "1.18.0"
+version = "1.18.2"
 requires_python = ">=3.8"
 summary = "static type checking for Python (but based)"
 groups = ["dev"]
@@ -439,8 +439,8 @@ dependencies = [
     "nodejs-wheel-binaries>=20.13.1",
 ]
 files = [
-    {file = "basedpyright-1.18.0-py3-none-any.whl", hash = "sha256:96238749b870809719d9e99587346056ca68169803095901fc5e028c733c9b54"},
-    {file = "basedpyright-1.18.0.tar.gz", hash = "sha256:82a0cceb7a20bbdd8b801a2ea41a035bc101d94bc634157bcc2ecf0f7aff52f8"},
+    {file = "basedpyright-1.18.2-py3-none-any.whl", hash = "sha256:bebba0456dc87e51e9e25fd7b72f2d75659f0d965473edfb5c8c276b1c5d28b7"},
+    {file = "basedpyright-1.18.2.tar.gz", hash = "sha256:ff13c8557f8e8e7cb75c9761d40ebb17a9e8790891faa729521f71784e8ee8b1"},
 ]
 
 [[package]]
