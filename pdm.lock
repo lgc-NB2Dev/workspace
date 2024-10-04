@@ -1022,7 +1022,7 @@ files = [
 
 [[package]]
 name = "emoji"
-version = "2.13.2"
+version = "2.14.0"
 requires_python = ">=3.7"
 summary = "Emoji for Python"
 groups = ["dev"]
@@ -1030,8 +1030,8 @@ dependencies = [
     "typing-extensions>=4.7.0; python_version < \"3.9\"",
 ]
 files = [
-    {file = "emoji-2.13.2-py3-none-any.whl", hash = "sha256:ef6f2ee63b245e934c763b1a9a0637713955aa3d9e322432e036bb60559de4d6"},
-    {file = "emoji-2.13.2.tar.gz", hash = "sha256:f95d10d96c5f21299ed2c4b32511611ba890b8c07f5f2bf5b04d5d3eee91fd19"},
+    {file = "emoji-2.14.0-py3-none-any.whl", hash = "sha256:fcc936bf374b1aec67dda5303ae99710ba88cc9cdce2d1a71c5f2204e6d78799"},
+    {file = "emoji-2.14.0.tar.gz", hash = "sha256:f68ac28915a2221667cddb3e6c589303c3c6954c6c5af6fefaec7f9bdf72fdca"},
 ]
 
 [[package]]
@@ -2064,18 +2064,18 @@ files = [
 
 [[package]]
 name = "nodejs-wheel-binaries"
-version = "20.17.0"
+version = "20.18.0"
 requires_python = ">=3.7"
 summary = "unoffical Node.js package"
 groups = ["dev"]
 files = [
-    {file = "nodejs_wheel_binaries-20.17.0-py2.py3-none-macosx_10_15_x86_64.whl", hash = "sha256:a5eaffb0327d751360e5f01e92f0adeb3b297a9196751bf1dda910b92c9f6f83"},
-    {file = "nodejs_wheel_binaries-20.17.0-py2.py3-none-macosx_11_0_arm64.whl", hash = "sha256:a661d2894b11dc886ae8c25727c3cdf1d54db982cdccfcddbb2dfe20dd249f3b"},
-    {file = "nodejs_wheel_binaries-20.17.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e0144c91e9816cda969d78ba0903acc405c99e0a4bfffbdabac6b48b237335e7"},
-    {file = "nodejs_wheel_binaries-20.17.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b87ee7e88bfece2d325949e4f0dedb942b7478c401fc4e6726c5270f5835a02d"},
-    {file = "nodejs_wheel_binaries-20.17.0-py2.py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:5b5fb7c51204ad30e9f83ab503f11b17de4bcc1c248314f83ca3302fda24b1a1"},
-    {file = "nodejs_wheel_binaries-20.17.0-py2.py3-none-win_amd64.whl", hash = "sha256:931558d528b976eb67ae1f68253df089e9d7d7267b6980fc580bfd31d67a0f5c"},
-    {file = "nodejs_wheel_binaries-20.17.0.tar.gz", hash = "sha256:827a3297a99764adfaeb0cd1e9e36d8fb79c5b074de916a2a31b8a61b8d208f7"},
+    {file = "nodejs_wheel_binaries-20.18.0-py2.py3-none-macosx_10_15_x86_64.whl", hash = "sha256:74273eab1c2423c04d034d3f707f517da32d3a2b20ca244b5667f3a4e38003ac"},
+    {file = "nodejs_wheel_binaries-20.18.0-py2.py3-none-macosx_11_0_arm64.whl", hash = "sha256:f95fb0989dfc54fd6932850e589000a8d6fc902527cebe7afd747696561d94b8"},
+    {file = "nodejs_wheel_binaries-20.18.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f62e38288d3a129b962dcba61b911d72b3d691935b8a2facfc0fa9433d9260b5"},
+    {file = "nodejs_wheel_binaries-20.18.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:33b138288dbeb9aafc6d54f43fbca6545b37e8fd9cbb8f68275ff2a47d4fed07"},
+    {file = "nodejs_wheel_binaries-20.18.0-py2.py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:bb4009d4d6abfb6765fabb62f322efdc520b6930d041af1d7f64d58445ce3e91"},
+    {file = "nodejs_wheel_binaries-20.18.0-py2.py3-none-win_amd64.whl", hash = "sha256:51c0cecb429a111351a54346909e672a57b96233a363c79cc0a2bbdbfa397304"},
+    {file = "nodejs_wheel_binaries-20.18.0.tar.gz", hash = "sha256:1d574a3d0e503b42414e80b4529da9fc71104b0d5e1d75606b3fb5802960fb6f"},
 ]
 
 [[package]]
