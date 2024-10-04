@@ -2242,7 +2242,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-color"
-version = "0.4.1"
+version = "0.4.2"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-color"
