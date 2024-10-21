@@ -14,8 +14,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-        # with:
-        #   submodules: recursive
+        with:
+          submodules: recursive
+          token: ${{ secrets.TOKEN }} # 使用 GitHub Token
 
       - name: Update submodules
         run: |-
