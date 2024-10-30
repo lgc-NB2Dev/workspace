@@ -11,7 +11,10 @@
       "program": "${workspaceFolder}/private/test-nb2/bot.py",
       "cwd": "${workspaceFolder}/private/test-nb2",
       "console": "integratedTerminal",
-      "justMyCode": false
+      "justMyCode": false,
+      "env": {
+        "LOG_LEVEL": "DEBUG"
+      }
     },
     {
       "name": "Python: Debug Tests",
