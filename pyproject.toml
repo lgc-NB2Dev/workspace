@@ -85,7 +85,7 @@ ignore = [
     "B905",
     # "COM812",
     "E501",
-    "F821",    # conflict with pyright
+    "F821", # conflict with pyright
     "FBT001",
     "FBT002",
     "ISC001",
@@ -144,29 +144,6 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"private/nonebot-plugin-send-anything-anywhere/*.py" = [
-    "I001",
-    "A001",
-    "A002",
-    "A003",
-    "N818",
-    "ARG001",
-    "ARG004",
-    "SLF001",
-]
-"private/adapter-telegram/*.py" = [
-    "I001",
-    "A001",
-    "A002",
-    "A003",
-    "B010",
-    "N818",
-    "ARG001",
-    "ARG004",
-    "COM812",
-    "SLF001",
-    "COM812",
-]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
