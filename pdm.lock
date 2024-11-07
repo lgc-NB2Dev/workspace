@@ -432,7 +432,7 @@ files = [
 
 [[package]]
 name = "basedpyright"
-version = "1.20.0"
+version = "1.21.0"
 requires_python = ">=3.8"
 summary = "static type checking for Python (but based)"
 groups = ["dev"]
@@ -440,8 +440,8 @@ dependencies = [
     "nodejs-wheel-binaries>=20.13.1",
 ]
 files = [
-    {file = "basedpyright-1.20.0-py3-none-any.whl", hash = "sha256:65de9f930ca327e74f2281da8e9b51d56a04efb25a1ba8ec5767c21751cdb2c3"},
-    {file = "basedpyright-1.20.0.tar.gz", hash = "sha256:0a9573b3947927dad915b13db520f48810676b9b0b894128743d5f442134b361"},
+    {file = "basedpyright-1.21.0-py3-none-any.whl", hash = "sha256:48902c476d6301c556df6eeae9acf1e34b176b14f8702ad5c770f4e6a747018a"},
+    {file = "basedpyright-1.21.0.tar.gz", hash = "sha256:e3a9f5b89acc7f23d5a10d95ea6056b2247fcd15b8b248ad44c560c85c39d5e3"},
 ]
 
 [[package]]
@@ -4145,7 +4145,7 @@ files = [
 
 [[package]]
 name = "tqdm"
-version = "4.66.6"
+version = "4.67.0"
 requires_python = ">=3.7"
 summary = "Fast, Extensible Progress Meter"
 groups = ["dev"]
@@ -4153,8 +4153,8 @@ dependencies = [
     "colorama; platform_system == \"Windows\"",
 ]
 files = [
-    {file = "tqdm-4.66.6-py3-none-any.whl", hash = "sha256:223e8b5359c2efc4b30555531f09e9f2f3589bcd7fdd389271191031b49b7a63"},
-    {file = "tqdm-4.66.6.tar.gz", hash = "sha256:4bdd694238bef1485ce839d67967ab50af8f9272aab687c0d7702a01da0be090"},
+    {file = "tqdm-4.67.0-py3-none-any.whl", hash = "sha256:0cd8af9d56911acab92182e88d763100d4788bdf421d251616040cc4d44863be"},
+    {file = "tqdm-4.67.0.tar.gz", hash = "sha256:fe5a6f95e6fe0b9755e9469b77b9c3cf850048224ecaa8293d7d2d31f97d869a"},
 ]
 
 [[package]]
