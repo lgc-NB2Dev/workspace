@@ -879,7 +879,7 @@ files = [
 
 [[package]]
 name = "cooaki"
-version = "0.2.0"
+version = "0.2.1"
 requires_python = "<4.0,>=3.9"
 summary = "Another Async Akinator API Wrapper"
 groups = ["dev"]
@@ -888,8 +888,8 @@ dependencies = [
     "httpx>=0.27.0",
 ]
 files = [
-    {file = "cooaki-0.2.0-py3-none-any.whl", hash = "sha256:4d346f6c6db79eb6c60f67c59fbbc57582e3952aea1efe2ed1ffafc0dd96dff9"},
-    {file = "cooaki-0.2.0.tar.gz", hash = "sha256:789735cd6dd3b5c5e731f59135e6677d3abb63b2e2a04dca2b91f6413dc50539"},
+    {file = "cooaki-0.2.1-py3-none-any.whl", hash = "sha256:5b4664b310c7987e6f2ab4a2914edc17b78fed73b70aa889fb77079cae932d17"},
+    {file = "cooaki-0.2.1.tar.gz", hash = "sha256:320d4c7c23e0ebf9be78e1132fe02d60d7af0b751767b127c3a5dbd35f617a44"},
 ]
 
 [[package]]
@@ -2216,14 +2216,14 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-akinator"
-version = "1.0.1"
+version = "1.0.1.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-akinator"
 summary = "Internet Genius - Akinator"
 groups = ["dev"]
 dependencies = [
-    "cooaki>=0.2.0",
+    "cooaki>=0.2.1",
     "cookit[loguru,nonebot-alconna]>=0.7.3",
     "nonebot-plugin-alconna>=0.48.0",
     "nonebot-plugin-waiter>=0.7.1",
