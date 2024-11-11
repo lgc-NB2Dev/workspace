@@ -85,7 +85,7 @@ ignore = [
     "B905",
     # "COM812",
     "E501",
-    "F821", # conflict with pyright
+    "F821",    # conflict with pyright
     "FBT001",
     "FBT002",
     "ISC001",
