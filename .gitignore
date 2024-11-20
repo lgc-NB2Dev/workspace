@@ -5,3 +5,4 @@ __pypackages__/
 node_modules/
 pyrightconfig.json
 __pycache__/
+.idea/
