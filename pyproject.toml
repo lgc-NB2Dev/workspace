@@ -20,39 +20,39 @@ dev = [
     "nonebot2[all]>=2.3.3",
     "nonebot-adapter-onebot>=2.4.4",
     "nonebot-plugin-orm[sqlite]>=0.7.6",
-    # cookit
-    "-e file:///${PROJECT_ROOT}/packages/cookit#egg=cookit",
-    # packages
-    # "-e file:///${PROJECT_ROOT}/packages/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-bawiki#egg=nonebot-plugin-bawiki",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-clash#egg=nonebot-plugin-clash",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-color#egg=nonebot-plugin-color",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-fuckyou#egg=nonebot-plugin-fuckyou",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-kawaii-robot#egg=nonebot-plugin-kawaii-robot",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-multincm#egg=nonebot-plugin-multincm",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-nonememe#egg=nonebot-plugin-nonememe",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-ottohzys#egg=nonebot-plugin-ottohzys",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-picmcstat#egg=nonebot-plugin-picmcstat",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-picstatus#egg=nonebot-plugin-picstatus",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-pingti#egg=nonebot-plugin-pingti",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-pjsk#egg=nonebot-plugin-pjsk",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-random-stereotypes#egg=nonebot-plugin-random-stereotypes",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-riffusion#egg=nonebot-plugin-riffusion",
-    "-e file:///${PROJECT_ROOT}/packages/nonebot-plugin-rimofun#egg=nonebot-plugin-rimofun",
-    "-e file:///${PROJECT_ROOT}/packages/YetAnotherPicSearch#egg=YetAnotherPicSearch",
+    # external
+    "-e file:///${PROJECT_ROOT}/external/cookit#egg=cookit",
+    # plugins
+    # "-e file:///${PROJECT_ROOT}/plugins/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-bawiki#egg=nonebot-plugin-bawiki",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-clash#egg=nonebot-plugin-clash",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-color#egg=nonebot-plugin-color",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-fuckyou#egg=nonebot-plugin-fuckyou",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-kawaii-robot#egg=nonebot-plugin-kawaii-robot",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-multincm#egg=nonebot-plugin-multincm",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-nonememe#egg=nonebot-plugin-nonememe",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-ottohzys#egg=nonebot-plugin-ottohzys",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picmcstat#egg=nonebot-plugin-picmcstat",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picstatus#egg=nonebot-plugin-picstatus",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pingti#egg=nonebot-plugin-pingti",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pjsk#egg=nonebot-plugin-pjsk",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-random-stereotypes#egg=nonebot-plugin-random-stereotypes",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-riffusion#egg=nonebot-plugin-riffusion",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-rimofun#egg=nonebot-plugin-rimofun",
+    "-e file:///${PROJECT_ROOT}/plugins/YetAnotherPicSearch#egg=YetAnotherPicSearch",
 ]
-
-[tool.pdm]
-distribution = false
 
 [tool.pdm.scripts]
 pull = { call = "scripts.pull:main" }
 dep = { call = "scripts.dep:main" }
 up = { call = "scripts.up:main" }
+
+[tool.uv]
+prerelease = "allow"
 
 [tool.basedpyright]
 pythonVersion = "3.9"
@@ -62,16 +62,16 @@ reportShadowedImports = false
 exclude = [
     "**/node_modules",
     "**/.venv",
-    "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
-    "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
+    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
+    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
 ]
 
 [tool.ruff]
 target-version = "py39"
 extend-exclude = [
-    "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
-    "./packages/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
-    "./packages/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
+    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
+    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
+    "./plugins/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
 ]
 
 [tool.ruff.format]
