@@ -1,10 +1,10 @@
-from .utils import iter_modules, system_no_fail
+from .utils import iter_modules, system
 
 
 def main():
-    system_no_fail("git", "pull")
+    system("git", "pull")
 
     for p in iter_modules():
-        system_no_fail("git", "pull", cwd=str(p))
+        system("git", "pull", cwd=str(p))
 
-    # system_no_fail("pdm install -G:all")
+    # system("pdm install -G:all")
