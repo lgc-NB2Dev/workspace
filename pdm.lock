@@ -1604,13 +1604,13 @@ files = [
 
 [[package]]
 name = "json5"
-version = "0.9.28"
+version = "0.10.0"
 requires_python = ">=3.8.0"
 summary = "A Python implementation of the JSON5 data format."
 groups = ["dev"]
 files = [
-    {file = "json5-0.9.28-py3-none-any.whl", hash = "sha256:29c56f1accdd8bc2e037321237662034a7e07921e2b7223281a5ce2c46f0c4df"},
-    {file = "json5-0.9.28.tar.gz", hash = "sha256:1f82f36e615bc5b42f1bbd49dbc94b12563c56408c6ffa06414ea310890e9a6e"},
+    {file = "json5-0.10.0-py3-none-any.whl", hash = "sha256:19b23410220a7271e8377f81ba8aacba2fdd56947fbb137ee5977cbe1f5e8dfa"},
+    {file = "json5-0.10.0.tar.gz", hash = "sha256:e66941c8f0a02026943c52c2eb34ebeb2a6f819a0be05920a6f5243cd30fd559"},
 ]
 
 [[package]]
@@ -2445,7 +2445,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-multincm"
-version = "1.1.3"
+version = "1.1.3.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./packages/nonebot-plugin-multincm"
@@ -2460,7 +2460,7 @@ dependencies = [
     "nonebot-plugin-htmlrender>=0.3.2",
     "nonebot-plugin-waiter>=0.6.2",
     "nonebot2>=2.3.1",
-    "pyncm>=1.6.15",
+    "pyncm>=1.7.1",
     "silk-python>=0.2.6",
     "typing-extensions>=4.12.2",
     "yarl>=1.9.4",
@@ -3329,7 +3329,7 @@ files = [
 
 [[package]]
 name = "pydantic"
-version = "2.10.1"
+version = "2.10.2"
 requires_python = ">=3.8"
 summary = "Data validation using Python type hints"
 groups = ["dev"]
@@ -3339,8 +3339,8 @@ dependencies = [
     "typing-extensions>=4.12.2",
 ]
 files = [
-    {file = "pydantic-2.10.1-py3-none-any.whl", hash = "sha256:a8d20db84de64cf4a7d59e899c2caf0fe9d660c7cfc482528e7020d7dd189a7e"},
-    {file = "pydantic-2.10.1.tar.gz", hash = "sha256:a4daca2dc0aa429555e0656d6bf94873a7dc5f54ee42b1f5873d666fb3f35560"},
+    {file = "pydantic-2.10.2-py3-none-any.whl", hash = "sha256:cfb96e45951117c3024e6b67b25cdc33a3cb7b2fa62e239f7af1378358a1d99e"},
+    {file = "pydantic-2.10.2.tar.gz", hash = "sha256:2bc2d7f17232e0841cbba4641e65ba1eb6fafb3a08de3a091ff3ce14a197c4fa"},
 ]
 
 [[package]]
@@ -4663,24 +4663,24 @@ files = [
 
 [[package]]
 name = "yetanotherpicsearch"
-version = "2.0.2"
+version = "2.0.3"
 requires_python = "<4,>=3.9"
 editable = true
 path = "./packages/YetAnotherPicSearch"
 summary = "Yet Another Picture Search Nonebot Plugin"
 groups = ["dev"]
 dependencies = [
-    "PicImageSearch>=3.10.7",
-    "Pillow>=9",
+    "PicImageSearch>=3.11.2",
+    "Pillow>=11.0.0",
     "arrow>=1.3.0",
-    "cookit[loguru,nonebot-alconna,pydantic]>=0.8.0",
-    "httpx>=0.27.0",
-    "lxml>=5.2.2",
-    "msgpack>=1.0.8",
-    "nonebot-plugin-alconna>=0.51.4",
-    "nonebot-plugin-waiter>=0.7.1",
-    "nonebot2>=2.3.2",
-    "pyquery>=2.0.0",
+    "cookit[loguru,nonebot-alconna,pydantic]>=0.8.1",
+    "httpx>=0.27.2",
+    "lxml>=5.3.0",
+    "msgpack>=1.1.0",
+    "nonebot-plugin-alconna>=0.54.0",
+    "nonebot-plugin-waiter>=0.8.0",
+    "nonebot2>=2.4.0",
+    "pyquery>=2.0.1",
     "tenacity>=9.0.0",
 ]
 
