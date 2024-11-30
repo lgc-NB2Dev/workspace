@@ -2077,6 +2077,30 @@ files = [
 ]
 
 [[package]]
+name = "msvc-runtime"
+version = "14.42.34433"
+requires_python = ">=3.5"
+summary = "Install the Microsoft™ Visual C++™ runtime DLLs to the sys.prefix and Scripts directories"
+groups = ["dev"]
+marker = "sys_platform == \"win32\""
+files = [
+    {file = "msvc_runtime-14.42.34433-cp310-cp310-win32.whl", hash = "sha256:7211342b24025fd0294f7920814c5a5dc95a22fd03c8bc729ca980fb21df3f2b"},
+    {file = "msvc_runtime-14.42.34433-cp310-cp310-win_amd64.whl", hash = "sha256:89574bc376a48e349f97b6dde289367b0a32dedaf3774ef64ed4330e9823e09c"},
+    {file = "msvc_runtime-14.42.34433-cp311-cp311-win32.whl", hash = "sha256:a54c001e058ca22d88c30dc348d06fa704708ca9369464e52ed80b130bb47b4e"},
+    {file = "msvc_runtime-14.42.34433-cp311-cp311-win_amd64.whl", hash = "sha256:60ab9e5ca8ef3e230ead1a3db66340628aafc25f0c10d0195ced8f5a2e24883f"},
+    {file = "msvc_runtime-14.42.34433-cp311-cp311-win_arm64.whl", hash = "sha256:3a339f6dd8c8830743ef250a46683cb77b40633aaf1e5cf4032753f2c46f5afd"},
+    {file = "msvc_runtime-14.42.34433-cp312-cp312-win32.whl", hash = "sha256:791f60e9d8479065c6e9c6b1ae1d31555a6bb41a2e649f705bd96566a79bd1df"},
+    {file = "msvc_runtime-14.42.34433-cp312-cp312-win_amd64.whl", hash = "sha256:0f1c2733bf16fee37ab5f48a4c1cdf8f8bd26a945679a111e4219396e89a9049"},
+    {file = "msvc_runtime-14.42.34433-cp312-cp312-win_arm64.whl", hash = "sha256:f4ffbb6bdde4870f4995234423a46ac650cc2535c7812605bd457d064a77345e"},
+    {file = "msvc_runtime-14.42.34433-cp313-cp313-win32.whl", hash = "sha256:7d1fc5675c3d9769b3f05b9a57156211a053415f0dab938493c2d490c84187a4"},
+    {file = "msvc_runtime-14.42.34433-cp313-cp313-win_amd64.whl", hash = "sha256:087e2a7906b953970d93f37ea740605688eff616fa7ad42cc46e15137797e7e6"},
+    {file = "msvc_runtime-14.42.34433-cp313-cp313-win_arm64.whl", hash = "sha256:0d873db88d3027e3a9b2abf8b2104af96199a317f940802bce2d234dd4aa915c"},
+    {file = "msvc_runtime-14.42.34433-cp39-cp39-win32.whl", hash = "sha256:2adaf04bc5a7290b669fcc404a96750c1c6d8ffb8fe1037c264371bf67bca210"},
+    {file = "msvc_runtime-14.42.34433-cp39-cp39-win_amd64.whl", hash = "sha256:d4da7241349e9bf7d79346680f180b29bcc8aff242bd3de075529be71c097271"},
+    {file = "msvc_runtime-14.42.34433-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:e934840ebbef53f51febfacdb4f39965060a818cee3429da9fcfd396c61595cf"},
+]
+
+[[package]]
 name = "multidict"
 version = "6.1.0"
 requires_python = ">=3.8"
@@ -2444,7 +2468,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-multincm"
-version = "1.1.3.post1"
+version = "1.1.4.post514"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./plugins/nonebot-plugin-multincm"
@@ -2860,20 +2884,21 @@ files = [
 
 [[package]]
 name = "pil-utils"
-version = "0.2.1"
+version = "0.2.2"
 requires_python = "<4.0,>=3.9"
 summary = "A simple PIL wrapper and text-to-image tool"
 groups = ["dev"]
 dependencies = [
     "Pillow<12.0.0,>=10.0.0",
     "bbcode<2.0.0,>=1.1.0",
+    "msvc-runtime; sys_platform == \"win32\"",
     "numpy>=1.21.0",
     "opencv-python-headless<5.0.0,>=4.0.0",
-    "skia-python>=130.0b10",
+    "skia-python>=132.0b11",
 ]
 files = [
-    {file = "pil_utils-0.2.1-py3-none-any.whl", hash = "sha256:9da2ec37c27939410e9d416465c329d05094075f6a173ca205da41fe498c9805"},
-    {file = "pil_utils-0.2.1.tar.gz", hash = "sha256:6c4cd35a809e5f9af6243f421ab3448ba3b8c61576fca66e06c251e823e35b56"},
+    {file = "pil_utils-0.2.2-py3-none-any.whl", hash = "sha256:6fec6ba0caebddffdcdb0b0b60719968173ddc15427bded47f81c7ba121a0211"},
+    {file = "pil_utils-0.2.2.tar.gz", hash = "sha256:4d7855ec387691dec5eddaaef2583d82b4855c13006dc980c7fffb7bd35bc4ef"},
 ]
 
 [[package]]
