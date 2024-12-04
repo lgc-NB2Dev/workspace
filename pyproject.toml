@@ -82,7 +82,6 @@ docstring-code-format = true
 line-ending = "lf"
 
 [tool.ruff.lint]
-preview = true
 ignore = [
     "B008",
     "B905",
@@ -115,6 +114,7 @@ ignore = [
     "SIM117",
     "TRY002",
     "TRY003",
+    "W505",
 ]
 select = [
     "A",
@@ -138,8 +138,8 @@ select = [
     "NPY",
     "PD",
     "PERF",
-    "PIE",
     "PGH",
+    "PIE",
     "PL",
     "PT",
     "PTH",
@@ -155,6 +155,7 @@ select = [
     "TC",
     "TRY",
     "UP",
+    "W",
     "YTT",
 ]
 
@@ -167,5 +168,10 @@ extra-standard-library = ["typing_extensions"]
 split-on-trailing-comma = true
 
 [tool.ruff.lint.flake8-type-checking]
-exempt-modules = ["typing", "typing_extensions", "collections"]
+exempt-modules = [
+    "typing",
+    "typing_extensions",
+    "collections",
+    "nonebot.typing",
+]
 quote-annotations = true
