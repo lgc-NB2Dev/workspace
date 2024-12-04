@@ -127,13 +127,16 @@ select = [
     "DTZ",
     "E",
     "F",
+    "FAST",
     "FBT",
     "FLY",
     "FURB",
     "I",
+    "INP",
     "ISC",
     "N",
     "NPY",
+    "PD",
     "PERF",
     "PIE",
     "PGH",
@@ -149,7 +152,9 @@ select = [
     "SIM",
     "SLF",
     "SLOT",
+    "TC",
     "TRY",
+    "UP",
     "YTT",
 ]
 
@@ -160,3 +165,7 @@ combine-as-imports = true
 detect-same-package = true
 extra-standard-library = ["typing_extensions"]
 split-on-trailing-comma = true
+
+[tool.ruff.lint.flake8-type-checking]
+exempt-modules = ["typing", "typing_extensions", "collections"]
+quote-annotations = true
