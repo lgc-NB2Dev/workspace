@@ -46,6 +46,9 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/YetAnotherPicSearch#egg=YetAnotherPicSearch",
 ]
 
+[tool.pdm]
+distribution = false
+
 [tool.pdm.scripts]
 pull = { call = "scripts.pull:main" }
 dep = { call = "scripts.dep:main" }
