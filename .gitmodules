@@ -1,34 +1,42 @@
+[submodule "plugins/nb-cli-plugin-bootstrap"]
+	path = plugins/nb-cli-plugin-bootstrap
+	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
+	branch = master
 [submodule "plugins/nonebot-plugin-akinator"]
 	path = plugins/nonebot-plugin-akinator
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
-	branch = master
-[submodule "plugins/nonebot-plugin-bawiki"]
-	path = plugins/nonebot-plugin-bawiki
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
-	branch = master
-[submodule "plugins/nonebot-plugin-fuckyou"]
-	path = plugins/nonebot-plugin-fuckyou
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
-	branch = master
-[submodule "plugins/nonebot-plugin-picmcstat"]
-	path = plugins/nonebot-plugin-picmcstat
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
-	branch = master
-[submodule "plugins/nonebot-plugin-rimofun"]
-	path = plugins/nonebot-plugin-rimofun
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
 	branch = master
 [submodule "plugins/nonebot-plugin-autoreply"]
 	path = plugins/nonebot-plugin-autoreply
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
 	branch = master
-[submodule "plugins/nonebot-plugin-picstatus"]
-	path = plugins/nonebot-plugin-picstatus
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
+[submodule "plugins/nonebot-plugin-bawiki"]
+	path = plugins/nonebot-plugin-bawiki
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
 	branch = master
 [submodule "plugins/nonebot-plugin-callapi"]
 	path = plugins/nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
+	branch = master
+[submodule "plugins/nonebot-plugin-clash"]
+	path = plugins/nonebot-plugin-clash
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash
+	branch = master
+[submodule "plugins/nonebot-plugin-cnrail"]
+	path = plugins/nonebot-plugin-cnrail
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
+	branch = master
+[submodule "plugins/nonebot-plugin-color"]
+	path = plugins/nonebot-plugin-color
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
+	branch = main
+[submodule "plugins/nonebot-plugin-fuckyou"]
+	path = plugins/nonebot-plugin-fuckyou
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
+	branch = master
+[submodule "plugins/nonebot-plugin-kawaii-robot"]
+	path = plugins/nonebot-plugin-kawaii-robot
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-kawaii-robot
 	branch = master
 [submodule "plugins/nonebot-plugin-multincm"]
 	path = plugins/nonebot-plugin-multincm
@@ -42,46 +50,41 @@
 	path = plugins/nonebot-plugin-ottohzys
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-ottohzys
 	branch = master
-[submodule "plugins/nonebot-plugin-pjsk"]
-	path = plugins/nonebot-plugin-pjsk
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
-	branch = main
-[submodule "plugins/nonebot-plugin-color"]
-	path = plugins/nonebot-plugin-color
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
-	branch = main
-[submodule "plugins/nb-cli-plugin-bootstrap"]
-	path = plugins/nb-cli-plugin-bootstrap
-	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
+[submodule "plugins/nonebot-plugin-picmcstat"]
+	path = plugins/nonebot-plugin-picmcstat
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
 	branch = master
-[submodule "plugins/nonebot-plugin-cnrail"]
-	path = plugins/nonebot-plugin-cnrail
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
-	branch = master
-[submodule "plugins/nonebot-plugin-clash"]
-	path = plugins/nonebot-plugin-clash
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash
-	branch = master
-[submodule "plugins/nonebot-plugin-riffusion"]
-	path = plugins/nonebot-plugin-riffusion
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
+[submodule "plugins/nonebot-plugin-picmenu-next"]
+	path = plugins/nonebot-plugin-picmenu-next
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
+[submodule "plugins/nonebot-plugin-picstatus"]
+	path = plugins/nonebot-plugin-picstatus
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
 	branch = master
 [submodule "plugins/nonebot-plugin-pingti"]
 	path = plugins/nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
 	branch = master
-[submodule "plugins/nonebot-plugin-kawaii-robot"]
-	path = plugins/nonebot-plugin-kawaii-robot
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-kawaii-robot
-	branch = master
-[submodule "plugins/YetAnotherPicSearch"]
-	path = plugins/YetAnotherPicSearch
-	url = https://github.com/lgc-NB2Dev/YetAnotherPicSearch
+[submodule "plugins/nonebot-plugin-pjsk"]
+	path = plugins/nonebot-plugin-pjsk
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
 	branch = main
 [submodule "plugins/nonebot-plugin-random-stereotypes"]
 	path = plugins/nonebot-plugin-random-stereotypes
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes
 	branch = master
+[submodule "plugins/nonebot-plugin-riffusion"]
+	path = plugins/nonebot-plugin-riffusion
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
+	branch = master
+[submodule "plugins/nonebot-plugin-rimofun"]
+	path = plugins/nonebot-plugin-rimofun
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
+	branch = master
+[submodule "plugins/YetAnotherPicSearch"]
+	path = plugins/YetAnotherPicSearch
+	url = https://github.com/lgc-NB2Dev/YetAnotherPicSearch
+	branch = main
 
 [submodule "external/cookit"]
 	path = external/cookit
