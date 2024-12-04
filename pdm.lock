@@ -892,159 +892,162 @@ files = [
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./external/cookit"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "anyio>=4.4.0",
     "fleep>=1.0.1",
     "typing-extensions>=4.12.2",
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["jinja", "loguru", "nonebot-alconna", "pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "cookit==0.8.2.post1",
     "cookit[nonebot-base]",
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
-    "nonebot-plugin-alconna>=0.50.2",
+    "nonebot-plugin-alconna>=0.54.0",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["jinja", "loguru", "playwright", "pyd"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "anyio>=4.6.2.post1",
+    "cookit==0.8.2.post1",
     "cookit[pydantic]",
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
-    "playwright>=1.45.1",
+    "playwright>=1.49.0",
+    "yarl>=1.18.3",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["jinja", "loguru", "playwright", "pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "anyio>=4.6.2.post1",
+    "cookit==0.8.2.post1",
     "jinja2>=3.1.4",
     "loguru>=0.7.2",
-    "playwright>=1.45.1",
+    "playwright>=1.49.0",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+    "yarl>=1.18.3",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["loguru", "nonebot-alconna", "pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "cookit==0.8.2.post1",
     "cookit[nonebot-base]",
     "loguru>=0.7.2",
-    "nonebot-plugin-alconna>=0.50.2",
+    "nonebot-plugin-alconna>=0.54.0",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["loguru", "nonebot-alconna"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "cookit==0.8.2.post1",
     "cookit[nonebot-base]",
     "loguru>=0.7.2",
-    "nonebot-plugin-alconna>=0.50.2",
+    "nonebot-plugin-alconna>=0.54.0",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["nonebot-base"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
-    "nonebot2>=2.3.1",
+    "cookit==0.8.2.post1",
+    "nonebot2>=2.4.0",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["pyd"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "cookit==0.8.2.post1",
     "cookit[pydantic]",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
 name = "cookit"
-version = "0.8.1"
+version = "0.8.2.post1"
 extras = ["pydantic"]
 requires_python = "<4.0,>=3.9"
 summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
-    "cookit==0.8.1",
+    "cookit==0.8.2.post1",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
 files = [
-    {file = "cookit-0.8.1-py3-none-any.whl", hash = "sha256:382abe6604e0dc0444041a2ac416c0464172d2cad0e5c6ddfd0301a60fdaa357"},
-    {file = "cookit-0.8.1.tar.gz", hash = "sha256:0d4ac51db51ee2c306b442fa6493897387972739da7307a80d998d06911dc4f2"},
+    {file = "cookit-0.8.2.post1-py3-none-any.whl", hash = "sha256:4ad1c99d351b353131fc91ab3ecefa693a228d3fd7db509df5be59608fd50a16"},
+    {file = "cookit-0.8.2.post1.tar.gz", hash = "sha256:5d05f41c8dd1ac25433b45d6b1c442486c4c1180054f2a4694e45a4cd0eaf9b9"},
 ]
 
 [[package]]
@@ -2592,18 +2595,18 @@ path = "./plugins/nonebot-plugin-picstatus"
 summary = "A NoneBot2 plugin generates a picture which shows the status of current device"
 groups = ["dev"]
 dependencies = [
-    "anyio>=4.4.0",
-    "cookit[jinja,loguru,playwright,pydantic]>=0.8.0",
-    "httpx>=0.27.0",
+    "anyio>=4.6.2.post1",
+    "cookit[jinja,loguru,playwright,pydantic]>=0.8.2",
+    "httpx>=0.28.0",
     "jinja2>=3.1.4",
-    "nonebot-plugin-alconna>=0.52.0",
+    "nonebot-plugin-alconna>=0.54.0",
     "nonebot-plugin-apscheduler>=0.5.0",
-    "nonebot-plugin-htmlrender>=0.3.5",
-    "nonebot-plugin-userinfo>=0.2.5",
-    "nonebot2>=2.3.3",
-    "psutil>=6.0.0",
+    "nonebot-plugin-htmlrender>=0.4.0",
+    "nonebot-plugin-userinfo>=0.2.6",
+    "nonebot2>=2.4.0",
+    "psutil>=6.1.0",
     "py-cpuinfo>=9.0.0",
-    "yarl>=1.9.4",
+    "yarl>=1.18.3",
 ]
 
 [[package]]
