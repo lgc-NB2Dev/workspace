@@ -21,7 +21,7 @@
       "console": "integratedTerminal",
       "justMyCode": false,
       "env": {
-        "LOG_LEVEL": "DEBUG"
+        // "LOG_LEVEL": "DEBUG"
       }
     },
     {

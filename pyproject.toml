@@ -168,10 +168,5 @@ extra-standard-library = ["typing_extensions"]
 split-on-trailing-comma = true
 
 [tool.ruff.lint.flake8-type-checking]
-exempt-modules = [
-    "typing",
-    "typing_extensions",
-    "collections",
-    "nonebot.typing",
-]
+exempt-modules = ["typing", "typing_extensions", "collections", "nonebot"]
 quote-annotations = true

@@ -73,10 +73,6 @@
 	path = plugins/nonebot-plugin-random-stereotypes
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes
 	branch = master
-[submodule "plugins/nonebot-plugin-riffusion"]
-	path = plugins/nonebot-plugin-riffusion
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-riffusion
-	branch = master
 [submodule "plugins/nonebot-plugin-rimofun"]
 	path = plugins/nonebot-plugin-rimofun
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
