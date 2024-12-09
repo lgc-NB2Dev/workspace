@@ -8,10 +8,9 @@ PLUGINS_PATH = ROOT_PATH / "plugins"
 OTHERS_PATH = ROOT_PATH / "others"
 
 
-def system(*args: str, check: bool = True, **kwargs: Any):
+def system(*args: str, check: bool = True, **kwargs: Any) -> CompletedProcess:
     kwargs.setdefault("cwd", str(ROOT_PATH))
-    r: CompletedProcess = run(args, check=check, **kwargs)  # noqa: S603
-    return r.returncode
+    return run(args, check=check, **kwargs)  # noqa: S603
 
 
 def iter_modules(tip: bool = True):
@@ -32,3 +31,7 @@ def iter_packages(tip: bool = True):
             if tip:
                 print(f"Entering {p.relative_to(ROOT_PATH)}")
             yield p
+
+
+def ok(p: CompletedProcess) -> bool:
+    return p.returncode == 0

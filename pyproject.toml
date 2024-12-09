@@ -41,7 +41,6 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pingti#egg=nonebot-plugin-pingti",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pjsk#egg=nonebot-plugin-pjsk",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-random-stereotypes#egg=nonebot-plugin-random-stereotypes",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-riffusion#egg=nonebot-plugin-riffusion",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-rimofun#egg=nonebot-plugin-rimofun",
     "-e file:///${PROJECT_ROOT}/plugins/YetAnotherPicSearch#egg=YetAnotherPicSearch",
 ]
@@ -50,8 +49,9 @@ dev = [
 distribution = false
 
 [tool.pdm.scripts]
-pull = { call = "scripts.pull:main" }
 dep = { call = "scripts.dep:main" }
+pull = { call = "scripts.pull:main" }
+switch = { call = "scripts.switch:main" }
 up = { call = "scripts.up:main" }
 
 [tool.uv]

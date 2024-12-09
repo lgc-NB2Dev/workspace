@@ -1,12 +1,14 @@
-from .utils import iter_packages, system
+from .utils import iter_packages, ok, system
 
 
 def main():
     for p in iter_packages():
-        if system(
-            *("pdm", "update", "-G:all", "-u", "--no-self"),
-            check=False,
-            cwd=str(p),
+        if ok(
+            system(
+                *("pdm", "update", "-G:all", "-u", "--no-self"),
+                check=False,
+                cwd=str(p),
+            ),
         ):
             system("pdm", "lock", "-G:all", "--no-self", cwd=str(p))
             system("pdm", "update", "-G:all", "--no-self", "-u", cwd=str(p))
