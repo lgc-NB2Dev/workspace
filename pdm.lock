@@ -235,16 +235,16 @@ files = [
 
 [[package]]
 name = "aiosignal"
-version = "1.3.1"
-requires_python = ">=3.7"
+version = "1.3.2"
+requires_python = ">=3.9"
 summary = "aiosignal: a list of registered asynchronous callbacks"
 groups = ["dev"]
 dependencies = [
     "frozenlist>=1.1.0",
 ]
 files = [
-    {file = "aiosignal-1.3.1-py3-none-any.whl", hash = "sha256:f8376fb07dd1e86a584e4fcdec80b36b7f81aac666ebc724e2c090300dd83b17"},
-    {file = "aiosignal-1.3.1.tar.gz", hash = "sha256:54cd96e15e1649b75d6c87526a6ff0b6c1b0dd3459f43d9ca11d48c339b68cfc"},
+    {file = "aiosignal-1.3.2-py2.py3-none-any.whl", hash = "sha256:45cde58e409a301715980c2b01d0c28bdde3770d8290b5eb2173759d9acb31a5"},
+    {file = "aiosignal-1.3.2.tar.gz", hash = "sha256:a8c255c66fafb1e499c9351d0bf32ff2d8a0321595ebac3b93713656d2436f54"},
 ]
 
 [[package]]
@@ -918,6 +918,10 @@ dependencies = [
     "nonebot-plugin-alconna>=0.54.0",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
+]
 
 [[package]]
 name = "cookit"
@@ -934,6 +938,10 @@ dependencies = [
     "loguru>=0.7.2",
     "playwright>=1.49.0",
     "yarl>=1.18.3",
+]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
 ]
 
 [[package]]
@@ -952,6 +960,10 @@ dependencies = [
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
     "yarl>=1.18.3",
 ]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
+]
 
 [[package]]
 name = "cookit"
@@ -967,6 +979,10 @@ dependencies = [
     "nonebot-plugin-alconna>=0.54.0",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
 ]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
+]
 
 [[package]]
 name = "cookit"
@@ -981,6 +997,10 @@ dependencies = [
     "loguru>=0.7.2",
     "nonebot-plugin-alconna>=0.54.0",
 ]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
+]
 
 [[package]]
 name = "cookit"
@@ -992,6 +1012,10 @@ groups = ["dev"]
 dependencies = [
     "cookit==0.8.4",
     "nonebot2>=2.4.0",
+]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
 ]
 
 [[package]]
@@ -1005,6 +1029,10 @@ dependencies = [
     "cookit==0.8.4",
     "cookit[pydantic]",
 ]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
+]
 
 [[package]]
 name = "cookit"
@@ -1016,6 +1044,10 @@ groups = ["dev"]
 dependencies = [
     "cookit==0.8.4",
     "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+]
+files = [
+    {file = "cookit-0.8.4-py3-none-any.whl", hash = "sha256:a6e6426204192e6cd3739c2d426636af015ff8d34882eeea7182e2507a2a9b2e"},
+    {file = "cookit-0.8.4.tar.gz", hash = "sha256:f6d3ad2072dfe42c2b619d35ea38fa58e27b26c8dabb8b16a3e3b607767dbde0"},
 ]
 
 [[package]]
@@ -2583,14 +2615,14 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-pingti"
-version = "0.2.0"
+version = "0.2.0.post1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./plugins/nonebot-plugin-pingti"
 summary = "Shop with lower prices by searching with alternative keywords."
 groups = ["dev"]
 dependencies = [
-    "cookit[loguru,nonebot-alconna,pydantic]>=0.8.3",
+    "cookit[loguru,nonebot-alconna,pydantic]>=0.8.4",
     "httpx>=0.27.0",
     "nonebot-plugin-alconna>=0.54.1",
     "nonebot-plugin-waiter>=0.8.0",
