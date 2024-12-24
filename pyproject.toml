@@ -113,6 +113,7 @@ ignore = [
     "S311",
     "S404",
     "SIM117",
+    "TC001",
     "TRY002",
     "TRY003",
     "W505",
@@ -169,11 +170,12 @@ extra-standard-library = ["typing_extensions"]
 split-on-trailing-comma = true
 
 [tool.ruff.lint.flake8-type-checking]
+quote-annotations = true
 exempt-modules = [
     "types",
     "typing",
     "typing_extensions",
     "collections",
     "nonebot",
+    "nonebot_plugin_alconna",
 ]
-quote-annotations = true
