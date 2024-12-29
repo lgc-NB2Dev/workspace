@@ -54,9 +54,6 @@
 	path = plugins/nonebot-plugin-picmcstat
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
 	branch = master
-[submodule "plugins/nonebot-plugin-picmenu-next"]
-	path = plugins/nonebot-plugin-picmenu-next
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
 [submodule "plugins/nonebot-plugin-picstatus"]
 	path = plugins/nonebot-plugin-picstatus
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
