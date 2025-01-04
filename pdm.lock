@@ -1553,8 +1553,8 @@ files = [
 
 [[package]]
 name = "importlib-resources"
-version = "6.4.5"
-requires_python = ">=3.8"
+version = "6.5.2"
+requires_python = ">=3.9"
 summary = "Read resources from Python packages"
 groups = ["dev"]
 marker = "python_version < \"3.12\""
@@ -1562,8 +1562,8 @@ dependencies = [
     "zipp>=3.1.0; python_version < \"3.10\"",
 ]
 files = [
-    {file = "importlib_resources-6.4.5-py3-none-any.whl", hash = "sha256:ac29d5f956f01d5e4bb63102a5a19957f1b9175e45649977264a1416783bb717"},
-    {file = "importlib_resources-6.4.5.tar.gz", hash = "sha256:980862a1d16c9e147a59603677fa2aa5fd82b87f223b6cb870695bcfce830065"},
+    {file = "importlib_resources-6.5.2-py3-none-any.whl", hash = "sha256:789cfdc3ed28c78b67a06acb8126751ced69a3d5f79c095a98298cd8a760ccec"},
+    {file = "importlib_resources-6.5.2.tar.gz", hash = "sha256:185f87adef5bcc288449d98fb4fba07cea78bc036455dd44c5fc4a2fe78fed2c"},
 ]
 
 [[package]]
@@ -4202,7 +4202,7 @@ files = [
 
 [[package]]
 name = "taskgroup"
-version = "0.2.1"
+version = "0.2.2"
 summary = "backport of asyncio.TaskGroup, asyncio.Runner and asyncio.timeout"
 groups = ["dev"]
 marker = "python_version < \"3.11\""
@@ -4211,8 +4211,8 @@ dependencies = [
     "typing-extensions<5,>=4.12.2",
 ]
 files = [
-    {file = "taskgroup-0.2.1-py2.py3-none-any.whl", hash = "sha256:bff020b6e63408d1bcf952486cce05ed4c4e0747743c4762eb10b35726c89ab3"},
-    {file = "taskgroup-0.2.1.tar.gz", hash = "sha256:11fa9c2db1037188ac0b60c70fa979243d00b1fee1a6e61e3171c21c1af75f78"},
+    {file = "taskgroup-0.2.2-py2.py3-none-any.whl", hash = "sha256:e2c53121609f4ae97303e9ea1524304b4de6faf9eb2c9280c7f87976479a52fb"},
+    {file = "taskgroup-0.2.2.tar.gz", hash = "sha256:078483ac3e78f2e3f973e2edbf6941374fbea81b9c5d0a96f51d297717f4752d"},
 ]
 
 [[package]]
