@@ -23,7 +23,7 @@ dev = [
     # external
     "-e file:///${PROJECT_ROOT}/external/cookit#egg=cookit",
     # plugins
-    # "-e file:///${PROJECT_ROOT}/plugins/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
+    "-e file:///${PROJECT_ROOT}/plugins/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-bawiki#egg=nonebot-plugin-bawiki",
