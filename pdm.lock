@@ -2741,7 +2741,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picmcstat"
-version = "0.7.0"
+version = "0.7.1"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./plugins/nonebot-plugin-picmcstat"
