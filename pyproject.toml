@@ -69,13 +69,17 @@ exclude = [
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
 ]
+executionEnvironments = [
+    { root = "typings/skia", reportIncompatibleMethodOverride = false, reportSelfClsParameterName = false },
+    { root = "." },
+]
 
 [tool.ruff]
 target-version = "py39"
 extend-exclude = [
+    "./plugins/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
-    "./plugins/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
 ]
 
 [tool.ruff.format]
@@ -162,6 +166,7 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
+"typings/skia/*" = ["A002", "E743", "N8", "PLW0211", "PYI021", "PYI034"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
