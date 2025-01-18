@@ -19,9 +19,7 @@ def up(cwd: Union[str, "Path", None] = None):
     )
     if status_p.stdout.strip():
         system("git", "add", ".", cwd=cwd)
-        if not ok(commit(cwd, check=False)):
-            system("git", "pull", cwd=cwd)
-            commit(cwd)
+        commit(cwd)
 
     branch_p: CompletedProcess[str] = system(
         *("git", "branch", "--show-current"),
@@ -36,7 +34,8 @@ def up(cwd: Union[str, "Path", None] = None):
         text=True,
         cwd=cwd,
     )
-    if log_p.stdout.strip():
+    if log_p.stdout.strip() and (not ok(system("git", "push", cwd=cwd, check=False))):
+        system("git", "pull", cwd=cwd)
         system("git", "push", cwd=cwd)
 
 

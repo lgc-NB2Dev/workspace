@@ -1,7 +1,7 @@
 [project]
 name = "nb2-workspace"
 version = "0"
-authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
+authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
 dependencies = []
 requires-python = ">=3.9"
 license = { text = "MIT" }
