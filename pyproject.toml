@@ -26,7 +26,6 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-bawiki#egg=nonebot-plugin-bawiki",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-clash#egg=nonebot-plugin-clash",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",

@@ -10,10 +10,6 @@
 	path = plugins/nonebot-plugin-autoreply
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
 	branch = master
-[submodule "plugins/nonebot-plugin-bawiki"]
-	path = plugins/nonebot-plugin-bawiki
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki
-	branch = master
 [submodule "plugins/nonebot-plugin-callapi"]
 	path = plugins/nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi

@@ -13,6 +13,10 @@ def system(*args: str, check: bool = True, **kwargs: Any) -> CompletedProcess:
     return run(args, check=check, **kwargs)  # noqa: S603
 
 
+def tip_entering(p: Path):
+    print(f"Entering {p.relative_to(ROOT_PATH)}")
+
+
 def iter_modules(tip: bool = True):
     for p in (
         *EXTERNAL_PATH.iterdir(),
@@ -21,7 +25,7 @@ def iter_modules(tip: bool = True):
     ):
         if p.is_dir() and (p / ".git").exists():
             if tip:
-                print(f"Entering {p.relative_to(ROOT_PATH)}")
+                tip_entering(p)
             yield p
 
 
@@ -29,7 +33,7 @@ def iter_packages(tip: bool = True):
     for p in iter_modules(tip=False):
         if (p / "pyproject.toml").exists():
             if tip:
-                print(f"Entering {p.relative_to(ROOT_PATH)}")
+                tip_entering(p)
             yield p
 
 
