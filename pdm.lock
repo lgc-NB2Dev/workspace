@@ -590,13 +590,13 @@ files = [
 
 [[package]]
 name = "cachetools"
-version = "5.5.0"
+version = "5.5.1"
 requires_python = ">=3.7"
 summary = "Extensible memoizing collections and decorators"
 groups = ["dev"]
 files = [
-    {file = "cachetools-5.5.0-py3-none-any.whl", hash = "sha256:02134e8439cdc2ffb62023ce1debca2944c3f289d66bb17ead3ab3dede74b292"},
-    {file = "cachetools-5.5.0.tar.gz", hash = "sha256:2cc24fb4cbe39633fb7badd9db9ca6295d766d9c2995f245725a46715d050f2a"},
+    {file = "cachetools-5.5.1-py3-none-any.whl", hash = "sha256:b76651fdc3b24ead3c648bbdeeb940c1b04d365b38b4af66788f9ec4a81d42bb"},
+    {file = "cachetools-5.5.1.tar.gz", hash = "sha256:70f238fbba50383ef62e55c6aff6d9673175fe59f7c6782c7a0b9e38f4a9df95"},
 ]
 
 [[package]]
@@ -1185,13 +1185,13 @@ files = [
 
 [[package]]
 name = "filelock"
-version = "3.16.1"
-requires_python = ">=3.8"
+version = "3.17.0"
+requires_python = ">=3.9"
 summary = "A platform independent file lock."
 groups = ["dev"]
 files = [
-    {file = "filelock-3.16.1-py3-none-any.whl", hash = "sha256:2082e5703d51fbf98ea75855d9d5527e33d8ff23099bec374a134febee6946b0"},
-    {file = "filelock-3.16.1.tar.gz", hash = "sha256:c249fbfcd5db47e5e2d6d62198e565475ee65e4831e2561c8e313fa7eb961435"},
+    {file = "filelock-3.17.0-py3-none-any.whl", hash = "sha256:533dc2f7ba78dc2f0f531fc6c4940addf7b70a481e269a5a3b93be94ffbe8338"},
+    {file = "filelock-3.17.0.tar.gz", hash = "sha256:ee4e77401ef576ebb38cd7f13b9b28893194acc20a8e68e18730ba9c0e54660e"},
 ]
 
 [[package]]
@@ -2362,7 +2362,7 @@ files = [
 
 [[package]]
 name = "nodejs-wheel-binaries"
-version = "22.13.0"
+version = "22.13.1"
 requires_python = ">=3.7"
 summary = "unoffical Node.js package"
 groups = ["dev"]
@@ -2370,14 +2370,15 @@ dependencies = [
     "typing-extensions; python_version < \"3.8\"",
 ]
 files = [
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-macosx_11_0_arm64.whl", hash = "sha256:646ab3e65296de9c578db9a1dcfbca26386d2ead70a49008f75d02e960593b2f"},
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-macosx_11_0_x86_64.whl", hash = "sha256:38c689d556f428415a77655f70d2046ddbe11604039489f029b12f317042eaf4"},
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:61885cbcfff0a6d40353c8ea3d861ccb65dba7ce4b19f22427719aeeb35d42f1"},
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e358439ff830db766006e6eeb85ababb94b8c41c7325c9eb1f873a52d3df3016"},
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:1e26d39448cbb2969da10f5e62e53101591e4d6c6a6ae8d623c65f56bf28ce6b"},
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-win_amd64.whl", hash = "sha256:cd9c6cdfd00ec48c55cbcd21a98af1fc9c2a18f039aede729de319346ed8675d"},
-    {file = "nodejs_wheel_binaries-22.13.0-py2.py3-none-win_arm64.whl", hash = "sha256:aa8af75d30c3132bc4e998126a78b11c269abc3060f1c7c697907299b21ae0e1"},
-    {file = "nodejs_wheel_binaries-22.13.0.tar.gz", hash = "sha256:dd811e3e5b92f2e5d4eb236cdf1ff814c91d3d3533d90d63b4af41d07a8bb2fc"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-macosx_11_0_arm64.whl", hash = "sha256:e4f64d0e26600d51cbdd98a6718a19c2d1b8c7538e9e353e95a634a06a8e1a58"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-macosx_11_0_x86_64.whl", hash = "sha256:afcb40484bb02f23137f838014724604ae183fd767b30da95b0be1510a40c06d"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4fc88c98eebabfc36b5270a4ab974a2682746931567ca76a5ca49c54482bbb51"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8b9f75ea8f5e3e5416256fcb00a98cbe14c8d3b6dcaf17da29c4ade5723026d8"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:94608702ef6c389d32e89ff3b7a925cb5dedaf55b5d98bd0c4fb3450a8b6d1c1"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:53a40d0269689aa2eaf2e261cbe5ec256644bc56aae0201ef344b7d8f40ccc79"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-win_amd64.whl", hash = "sha256:549371a929a29fbce8d0ab8f1b5410549946d4f1b0376a5ce635b45f6d05298f"},
+    {file = "nodejs_wheel_binaries-22.13.1-py2.py3-none-win_arm64.whl", hash = "sha256:cf72d50d755f4e5c0709b0449de01768d96b3b1ec7aa531561415b88f179ad8b"},
+    {file = "nodejs_wheel_binaries-22.13.1.tar.gz", hash = "sha256:a0c15213c9c3383541be4400a30959883868ce5da9cebb3d63ddc7fe61459308"},
 ]
 
 [[package]]
@@ -3700,7 +3701,7 @@ files = [
 
 [[package]]
 name = "pymdown-extensions"
-version = "10.14"
+version = "10.14.1"
 requires_python = ">=3.8"
 summary = "Extension pack for Python Markdown."
 groups = ["dev"]
@@ -3709,8 +3710,8 @@ dependencies = [
     "pyyaml",
 ]
 files = [
-    {file = "pymdown_extensions-10.14-py3-none-any.whl", hash = "sha256:202481f716cc8250e4be8fce997781ebf7917701b59652458ee47f2401f818b5"},
-    {file = "pymdown_extensions-10.14.tar.gz", hash = "sha256:741bd7c4ff961ba40b7528d32284c53bc436b8b1645e8e37c3e57770b8700a34"},
+    {file = "pymdown_extensions-10.14.1-py3-none-any.whl", hash = "sha256:637951cbfbe9874ba28134fb3ce4b8bcadd6aca89ac4998ec29dcbafd554ae08"},
+    {file = "pymdown_extensions-10.14.1.tar.gz", hash = "sha256:b65801996a0cd4f42a3110810c306c45b7313c09b0610a6f773730f2a9e3c96b"},
 ]
 
 [[package]]
@@ -4528,14 +4529,14 @@ files = [
 
 [[package]]
 name = "tzdata"
-version = "2024.2"
+version = "2025.1"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
 groups = ["dev"]
 marker = "platform_system == \"Windows\""
 files = [
-    {file = "tzdata-2024.2-py2.py3-none-any.whl", hash = "sha256:a48093786cdcde33cad18c2555e8532f34422074448fbc874186f0abd79565cd"},
-    {file = "tzdata-2024.2.tar.gz", hash = "sha256:7d85cc416e9382e69095b7bdf4afd9e3880418a2413feec7069d533d6b4e31cc"},
+    {file = "tzdata-2025.1-py2.py3-none-any.whl", hash = "sha256:7e127113816800496f027041c570f50bcd464a020098a3b6b199517772303639"},
+    {file = "tzdata-2025.1.tar.gz", hash = "sha256:24894909e88cdb28bd1636c6887801df64cb485bd593f2fd83ef29075a81d694"},
 ]
 
 [[package]]
