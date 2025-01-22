@@ -26746,7 +26746,7 @@ class textlayout_TextStyle:
     def setDecorationMode(self, mode: textlayout_TextDecorationMode) -> None: ...
     def setDecorationStyle(self, style: textlayout_TextDecorationStyle) -> None: ...
     def setDecorationThicknessMultiplier(self, m: float) -> None: ...
-    def setFontFamilies(self, families: list[String]) -> None: ...
+    def setFontFamilies(self, families: list[String] | list[str]) -> None: ...
     def setFontSize(self, size: float) -> None: ...
     def setFontStyle(self, fontStyle: FontStyle) -> None: ...
     def setForegroundColor(self, paint: Paint) -> None:
@@ -26754,7 +26754,7 @@ class textlayout_TextStyle:
         DEPRECATED: prefer `setForegroundPaint`
         """
     def setForegroundPaint(self, paint: Paint) -> None: ...
-    def setLocale(self, locale: String) -> None: ...
+    def setLocale(self, locale: String | str) -> None: ...
 
 def AlphaTypeIsOpaque(at: AlphaType) -> bool:
     """
@@ -27088,7 +27088,15 @@ ColorWHITE: int = 4294967295
 ColorYELLOW: int = 4294967040
 ScalarInfinity: float  # value = inf
 ScalarNegativeInfinity: float  # value = -inf
-Unicodes: types.SimpleNamespace  # value = namespace(ICU=namespace(Make=<built-in method ICU_Make of PyCapsule object at 0x0000027897242EB0>))
+
+# Unicodes: types.SimpleNamespace  # value = namespace(ICU=namespace(Make=<built-in method ICU_Make of PyCapsule object at 0x0000027897242EB0>))
+class Unicodes:
+    def __init__(self) -> typing.NoReturn: ...
+    class ICU:
+        def __init__(self) -> typing.NoReturn: ...
+        @staticmethod
+        def Make() -> Unicode: ...
+
 k2D: GrTextureType  # value = <GrTextureType.k2D: 1>
 kA: ColorChannel  # value = <ColorChannel.kA: 3>
 kA16_float_ColorType: ColorType  # value = <ColorType.kA16_float_ColorType: 20>
@@ -27444,8 +27452,27 @@ kXOR_PathOp: PathOp  # value = <PathOp.kXOR_PathOp: 3>
 kXor: ConvergeMode  # value = <ConvergeMode.kXor: 4>
 kYes: Budgeted  # value = <Budgeted.kYes: 1>
 kZero: BlendModeCoeff  # value = <BlendModeCoeff.kZero: 0>
-skgpu: types.SimpleNamespace  # value = namespace(VulkanBackendContext=<class 'skia.GrVkBackendContext'>, VulkanAlloc=<class 'skia.GrVkAlloc'>, VulkanYcbcrConversionInfo=<class 'skia.GrVkYcbcrConversionInfo'>)
-textlayout: types.SimpleNamespace  # value = namespace(FontCollection=<class 'skia.textlayout_FontCollection'>, ParagraphBuilder=<class 'skia.textlayout_ParagraphBuilder'>, ParagraphStyle=<class 'skia.textlayout_ParagraphStyle'>, Paragraph=<class 'skia.textlayout_Paragraph'>, TextStyle=<class 'skia.textlayout_TextStyle'>, TextAlign=<class 'skia.textlayout_TextAlign'>, TextDecoration=<class 'skia.textlayout_TextDecoration'>, TextDecorationStyle=<class 'skia.textlayout_TextDecorationStyle'>, TextDecorationMode=<class 'skia.textlayout_TextDecorationMode'>)
+
+# skgpu: types.SimpleNamespace  # value = namespace(VulkanBackendContext=<class 'skia.GrVkBackendContext'>, VulkanAlloc=<class 'skia.GrVkAlloc'>, VulkanYcbcrConversionInfo=<class 'skia.GrVkYcbcrConversionInfo'>)
+class skgpu:
+    def __init__(self) -> typing.NoReturn: ...
+    VulkanBackendContext: typing.ClassVar[type[GrVkBackendContext]]
+    VulkanAlloc: typing.ClassVar[type[GrVkAlloc]]
+    VulkanYcbcrConversionInfo: typing.ClassVar[type[GrVkYcbcrConversionInfo]]
+
+# textlayout: types.SimpleNamespace  # value = namespace(FontCollection=<class 'skia.textlayout_FontCollection'>, ParagraphBuilder=<class 'skia.textlayout_ParagraphBuilder'>, ParagraphStyle=<class 'skia.textlayout_ParagraphStyle'>, Paragraph=<class 'skia.textlayout_Paragraph'>, TextStyle=<class 'skia.textlayout_TextStyle'>, TextAlign=<class 'skia.textlayout_TextAlign'>, TextDecoration=<class 'skia.textlayout_TextDecoration'>, TextDecorationStyle=<class 'skia.textlayout_TextDecorationStyle'>, TextDecorationMode=<class 'skia.textlayout_TextDecorationMode'>)
+class textlayout:
+    def __init__(self) -> typing.NoReturn: ...
+    FontCollection: typing.ClassVar[type[textlayout_FontCollection]]
+    ParagraphBuilder: typing.ClassVar[type[textlayout_ParagraphBuilder]]
+    ParagraphStyle: typing.ClassVar[type[textlayout_ParagraphStyle]]
+    Paragraph: typing.ClassVar[type[textlayout_Paragraph]]
+    TextStyle: typing.ClassVar[type[textlayout_TextStyle]]
+    TextAlign: typing.ClassVar[type[textlayout_TextAlign]]
+    TextDecoration: typing.ClassVar[type[textlayout_TextDecoration]]
+    TextDecorationStyle: typing.ClassVar[type[textlayout_TextDecorationStyle]]
+    TextDecorationMode: typing.ClassVar[type[textlayout_TextDecorationMode]]
+
 GrBackendRenderTargets = GrBackendRenderTarget
 GrContext = GrDirectContext
 GrDirectContexts = GrDirectContext
