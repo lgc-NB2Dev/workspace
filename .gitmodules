@@ -92,3 +92,9 @@
 	path = others/readme
 	url = https://github.com/lgc-NB2Dev/readme
 	branch = main
+[submodule "others/nonebot-plugin-template"]
+	path = others/nonebot-plugin-template
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
+[submodule "plugins/nonebot-plugin-meme-stickers"]
+	path = plugins/nonebot-plugin-meme-stickers
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-meme-stickers
