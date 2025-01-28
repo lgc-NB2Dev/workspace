@@ -181,6 +181,7 @@ exempt-modules = [
     "typing",
     "typing_extensions",
     "collections",
+    "pathlib",
     "nonebot",
     "nonebot_plugin_alconna",
 ]
