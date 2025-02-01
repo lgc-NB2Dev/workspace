@@ -62,10 +62,6 @@
 	path = plugins/nonebot-plugin-pingti
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
 	branch = master
-[submodule "plugins/nonebot-plugin-pjsk"]
-	path = plugins/nonebot-plugin-pjsk
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pjsk
-	branch = main
 [submodule "plugins/nonebot-plugin-random-stereotypes"]
 	path = plugins/nonebot-plugin-random-stereotypes
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes
