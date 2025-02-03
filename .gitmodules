@@ -14,10 +14,6 @@
 	path = plugins/nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
 	branch = master
-[submodule "plugins/nonebot-plugin-clash"]
-	path = plugins/nonebot-plugin-clash
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-clash
-	branch = master
 [submodule "plugins/nonebot-plugin-cnrail"]
 	path = plugins/nonebot-plugin-cnrail
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
