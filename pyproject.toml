@@ -22,12 +22,12 @@ dev = [
     "nonebot-plugin-orm[sqlite]>=0.7.6",
     # external
     "-e file:///${PROJECT_ROOT}/external/cookit#egg=cookit",
+    "-e file:///${PROJECT_ROOT}/external/cooaki#egg=cooaki",
     # plugins
     "-e file:///${PROJECT_ROOT}/plugins/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-clash#egg=nonebot-plugin-clash",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-color#egg=nonebot-plugin-color",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-fuckyou#egg=nonebot-plugin-fuckyou",
@@ -54,9 +54,6 @@ pull = { call = "scripts.pull:main" }
 switch = { call = "scripts.switch:main" }
 up = { call = "scripts.up:main" }
 locks = { call = "scripts.lock:main" }
-
-[tool.uv]
-prerelease = "allow"
 
 [tool.basedpyright]
 pythonVersion = "3.9"
