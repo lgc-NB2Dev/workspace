@@ -37,13 +37,13 @@ files = [
 
 [[package]]
 name = "aiohappyeyeballs"
-version = "2.4.4"
-requires_python = ">=3.8"
+version = "2.4.6"
+requires_python = ">=3.9"
 summary = "Happy Eyeballs for asyncio"
 groups = ["dev"]
 files = [
-    {file = "aiohappyeyeballs-2.4.4-py3-none-any.whl", hash = "sha256:a980909d50efcd44795c4afeca523296716d50cd756ddca6af8c65b996e27de8"},
-    {file = "aiohappyeyeballs-2.4.4.tar.gz", hash = "sha256:5fdd7d87889c63183afc18ce9271f9b0a7d32c2303e394468dd45d514a757745"},
+    {file = "aiohappyeyeballs-2.4.6-py3-none-any.whl", hash = "sha256:147ec992cf873d74f5062644332c539fcd42956dc69453fe5204195e560517e1"},
+    {file = "aiohappyeyeballs-2.4.6.tar.gz", hash = "sha256:9b05052f9042985d32ecbe4b59a77ae19c006a78f1344d7fdad69d28ded3d0b0"},
 ]
 
 [[package]]
@@ -2127,7 +2127,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.55.0"
+version = "0.55.1"
 requires_python = ">=3.9"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
@@ -2141,8 +2141,8 @@ dependencies = [
     "tarina<0.7,>=0.6.8",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.55.0-py3-none-any.whl", hash = "sha256:d9856de217d560ec3e36a3951020383d9417ace5c204e474fdb2c997ed42bdca"},
-    {file = "nonebot_plugin_alconna-0.55.0.tar.gz", hash = "sha256:9bd8571f2a020d35024e47505266a999f4df4a484a081626f15591fc392a05a2"},
+    {file = "nonebot_plugin_alconna-0.55.1-py3-none-any.whl", hash = "sha256:36162613b84d6196c33914e6d3efb6387423fa4acdb502a9104f456232c3b4c4"},
+    {file = "nonebot_plugin_alconna-0.55.1.tar.gz", hash = "sha256:fb8c9e1898918fc949f6294ebffbcd22699a1974b3bd486862c0f81a41dc0044"},
 ]
 
 [[package]]
