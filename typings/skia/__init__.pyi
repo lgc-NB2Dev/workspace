@@ -1,9 +1,9 @@
 """Python Skia binding module."""
 
 import datetime
-import types
 import typing
 import typing_extensions
+from typing_extensions import TypeAlias
 
 import numpy
 
@@ -76,7 +76,7 @@ __all__ = [
     "CornerPathEffect",
     "CubicResampler",
     "DashPathEffect",
-    "Data",
+    "DataT",
     "DiscretePathEffect",
     "Document",
     "Drawable",
@@ -2690,7 +2690,7 @@ class Canvas:
         once done with SkCanvas; any cached data is deleted when owning
         :py:class:`Surface` or :py:class:`BaseDevice` is deleted.
         """
-    def drawAnnotation(self, rect: Rect, key: str, value: Data) -> None:
+    def drawAnnotation(self, rect: Rect, key: str, value: DataT) -> None:
         """
         Associates :py:class:`Rect` on :py:class:`Canvas` when an annotation; a
         key-value pair, where the key is an UTF-8 string, and optional value is
@@ -5718,7 +5718,7 @@ class ColorSpace:
         """
     def ref(self) -> None: ...
     def refCntGreaterThan(self, count: int) -> bool: ...
-    def serialize(self) -> Data:
+    def serialize(self) -> DataT:
         """
         Returns nullptr on failure.
 
@@ -6012,27 +6012,27 @@ class Data:
 
     __hash__: typing.ClassVar[None] = None
     @staticmethod
-    def MakeEmpty() -> Data:
+    def MakeEmpty() -> DataT:
         """
         Returns a new empty dataref (or a reference to a shared empty dataref).
 
         New or shared, the caller must see that unref() is eventually called.
         """
     @staticmethod
-    def MakeFromFileName(path: str) -> Data:
+    def MakeFromFileName(path: str) -> DataT:
         """
         Create a new dataref the file with the specified path.
 
         If the file cannot be opened, this returns NULL.
         """
     @staticmethod
-    def MakeSubset(src: Data, offset: int, length: int) -> Data:
+    def MakeSubset(src: DataT, offset: int, length: int) -> DataT:
         """
         Create a new dataref using a subset of the data in the specified src
         dataref.
         """
     @staticmethod
-    def MakeUninitialized(length: int) -> Data:
+    def MakeUninitialized(length: int) -> DataT:
         """
         Create a new data with uninitialized contents.
 
@@ -6040,12 +6040,12 @@ class Data:
         buffer, but this must be done before another :py:meth:`ref` is made.
         """
     @staticmethod
-    def MakeWithCopy(data: typing_extensions.Buffer) -> Data:
+    def MakeWithCopy(data: typing_extensions.Buffer) -> DataT:
         """
         Create a new dataref by copying the specified data.
         """
     @staticmethod
-    def MakeWithoutCopy(data: typing_extensions.Buffer) -> Data:
+    def MakeWithoutCopy(data: typing_extensions.Buffer) -> DataT:
         """
         Call this when the data parameter is already const and will outlive the
         lifetime of the :py:class:`Data`.
@@ -6058,7 +6058,7 @@ class Data:
         """
         Return a buffer object that exposes the underlying memory of the object.
         """
-    def __eq__(self, other: Data) -> bool:
+    def __eq__(self, other: DataT) -> bool:
         """
         Returns true if these two objects have the same length and contents,
         effectively returning 0 == memcmp(...)
@@ -6092,7 +6092,7 @@ class Data:
         Returns the read-only memoryview to the data.
         """
     def deref(self) -> None: ...
-    def equals(self, other: Data) -> bool:
+    def equals(self, other: DataT) -> bool:
         """
         Returns true if these two objects have the same length and contents,
         effectively returning 0 == memcmp(...)
@@ -6274,7 +6274,7 @@ class DynamicMemoryWStream(WStream):
         Equivalent to :py:meth:`copyTo` followed by :py:meth:`reset`, but may
         save memory use.
         """
-    def detachAsData(self) -> Data:
+    def detachAsData(self) -> DataT:
         """
         Return the contents as :py:class:`Data`, and then reset the stream.
         """
@@ -6586,7 +6586,7 @@ class Flattanable(RefCnt):
 
         Implemented in :py:class:`~skia.Drawable`.
         """
-    def serialize(self) -> Data: ...
+    def serialize(self) -> DataT: ...
 
 class Font:
     """
@@ -7513,7 +7513,7 @@ class FontMgr(RefCnt):
     def New_Custom_Empty(filename: str) -> FontMgr: ...
     @staticmethod
     @typing.overload
-    def New_Custom_Empty(data: Data) -> FontMgr: ...
+    def New_Custom_Empty(data: DataT) -> FontMgr: ...
     @staticmethod
     def OneFontMgr(*args, **kwargs):
         """
@@ -7540,7 +7540,7 @@ class FontMgr(RefCnt):
     def createStyleSet(self, index: int) -> FontStyleSet: ...
     def getFamilyName(self, index: int) -> str: ...
     def legacyMakeTypeface(self, familyName: str, style: FontStyle) -> Typeface: ...
-    def makeFromData(self, data: Data, ttcIndex: int = 0) -> Typeface:
+    def makeFromData(self, data: DataT, ttcIndex: int = 0) -> Typeface:
         """
         Create a typeface for the specified data and TTC index (pass 0 for none)
         or NULL if the data is not recognized.
@@ -8732,7 +8732,7 @@ class GrDirectContext(GrRecordingContext):
         Vulkan - Reports true if VK_ERROR_OUT_OF_HOST_MEMORY or
         VK_ERROR_OUT_OF_DEVICE_MEMORY has occurred.
         """
-    def precompileShader(self, key: Data, data: Data) -> bool: ...
+    def precompileShader(self, key: DataT, data: DataT) -> bool: ...
     def purgeResourcesNotUsedInMs(self, msNotUsed: datetime.timedelta) -> None: ...
     @typing.overload
     def purgeUnlockedResources(
@@ -10993,7 +10993,7 @@ class Image(RefCnt):
         :return: created :py:class:`Image`, or nullptr
         """
     @staticmethod
-    def MakeFromEncoded(encoded: Data, alphaType: AlphaType | None = None) -> Image:
+    def MakeFromEncoded(encoded: DataT, alphaType: AlphaType | None = None) -> Image:
         """
         Return an image backed by the encoded data, but attempt to defer
         decoding until the image is actually used/drawn.
@@ -11162,7 +11162,7 @@ class Image(RefCnt):
         """
     @staticmethod
     def MakeRasterFromCompressed(
-        data: Data,
+        data: DataT,
         width: int,
         height: int,
         type: Image.CompressionType,
@@ -11183,7 +11183,7 @@ class Image(RefCnt):
     @staticmethod
     def MakeTextureFromCompressed(
         context: GrDirectContext,
-        data: Data,
+        data: DataT,
         width: int,
         height: int,
         type: Image.CompressionType,
@@ -11398,7 +11398,7 @@ class Image(RefCnt):
         self,
         encodedImageFormat: EncodedImageFormat,
         quality: int,
-    ) -> Data:
+    ) -> DataT:
         """
         Encodes :py:class:`Image` pixels, returning result as :py:class:`Data`.
 
@@ -11426,7 +11426,7 @@ class Image(RefCnt):
         :return: encoded :py:class:`Image`, or nullptr
         """
     @typing.overload
-    def encodeToData(self) -> Data:
+    def encodeToData(self) -> DataT:
         """
         Encodes :py:class:`Image` pixels, returning result as :py:class:`Data`.
 
@@ -11960,7 +11960,7 @@ class Image(RefCnt):
         :return: :py:class:`ColorSpace` in :py:class:`Image`, or nullptr,
             wrapped in a smart pointer
         """
-    def refEncodedData(self) -> Data:
+    def refEncodedData(self) -> DataT:
         """
         Returns encoded :py:class:`Image` pixels as :py:class:`Data`, if
         :py:class:`Image` was created from supported encoded stream format.
@@ -15124,7 +15124,7 @@ class Matrix:
 
 class MemoryStream(StreamMemory):
     @staticmethod
-    def Make(data: Data) -> MemoryStream: ...
+    def Make(data: DataT) -> MemoryStream: ...
     @staticmethod
     def MakeCopy(data: typing_extensions.Buffer) -> MemoryStream: ...
     @staticmethod
@@ -15144,10 +15144,10 @@ class MemoryStream(StreamMemory):
     @typing.overload
     def __init__(self, data: capsule, length: int, copyData: bool = False) -> None: ...
     @typing.overload
-    def __init__(self, data: Data) -> None: ...
-    def asData(self) -> Data: ...
+    def __init__(self, data: DataT) -> None: ...
+    def asData(self) -> DataT: ...
     def getAtPos(self) -> capsule: ...
-    def setData(self, data: Data) -> None: ...
+    def setData(self, data: DataT) -> None: ...
     def setMemory(
         self,
         data: typing_extensions.Buffer,
@@ -18025,7 +18025,7 @@ class Path:
 
         :return: reference to :py:class:`Path`
         """
-    def serialize(self) -> Data:
+    def serialize(self) -> DataT:
         """
         Writes :py:class:`Path` to buffer, returning the buffer written to,
         wrapped in :py:class:`Data`.
@@ -19044,7 +19044,7 @@ class Picture(RefCnt):
 
     """
     @staticmethod
-    def MakeFromData(data: Data) -> Picture:
+    def MakeFromData(data: DataT) -> Picture:
         """
         Recreates :py:class:`Picture` that was serialized into data.
 
@@ -19166,7 +19166,7 @@ class Picture(RefCnt):
         :param skia.Canvas canvas: receiver of drawing commands
         :param callback: allows interruption of playback
         """
-    def serialize(self) -> Data:
+    def serialize(self) -> DataT:
         """
         Returns storage containing :py:class:`Data` describing
         :py:class:`Picture`.
@@ -22307,7 +22307,7 @@ class Region:
         :rgn: :py:class:`Region` to intersect
         :return: true if rgn does not intersect
         """
-    def readFromMemory(self, data: Data) -> int:
+    def readFromMemory(self, data: DataT) -> int:
         """
         Constructs :py:class:`Region` from buffer of size length.
 
@@ -22428,7 +22428,7 @@ class Region:
         :dx: x-axis offset
         :dy: y-axis offset
         """
-    def writeToMemory(self) -> Data:
+    def writeToMemory(self) -> DataT:
         """
         Writes :py:class:`Region` to :py:class:`Data`.
 
@@ -22457,34 +22457,34 @@ class RuntimeEffect(RefCnt):
     @staticmethod
     def _pybind11_conduit_v1_(*args, **kwargs): ...
     @typing.overload
-    def makeBlender(self, uniforms: Data) -> Blender: ...
+    def makeBlender(self, uniforms: DataT) -> Blender: ...
     @typing.overload
     def makeBlender(
         self,
-        uniforms: Data,
+        uniforms: DataT,
         children: SpanRuntimeEffectChildPtr = ...,
     ) -> Blender: ...
     @typing.overload
-    def makeColorFilter(self, uniforms: Data) -> ColorFilter: ...
+    def makeColorFilter(self, uniforms: DataT) -> ColorFilter: ...
     @typing.overload
     def makeColorFilter(
         self,
-        uniforms: Data,
+        uniforms: DataT,
         children: ColorFilter,
         childCount: int,
     ) -> ColorFilter: ...
     @typing.overload
     def makeColorFilter(
         self,
-        uniforms: Data,
+        uniforms: DataT,
         children: SpanRuntimeEffectChildPtr,
     ) -> ColorFilter: ...
     @typing.overload
-    def makeShader(self, uniforms: Data) -> Shader: ...
+    def makeShader(self, uniforms: DataT) -> Shader: ...
     @typing.overload
     def makeShader(
         self,
-        uniforms: Data,
+        uniforms: DataT,
         children: Shader,
         childCount: int,
         localMatrix: Matrix | None = None,
@@ -22492,7 +22492,7 @@ class RuntimeEffect(RefCnt):
     @typing.overload
     def makeShader(
         self,
-        uniforms: Data,
+        uniforms: DataT,
         children: SpanRuntimeEffectChildPtr,
         localMatrix: Matrix | None = None,
     ) -> Shader: ...
@@ -22503,7 +22503,7 @@ class RuntimeEffectBuilder:
     @typing.overload
     def __init__(self, arg0: RuntimeEffect) -> None: ...
     @typing.overload
-    def __init__(self, arg0: RuntimeEffect, arg1: Data) -> None: ...
+    def __init__(self, arg0: RuntimeEffect, arg1: DataT) -> None: ...
     def child(self, name: str) -> RuntimeEffectBuilderChild: ...
     def children(self) -> SpanRuntimeEffectChildPtr: ...
     def makeBlender(self) -> Blender: ...
@@ -22524,7 +22524,7 @@ class RuntimeEffectBuilder:
     @typing.overload
     def setUniform(self, name: str, uniform: list) -> None: ...
     def uniform(self, name: str) -> RuntimeEffectBuilderUniform: ...
-    def uniforms(self) -> Data: ...
+    def uniforms(self) -> DataT: ...
 
 class RuntimeEffectBuilderChild:
     @staticmethod
@@ -24880,7 +24880,7 @@ class TextBlob:
         """
     def ref(self) -> None: ...
     def refCntGreaterThan(self, count: int) -> bool: ...
-    def serialize(self) -> Data:
+    def serialize(self) -> DataT:
         """
         Returns storage containing :py:class:`Data` describing
         :py:class:`TextBlob`, using optional custom encoders.
@@ -25229,7 +25229,7 @@ class Typeface(RefCnt):
         Returns the default normal typeface, which is never nullptr.
         """
     @staticmethod
-    def MakeDeserialize(dats: Data, lastResortMgr: FontMgr) -> Typeface:
+    def MakeDeserialize(dats: DataT, lastResortMgr: FontMgr) -> Typeface:
         """
         Given the data previously written by :py:meth:`serialize`, return a new
         instance of a typeface referring to the same font.
@@ -25242,7 +25242,7 @@ class Typeface(RefCnt):
         Returns a non-null typeface which contains no glyphs.
         """
     @staticmethod
-    def MakeFromData(data: Data, index: int = 0) -> Typeface:
+    def MakeFromData(data: DataT, index: int = 0) -> Typeface:
         """
         Return a new typeface given a :py:class:`Data`.
 
@@ -25304,7 +25304,7 @@ class Typeface(RefCnt):
         :param skia.FontStyle fontStyle: The style of the typeface.
         :return: reference to the closest-matching typeface.
         """
-    def copyTableData(self, tag: int) -> Data:
+    def copyTableData(self, tag: int) -> DataT:
         """
         Return an immutable copy of the requested font table, or nullptr if that
         table was not found.
@@ -25427,7 +25427,7 @@ class Typeface(RefCnt):
         same as this typeface then this typeface may be ref'ed and returned. May
         return nullptr on failure.
         """
-    def serialize(self, behavior: Typeface.SerializeBehavior = ...) -> Data:
+    def serialize(self, behavior: Typeface.SerializeBehavior = ...) -> DataT:
         """
         Returns a unique signature to a stream, sufficient to reconstruct a
         typeface referencing the same font when Deserialize is called.
@@ -26306,7 +26306,7 @@ class YUVAPixmaps:
         Allocate space for pixmaps' pixels in the :py:class:`YUVAPixmaps`.
         """
     @staticmethod
-    def FromData(yuvaPixmapInfo: YUVAPixmapInfo, data: Data) -> YUVAPixmaps:
+    def FromData(yuvaPixmapInfo: YUVAPixmapInfo, data: DataT) -> YUVAPixmaps:
         """
         Use storage in :py:class:`Data` as backing store for pixmaps' pixels.
         :py:class:`Data` is retained by the :py:class:`YUVAPixmaps`.
@@ -27487,3 +27487,5 @@ TextureCompressionType = object
 GrContextThreadSafeProxy = object
 VkSharingMode = object
 Blender = object
+
+DataT: TypeAlias = bytes | bytearray | memoryview | Data
