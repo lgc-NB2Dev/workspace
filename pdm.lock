@@ -875,7 +875,11 @@ dependencies = [
     "jinja2>=3.1.5",
     "loguru>=0.7.3",
     "nonebot-plugin-alconna>=0.54.2",
-    "pydantic>=2.10.6",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
 ]
 
 [[package]]
@@ -894,6 +898,10 @@ dependencies = [
     "playwright>=1.50.0",
     "yarl>=1.18.3",
 ]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
+]
 
 [[package]]
 name = "cookit"
@@ -908,8 +916,12 @@ dependencies = [
     "jinja2>=3.1.5",
     "loguru>=0.7.3",
     "playwright>=1.50.0",
-    "pydantic>=2.10.6",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
     "yarl>=1.18.3",
+]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
 ]
 
 [[package]]
@@ -924,8 +936,12 @@ dependencies = [
     "cookit==0.9.4",
     "jinja2>=3.1.5",
     "playwright>=1.50.0",
-    "pydantic>=2.10.6",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
     "yarl>=1.18.3",
+]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
 ]
 
 [[package]]
@@ -940,7 +956,11 @@ dependencies = [
     "cookit[nonebot-base]",
     "loguru>=0.7.3",
     "nonebot-plugin-alconna>=0.54.2",
-    "pydantic>=2.10.6",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
 ]
 
 [[package]]
@@ -956,6 +976,10 @@ dependencies = [
     "loguru>=0.7.3",
     "nonebot-plugin-alconna>=0.54.2",
 ]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
+]
 
 [[package]]
 name = "cookit"
@@ -967,7 +991,11 @@ groups = ["dev"]
 dependencies = [
     "cookit==0.9.4",
     "loguru>=0.7.3",
-    "pydantic>=2.10.6",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
 ]
 
 [[package]]
@@ -981,6 +1009,10 @@ dependencies = [
     "cookit==0.9.4",
     "nonebot2>=2.4.1",
 ]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
+]
 
 [[package]]
 name = "cookit"
@@ -993,6 +1025,10 @@ dependencies = [
     "cookit==0.9.4",
     "cookit[pydantic]",
 ]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
+]
 
 [[package]]
 name = "cookit"
@@ -1003,7 +1039,11 @@ summary = "A toolkit for self use."
 groups = ["dev"]
 dependencies = [
     "cookit==0.9.4",
-    "pydantic>=2.10.6",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+]
+files = [
+    {file = "cookit-0.9.4-py3-none-any.whl", hash = "sha256:4e23162e410d79ff24c5952672bcac803c754a25b43b8d9164b0bd43f0a1878f"},
+    {file = "cookit-0.9.4.tar.gz", hash = "sha256:a3b7ff407164980be8cc9b03b7fd28ae86ae3f6dce1e5426fc0d19f26fdc2764"},
 ]
 
 [[package]]
