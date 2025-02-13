@@ -11398,7 +11398,7 @@ class Image(RefCnt):
         self,
         encodedImageFormat: EncodedImageFormat,
         quality: int,
-    ) -> DataT:
+    ) -> Data:
         """
         Encodes :py:class:`Image` pixels, returning result as :py:class:`Data`.
 
@@ -11426,7 +11426,7 @@ class Image(RefCnt):
         :return: encoded :py:class:`Image`, or nullptr
         """
     @typing.overload
-    def encodeToData(self) -> DataT:
+    def encodeToData(self) -> Data:
         """
         Encodes :py:class:`Image` pixels, returning result as :py:class:`Data`.
 
