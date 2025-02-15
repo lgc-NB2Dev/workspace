@@ -15,6 +15,6 @@
     "checkJs": true,
     "removeComments": true,
     "newLine": "lf",
-    "strict": true
+    // "strict": true
   }
 }
