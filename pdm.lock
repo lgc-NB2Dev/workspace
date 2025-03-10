@@ -1136,7 +1136,7 @@ files = [
 
 [[package]]
 name = "findpython"
-version = "0.6.2"
+version = "0.6.3"
 requires_python = ">=3.8"
 summary = "A utility to find python versions on your system"
 groups = ["dev"]
@@ -1144,8 +1144,8 @@ dependencies = [
     "packaging>=20",
 ]
 files = [
-    {file = "findpython-0.6.2-py3-none-any.whl", hash = "sha256:bda62477f858ea623ef2269f5e734469a018104a5f6c0fd9317ba238464ddb76"},
-    {file = "findpython-0.6.2.tar.gz", hash = "sha256:e0c75ba9f35a7f9bb4423eb31bd17358cccf15761b6837317719177aeff46723"},
+    {file = "findpython-0.6.3-py3-none-any.whl", hash = "sha256:a85bb589b559cdf1b87227cc233736eb7cad894b9e68021ee498850611939ebc"},
+    {file = "findpython-0.6.3.tar.gz", hash = "sha256:5863ea55556d8aadc693481a14ac4f3624952719efc1c5591abb0b4a9e965c94"},
 ]
 
 [[package]]
@@ -2245,7 +2245,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-htmlrender"
-version = "0.6.0"
+version = "0.6.1"
 requires_python = "<4.0,>=3.9"
 summary = "通过浏览器渲染图片"
 groups = ["dev"]
@@ -2260,8 +2260,8 @@ dependencies = [
     "python-markdown-math>=0.8",
 ]
 files = [
-    {file = "nonebot_plugin_htmlrender-0.6.0-py3-none-any.whl", hash = "sha256:def395b3ced6c810172cee036c5062636402bb76d90c9cc3db4550f45a33a8db"},
-    {file = "nonebot_plugin_htmlrender-0.6.0.tar.gz", hash = "sha256:d1b9475f02ff2341e1b79627486eaa257099954429f5ab6551ce2a23504cebe1"},
+    {file = "nonebot_plugin_htmlrender-0.6.1-py3-none-any.whl", hash = "sha256:4a9e44e6b241d9df74be628bce700920117284dcf3e1f590275f1fa1e1770130"},
+    {file = "nonebot_plugin_htmlrender-0.6.1.tar.gz", hash = "sha256:34378df850b97f89cf97d6a339b02f75d138b1dad2e7203e316995a076610653"},
 ]
 
 [[package]]
@@ -3735,13 +3735,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "75.9.1"
+version = "76.0.0"
 requires_python = ">=3.9"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["dev"]
 files = [
-    {file = "setuptools-75.9.1-py3-none-any.whl", hash = "sha256:0a6f876d62f4d978ca1a11ab4daf728d1357731f978543ff18ecdbf9fd071f73"},
-    {file = "setuptools-75.9.1.tar.gz", hash = "sha256:b6eca2c3070cdc82f71b4cb4bb2946bc0760a210d11362278cf1ff394e6ea32c"},
+    {file = "setuptools-76.0.0-py3-none-any.whl", hash = "sha256:199466a166ff664970d0ee145839f5582cb9bca7a0a3a2e795b6a9cb2308e9c6"},
+    {file = "setuptools-76.0.0.tar.gz", hash = "sha256:43b4ee60e10b0d0ee98ad11918e114c70701bc6051662a9a675a0496c1a158f4"},
 ]
 
 [[package]]
