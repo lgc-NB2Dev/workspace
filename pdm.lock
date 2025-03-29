@@ -2748,9 +2748,9 @@ files = [
 
 [[package]]
 name = "picimagesearch"
-version = "3.12.2"
+version = "3.12.4"
 requires_python = ">=3.9"
-summary = "PicImageSearch APIs for Python 3.x 适用于 Python 3 以图搜源整合API"
+summary = "PicImageSearch - Aggregator for Reverse Image Search APIs"
 groups = ["dev"]
 dependencies = [
     "httpx[http2]>=0.28.1",
@@ -2758,8 +2758,8 @@ dependencies = [
     "pyquery>=2.0.1",
 ]
 files = [
-    {file = "picimagesearch-3.12.2-py3-none-any.whl", hash = "sha256:166055900a83067f541dd85c6bb4780907df2fb87903610a90484a0197b7109c"},
-    {file = "picimagesearch-3.12.2.tar.gz", hash = "sha256:329832c264ffafed74491eed704bccd316d4d751633bf96cc8160008d89c5b9a"},
+    {file = "picimagesearch-3.12.4-py3-none-any.whl", hash = "sha256:a1be35e0938def3f00c982e7e48d6d2949904a23cdc38e1a6ab8fad347edf9dd"},
+    {file = "picimagesearch-3.12.4.tar.gz", hash = "sha256:a6251bda00806d0baa591075f579a843abe1c78192661c235cc248c1a784b0e5"},
 ]
 
 [[package]]
@@ -3270,7 +3270,7 @@ files = [
 
 [[package]]
 name = "pydantic"
-version = "2.11.0"
+version = "2.11.1"
 requires_python = ">=3.9"
 summary = "Data validation using Python type hints"
 groups = ["dev"]
@@ -3281,8 +3281,8 @@ dependencies = [
     "typing-inspection>=0.4.0",
 ]
 files = [
-    {file = "pydantic-2.11.0-py3-none-any.whl", hash = "sha256:d52535bb7aba33c2af820eaefd866f3322daf39319d03374921cd17fbbdf28f9"},
-    {file = "pydantic-2.11.0.tar.gz", hash = "sha256:d6a287cd6037dee72f0597229256dfa246c4d61567a250e99f86b7b4626e2f41"},
+    {file = "pydantic-2.11.1-py3-none-any.whl", hash = "sha256:5b6c415eee9f8123a14d859be0c84363fec6b1feb6b688d6435801230b56e0b8"},
+    {file = "pydantic-2.11.1.tar.gz", hash = "sha256:442557d2910e75c991c39f4b4ab18963d57b9b55122c8b2a9cd176d8c29ce968"},
 ]
 
 [[package]]
