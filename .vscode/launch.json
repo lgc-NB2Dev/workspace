@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python 调试程序: 当前文件",
+      "name": "Current file",
       "type": "debugpy",
       "request": "launch",
       "program": "${file}",
@@ -13,7 +13,7 @@
       "justMyCode": false
     },
     {
-      "name": "Run TestNB2",
+      "name": "TestNB2",
       "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/private/test-nb2/bot.py",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "name": "Python: Debug Tests",
+      "name": "Debug Tests",
       "type": "debugpy",
       "request": "launch",
       "program": "${file}",
@@ -38,41 +38,18 @@
       "type": "debugpy",
       "request": "launch",
       "module": "tests_standalone",
-      "cwd": "${workspaceFolder}/packages/cookit",
+      "cwd": "${workspaceFolder}/external/cookit",
       "console": "integratedTerminal",
       "justMyCode": false
     },
     {
-      "name": "bawiki-data: Test Global Future Image Crop",
+      "name": "cooaki: Console demo",
       "type": "debugpy",
       "request": "launch",
-      "cwd": "${workspaceFolder}/others/bawiki-data",
-      "module": "scripts.tools.future_crop_test",
-      "justMyCode": true
-    },
-    {
-      "name": "bawiki-data: Pre Deploy",
-      "type": "debugpy",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/others/bawiki-data",
-      "module": "scripts.pre_deploy",
-      "justMyCode": true
-    },
-    {
-      "name": "bawiki-data: Pre Deploy: Update Stu Aliases",
-      "type": "debugpy",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/others/bawiki-data",
-      "module": "scripts.pre_deploy.update_stu_alias_list",
-      "justMyCode": true
-    },
-    {
-      "name": "bawiki-data: Pre Deploy: Gen Gacha Data",
-      "type": "debugpy",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/others/bawiki-data",
-      "module": "scripts.pre_deploy.gen_gacha_data",
-      "justMyCode": true
+      "module": "cooaki",
+      "cwd": "${workspaceFolder}/external/cooaki",
+      "console": "integratedTerminal",
+      "justMyCode": false
     }
   ]
 }
