@@ -2398,7 +2398,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-multincm"
-version = "1.2.3"
+version = "1.2.4"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./plugins/nonebot-plugin-multincm"
@@ -2406,10 +2406,10 @@ summary = "NCM Song Searcher"
 groups = ["dev"]
 dependencies = [
     "cachetools>=5.5.1",
-    "cookit[jinja,loguru,nonebot-alconna,nonebot-localstore,pydantic]>=0.9.10",
+    "cookit[jinja,loguru,nonebot-alconna,nonebot-localstore,pydantic]>=0.11.0.post1",
     "httpx>=0.27.2",
     "jinja2>=3.1.5",
-    "nonebot-plugin-alconna>=0.54.2",
+    "nonebot-plugin-alconna>=0.57.4",
     "nonebot-plugin-htmlrender>=0.5.1",
     "nonebot-plugin-localstore>=0.7.4",
     "nonebot-plugin-waiter>=0.8.1",
@@ -2960,22 +2960,23 @@ files = [
 
 [[package]]
 name = "playwright"
-version = "1.51.0"
+version = "1.52.0"
 requires_python = ">=3.9"
 summary = "A high-level API to automate web browsers"
 groups = ["dev"]
 dependencies = [
     "greenlet<4.0.0,>=3.1.1",
-    "pyee<13,>=12",
+    "pyee<14,>=13",
 ]
 files = [
-    {file = "playwright-1.51.0-py3-none-macosx_10_13_x86_64.whl", hash = "sha256:bcaaa3d5d73bda659bfb9ff2a288b51e85a91bd89eda86eaf8186550973e416a"},
-    {file = "playwright-1.51.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:2e0ae6eb44297b24738e1a6d9c580ca4243b4e21b7e65cf936a71492c08dd0d4"},
-    {file = "playwright-1.51.0-py3-none-macosx_11_0_universal2.whl", hash = "sha256:ab4c0ff00bded52c946be60734868febc964c8a08a9b448d7c20cb3811c6521c"},
-    {file = "playwright-1.51.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:d5c9f67bc6ef49094618991c78a1466c5bac5ed09157660d78b8510b77f92746"},
-    {file = "playwright-1.51.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:814e4ec2a1a0d6f6221f075622c06b31ceb2bdc6d622258cfefed900c01569ae"},
-    {file = "playwright-1.51.0-py3-none-win32.whl", hash = "sha256:4cef804991867ea27f608b70fa288ee52a57651e22d02ab287f98f8620b9408c"},
-    {file = "playwright-1.51.0-py3-none-win_amd64.whl", hash = "sha256:9ece9316c5d383aed1a207f079fc2d552fff92184f0ecf37cc596e912d00a8c3"},
+    {file = "playwright-1.52.0-py3-none-macosx_10_13_x86_64.whl", hash = "sha256:19b2cb9d4794062008a635a99bd135b03ebb782d460f96534a91cb583f549512"},
+    {file = "playwright-1.52.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:0797c0479cbdc99607412a3c486a3a2ec9ddc77ac461259fd2878c975bcbb94a"},
+    {file = "playwright-1.52.0-py3-none-macosx_11_0_universal2.whl", hash = "sha256:7223960b7dd7ddeec1ba378c302d1d09733b8dac438f492e9854c85d3ca7144f"},
+    {file = "playwright-1.52.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:d010124d24a321e0489a8c0d38a3971a7ca7656becea7656c9376bfea7f916d4"},
+    {file = "playwright-1.52.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4173e453c43180acc60fd77ffe1ebee8d0efbfd9986c03267007b9c3845415af"},
+    {file = "playwright-1.52.0-py3-none-win32.whl", hash = "sha256:cd0bdf92df99db6237a99f828e80a6a50db6180ef8d5352fc9495df2c92f9971"},
+    {file = "playwright-1.52.0-py3-none-win_amd64.whl", hash = "sha256:dcbf75101eba3066b7521c6519de58721ea44379eb17a0dafa94f9f1b17f59e4"},
+    {file = "playwright-1.52.0-py3-none-win_arm64.whl", hash = "sha256:9d0085b8de513de5fb50669f8e6677f0252ef95a9a1d2d23ccee9638e71e65cb"},
 ]
 
 [[package]]
@@ -3473,7 +3474,7 @@ files = [
 
 [[package]]
 name = "pyee"
-version = "12.1.1"
+version = "13.0.0"
 requires_python = ">=3.8"
 summary = "A rough port of Node.js's EventEmitter to Python with a few tricks of its own"
 groups = ["dev"]
@@ -3481,8 +3482,8 @@ dependencies = [
     "typing-extensions",
 ]
 files = [
-    {file = "pyee-12.1.1-py3-none-any.whl", hash = "sha256:18a19c650556bb6b32b406d7f017c8f513aceed1ef7ca618fb65de7bd2d347ef"},
-    {file = "pyee-12.1.1.tar.gz", hash = "sha256:bbc33c09e2ff827f74191e3e5bbc6be7da02f627b7ec30d86f5ce1a6fb2424a3"},
+    {file = "pyee-13.0.0-py3-none-any.whl", hash = "sha256:48195a3cddb3b1515ce0695ed76036b5ccc2ef3a9f963ff9f77aec0139845498"},
+    {file = "pyee-13.0.0.tar.gz", hash = "sha256:b391e3c5a434d1f5118a25615001dbc8f669cf410ab67d04c4d4e07c55481c37"},
 ]
 
 [[package]]
@@ -3841,13 +3842,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "80.0.1"
+version = "80.1.0"
 requires_python = ">=3.9"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["dev"]
 files = [
-    {file = "setuptools-80.0.1-py3-none-any.whl", hash = "sha256:f4b49d457765b3aae7cbbeb1c71f6633a61b729408c2d1a837dae064cca82ef2"},
-    {file = "setuptools-80.0.1.tar.gz", hash = "sha256:20fe373a22ef9f3925512650d1db90b1b8de01cdb6df91ab1788263139cbf9a2"},
+    {file = "setuptools-80.1.0-py3-none-any.whl", hash = "sha256:ea0e7655c05b74819f82e76e11a85b31779fee7c4969e82f72bab0664e8317e4"},
+    {file = "setuptools-80.1.0.tar.gz", hash = "sha256:2e308396e1d83de287ada2c2fd6e64286008fe6aca5008e0b6a8cb0e2c86eedd"},
 ]
 
 [[package]]
