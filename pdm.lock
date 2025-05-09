@@ -12,7 +12,7 @@ requires_python = ">=3.9"
 
 [[package]]
 name = "aiodns"
-version = "3.3.0"
+version = "3.4.0"
 requires_python = ">=3.9"
 summary = "Simple DNS resolver for asyncio"
 groups = ["dev"]
@@ -21,8 +21,8 @@ dependencies = [
     "pycares>=4.0.0",
 ]
 files = [
-    {file = "aiodns-3.3.0-py3-none-any.whl", hash = "sha256:10773b905296afd92d41ef79b9ed0c97957d9af17262ffa67f405dc07f1600a4"},
-    {file = "aiodns-3.3.0.tar.gz", hash = "sha256:fdf7a7d51dcab0ad7cc22bf9cf54690d9c31b06414ac41c6cdbbecf50dd75ef1"},
+    {file = "aiodns-3.4.0-py3-none-any.whl", hash = "sha256:4da2b25f7475343f3afbb363a2bfe46afa544f2b318acb9a945065e622f4ed24"},
+    {file = "aiodns-3.4.0.tar.gz", hash = "sha256:24b0ae58410530367f21234d0c848e4de52c1f16fbddc111726a4ab536ec1b2f"},
 ]
 
 [[package]]
@@ -2814,18 +2814,18 @@ files = [
 
 [[package]]
 name = "picimagesearch"
-version = "3.12.5"
+version = "3.12.6"
 requires_python = ">=3.9"
 summary = "PicImageSearch - Aggregator for Reverse Image Search APIs"
 groups = ["dev"]
 dependencies = [
     "httpx[http2]>=0.28.1",
-    "lxml>=5.3.2",
+    "lxml>=5.4.0",
     "pyquery>=2.0.1",
 ]
 files = [
-    {file = "picimagesearch-3.12.5-py3-none-any.whl", hash = "sha256:33dcf5f158ad49953908a4c85ea09211c6f58b32f555c6208930f178ec0f24ce"},
-    {file = "picimagesearch-3.12.5.tar.gz", hash = "sha256:0618eb187567c2eba4386567f5feb12a98c3f185cc16930733d7891290db26f6"},
+    {file = "picimagesearch-3.12.6-py3-none-any.whl", hash = "sha256:c6228eef01ed2587bef326f765692c00e2ca230386d66cbb2342895f46881790"},
+    {file = "picimagesearch-3.12.6.tar.gz", hash = "sha256:c2d4a20921ebc9d0f55cf910a2c0310ccd1ad923a33a77314093e64c7d5be864"},
 ]
 
 [[package]]
@@ -4498,7 +4498,7 @@ files = [
 
 [[package]]
 name = "virtualenv"
-version = "20.31.1"
+version = "20.31.2"
 requires_python = ">=3.8"
 summary = "Virtual Python Environment builder"
 groups = ["dev"]
@@ -4509,8 +4509,8 @@ dependencies = [
     "platformdirs<5,>=3.9.1",
 ]
 files = [
-    {file = "virtualenv-20.31.1-py3-none-any.whl", hash = "sha256:f448cd2f1604c831afb9ea238021060be2c0edbcad8eb0a4e8b4e14ff11a5482"},
-    {file = "virtualenv-20.31.1.tar.gz", hash = "sha256:65442939608aeebb9284cd30baca5865fcd9f12b58bb740a24b220030df46d26"},
+    {file = "virtualenv-20.31.2-py3-none-any.whl", hash = "sha256:36efd0d9650ee985f0cad72065001e66d49a6f24eb44d98980f630686243cf11"},
+    {file = "virtualenv-20.31.2.tar.gz", hash = "sha256:e10c0a9d02835e592521be48b332b6caee6887f332c111aa79a09b9e79efc2af"},
 ]
 
 [[package]]
