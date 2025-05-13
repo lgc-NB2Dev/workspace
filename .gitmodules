@@ -29,6 +29,9 @@
 [submodule "plugins/nonebot-plugin-kawaii-robot"]
 	path = plugins/nonebot-plugin-kawaii-robot
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-kawaii-robot
+[submodule "plugins/nonebot-plugin-meme-stickers"]
+	path = plugins/nonebot-plugin-meme-stickers
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-meme-stickers
 	branch = master
 [submodule "plugins/nonebot-plugin-multincm"]
 	path = plugins/nonebot-plugin-multincm
@@ -45,6 +48,9 @@
 [submodule "plugins/nonebot-plugin-picmcstat"]
 	path = plugins/nonebot-plugin-picmcstat
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
+[submodule "plugins/nonebot-plugin-picmenu-next"]
+	path = plugins/nonebot-plugin-picmenu-next
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
 	branch = master
 [submodule "plugins/nonebot-plugin-picstatus"]
 	path = plugins/nonebot-plugin-picstatus
@@ -87,6 +93,3 @@
 [submodule "others/nonebot-plugin-template"]
 	path = others/nonebot-plugin-template
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
-[submodule "plugins/nonebot-plugin-meme-stickers"]
-	path = plugins/nonebot-plugin-meme-stickers
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-meme-stickers
