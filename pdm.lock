@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:1f958f2788a805a447a76f70f89fe41365e4b60f79389ce1962e0f46db70c9d9"
+content_hash = "sha256:0531b7b2bed14940dba6e96a56b6471ca0f0198ff7fc1b0dd281f1c8eab84433"
 
 [[metadata.targets]]
 requires_python = ">=3.9"
@@ -2520,6 +2520,19 @@ dependencies = [
     "nonebot2>=2.4.1",
     "pil-utils>=0.2.2",
     "punycode>=0.2.1",
+]
+
+[[package]]
+name = "nonebot-plugin-picmenu-next"
+version = "0.1.0"
+requires_python = "<4.0,>=3.9"
+editable = true
+path = "./plugins/nonebot-plugin-picmenu-next"
+summary = "Template plugin project"
+groups = ["dev"]
+dependencies = [
+    "nonebot-plugin-alconna>=0.54.2",
+    "nonebot2>=2.4.1",
 ]
 
 [[package]]

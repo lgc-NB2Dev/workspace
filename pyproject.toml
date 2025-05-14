@@ -37,6 +37,7 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-nonememe#egg=nonebot-plugin-nonememe",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-ottohzys#egg=nonebot-plugin-ottohzys",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picmcstat#egg=nonebot-plugin-picmcstat",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picmenu-next#egg=nonebot-plugin-picmenu-next",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picstatus#egg=nonebot-plugin-picstatus",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picstatus-template-zhenxun#egg=nonebot-plugin-picstatus-template-zhenxun",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pingti#egg=nonebot-plugin-pingti",
