@@ -93,3 +93,6 @@
 [submodule "others/nonebot-plugin-template"]
 	path = others/nonebot-plugin-template
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
+[submodule "plugins/nonebot-plugin-fix-qq-img-ssl"]
+	path = plugins/nonebot-plugin-fix-qq-img-ssl
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fix-qq-img-ssl
