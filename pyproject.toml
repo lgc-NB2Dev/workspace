@@ -9,17 +9,17 @@ license = { text = "MIT" }
 [dependency-groups]
 dev = [
     # pip
-    "setuptools>=75.8.0",
+    "setuptools>=80.7.1",
     "pip>=24.3.1",
     # tools
-    "basedpyright>=1.24.0",
-    "ruff>=0.9.2",
-    "pytest>=8.3.4",
-    "pytest-asyncio>=0.25.2",
+    "basedpyright>=1.29.1",
+    "ruff>=0.11.9",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
     # nonebot
-    "nonebot2[all]>=2.4.1",
+    "nonebot2[all]>=2.4.2",
     "nonebot-adapter-onebot>=2.4.6",
-    "nonebot-plugin-orm[sqlite]>=0.7.6",
+    "nonebot-plugin-orm[sqlite]>=0.7.7",
     # external
     "-e file:///${PROJECT_ROOT}/external/cookit#egg=cookit",
     "-e file:///${PROJECT_ROOT}/external/cooaki#egg=cooaki",
@@ -68,7 +68,7 @@ exclude = [
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
 ]
 executionEnvironments = [
-    { root = "typings/skia", reportIncompatibleMethodOverride = false, reportSelfClsParameterName = false },
+    { root = "typings", reportIncompatibleMethodOverride = false, reportSelfClsParameterName = false },
     { root = "." },
 ]
 
@@ -166,6 +166,7 @@ select = [
 [tool.ruff.lint.per-file-ignores]
 "private/test/*" = ["B018", "INP001"]
 "typings/skia/*" = ["A002", "E743", "N8", "PLW0211", "PYI021", "PYI034"]
+"typings/thefuzz/*" = ["N802"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true

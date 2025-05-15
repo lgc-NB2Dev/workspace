@@ -1,0 +1,6 @@
+from _typeshed import Incomplete
+
+translation_table: Incomplete
+
+def ascii_only(s): ...
+def full_process(s, force_ascii: bool = False): ...
