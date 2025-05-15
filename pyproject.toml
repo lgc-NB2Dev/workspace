@@ -30,6 +30,7 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-color#egg=nonebot-plugin-color",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-fix-qq-img-ssl#egg=nonebot-plugin-fix-qq-img-ssl",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-fuckyou#egg=nonebot-plugin-fuckyou",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-kawaii-robot#egg=nonebot-plugin-kawaii-robot",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-meme-stickers#egg=nonebot-plugin-meme-stickers",
