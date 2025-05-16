@@ -1,0 +1,6 @@
+{
+  "packageManager": "yarn@4.9.1",
+  "devDependencies": {
+    "@types/katex": "^0.16.7"
+  }
+}
