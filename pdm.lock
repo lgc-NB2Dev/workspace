@@ -2607,7 +2607,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picmenu-next"
-version = "0.1.0.post1"
+version = "0.1.2"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./plugins/nonebot-plugin-picmenu-next"
