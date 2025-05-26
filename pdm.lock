@@ -148,6 +148,7 @@ files = [
     {file = "aiohttp-3.12.0-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:4744aa06674299040d7a560e79282df7e66769882cfc0a4f602d5d2e3b972660"},
     {file = "aiohttp-3.12.0-cp39-cp39-win32.whl", hash = "sha256:19ae1ca271325184153c51b08512758e4c8cf631e39f37cf96b9f39d8de9be2f"},
     {file = "aiohttp-3.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:243281975c4a4fa7af43f35c962ed15ecd3f45342ef2052dd1afcf55afa14902"},
+    {file = "aiohttp-3.12.0.tar.gz", hash = "sha256:e3f0a2b4d7fb16c0d584d9b8860f1e46d39f7d93372b25a6f80c10015a7acdab"},
 ]
 
 [[package]]
@@ -249,6 +250,7 @@ files = [
     {file = "aiohttp-3.12.0-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:4744aa06674299040d7a560e79282df7e66769882cfc0a4f602d5d2e3b972660"},
     {file = "aiohttp-3.12.0-cp39-cp39-win32.whl", hash = "sha256:19ae1ca271325184153c51b08512758e4c8cf631e39f37cf96b9f39d8de9be2f"},
     {file = "aiohttp-3.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:243281975c4a4fa7af43f35c962ed15ecd3f45342ef2052dd1afcf55afa14902"},
+    {file = "aiohttp-3.12.0.tar.gz", hash = "sha256:e3f0a2b4d7fb16c0d584d9b8860f1e46d39f7d93372b25a6f80c10015a7acdab"},
 ]
 
 [[package]]
@@ -281,20 +283,19 @@ files = [
 
 [[package]]
 name = "alembic"
-version = "1.14.1"
-requires_python = ">=3.8"
+version = "1.16.1"
+requires_python = ">=3.9"
 summary = "A database migration tool for SQLAlchemy."
 groups = ["dev"]
 dependencies = [
     "Mako",
-    "SQLAlchemy>=1.3.0",
-    "importlib-metadata; python_version < \"3.9\"",
-    "importlib-resources; python_version < \"3.9\"",
-    "typing-extensions>=4",
+    "SQLAlchemy>=1.4.0",
+    "tomli; python_version < \"3.11\"",
+    "typing-extensions>=4.12",
 ]
 files = [
-    {file = "alembic-1.14.1-py3-none-any.whl", hash = "sha256:1acdd7a3a478e208b0503cd73614d5e4c6efafa4e73518bb60e4f2846a37b1c5"},
-    {file = "alembic-1.14.1.tar.gz", hash = "sha256:496e888245a53adf1498fcab31713a469c65836f8de76e01399aa1c3e90dd213"},
+    {file = "alembic-1.16.1-py3-none-any.whl", hash = "sha256:0cdd48acada30d93aa1035767d67dff25702f8de74d7c3919f2e8492c8db2e67"},
+    {file = "alembic-1.16.1.tar.gz", hash = "sha256:43d37ba24b3d17bc1eb1024fe0f51cd1dc95aeb5464594a02c6bb9ca9864bfa4"},
 ]
 
 [[package]]
@@ -1602,17 +1603,17 @@ files = [
 
 [[package]]
 name = "importlib-metadata"
-version = "7.2.1"
-requires_python = ">=3.8"
+version = "8.7.0"
+requires_python = ">=3.9"
 summary = "Read metadata from Python packages"
 groups = ["dev"]
 dependencies = [
     "typing-extensions>=3.6.4; python_version < \"3.8\"",
-    "zipp>=0.5",
+    "zipp>=3.20",
 ]
 files = [
-    {file = "importlib_metadata-7.2.1-py3-none-any.whl", hash = "sha256:ffef94b0b66046dd8ea2d619b701fe978d9264d38f3998bc4c27ec3b146a87c8"},
-    {file = "importlib_metadata-7.2.1.tar.gz", hash = "sha256:509ecb2ab77071db5137c655e24ceb3eee66e7bbc6574165d0d114d9fc4bbe68"},
+    {file = "importlib_metadata-8.7.0-py3-none-any.whl", hash = "sha256:e5dd1551894c77868a30651cef00984d50e1002d06942a7101d34870c5f02afd"},
+    {file = "importlib_metadata-8.7.0.tar.gz", hash = "sha256:d13b81ad223b890aa16c5471f2ac3056cf76c5f10f82d6f9292f0b415f389000"},
 ]
 
 [[package]]
@@ -2291,7 +2292,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.57.6"
+version = "0.58.0"
 requires_python = ">=3.9"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
@@ -2305,8 +2306,8 @@ dependencies = [
     "tarina<0.7,>=0.6.8",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.57.6-py3-none-any.whl", hash = "sha256:7690f4f1bfc1be8755080eea3554582cafe9cb44c1a1f270e30922d3d1f8358d"},
-    {file = "nonebot_plugin_alconna-0.57.6.tar.gz", hash = "sha256:f22357cf784358205b8ae76707627fd28d1a73b594e38b239619be4eea9fe6ae"},
+    {file = "nonebot_plugin_alconna-0.58.0-py3-none-any.whl", hash = "sha256:85762f564bf24779706a2557ea819826edac3746546a8e6782ddbfc2d21148ca"},
+    {file = "nonebot_plugin_alconna-0.58.0.tar.gz", hash = "sha256:e5a8528d6eed01d4dccf96bd1b7c009ac83685bcc206708f8654fe68d21d73e8"},
 ]
 
 [[package]]
@@ -2536,39 +2537,39 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-orm"
-version = "0.7.7"
-requires_python = "<4.0,>=3.8"
+version = "0.8.0"
+requires_python = "<4.0,>=3.9"
 summary = "SQLAlchemy ORM support for nonebot"
 groups = ["dev"]
 dependencies = [
-    "alembic<1.15,~=1.13",
+    "alembic~=1.16",
     "click~=8.1",
-    "importlib-metadata~=7.0; python_version < \"3.10\"",
-    "importlib-resources~=6.1; python_version < \"3.12\"",
-    "nonebot-plugin-localstore~=0.6",
-    "nonebot2~=2.2",
+    "importlib-metadata>=4.6; python_version < \"3.10\"",
+    "importlib-resources>=5.12; python_version < \"3.12\"",
+    "nonebot-plugin-localstore~=0.7",
+    "nonebot2~=2.4",
     "sqlalchemy~=2.0",
-    "typing-extensions~=4.9; python_version < \"3.11\"",
+    "typing-extensions~=4.13",
 ]
 files = [
-    {file = "nonebot_plugin_orm-0.7.7-py3-none-any.whl", hash = "sha256:645ba90f24969ce8bebb6841cdd0a0fb823e27a5d256989e332ec9f6608bbde5"},
-    {file = "nonebot_plugin_orm-0.7.7.tar.gz", hash = "sha256:61705c59bbac51521738259efbe51223847a0e0389807267fff7a5167f8c8c85"},
+    {file = "nonebot_plugin_orm-0.8.0-py3-none-any.whl", hash = "sha256:1d9836422e0cf13f41ae163f6f366877a00688930928f581b5e5e4846a168de5"},
+    {file = "nonebot_plugin_orm-0.8.0.tar.gz", hash = "sha256:7641f2b864d8ea1b365b088a1227ca1c4327a4c00840725bed9305a39b131e35"},
 ]
 
 [[package]]
 name = "nonebot-plugin-orm"
-version = "0.7.7"
+version = "0.8.0"
 extras = ["sqlite"]
-requires_python = "<4.0,>=3.8"
+requires_python = "<4.0,>=3.9"
 summary = "SQLAlchemy ORM support for nonebot"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-orm==0.7.7",
+    "nonebot-plugin-orm==0.8.0",
     "sqlalchemy[aiosqlite]",
 ]
 files = [
-    {file = "nonebot_plugin_orm-0.7.7-py3-none-any.whl", hash = "sha256:645ba90f24969ce8bebb6841cdd0a0fb823e27a5d256989e332ec9f6608bbde5"},
-    {file = "nonebot_plugin_orm-0.7.7.tar.gz", hash = "sha256:61705c59bbac51521738259efbe51223847a0e0389807267fff7a5167f8c8c85"},
+    {file = "nonebot_plugin_orm-0.8.0-py3-none-any.whl", hash = "sha256:1d9836422e0cf13f41ae163f6f366877a00688930928f581b5e5e4846a168de5"},
+    {file = "nonebot_plugin_orm-0.8.0.tar.gz", hash = "sha256:7641f2b864d8ea1b365b088a1227ca1c4327a4c00840725bed9305a39b131e35"},
 ]
 
 [[package]]
@@ -2614,7 +2615,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picmenu-next"
-version = "0.1.2"
+version = "0.1.3"
 requires_python = "<4.0,>=3.9"
 editable = true
 path = "./plugins/nonebot-plugin-picmenu-next"
@@ -3725,7 +3726,7 @@ files = [
 
 [[package]]
 name = "pytest-asyncio"
-version = "0.26.0"
+version = "1.0.0"
 requires_python = ">=3.9"
 summary = "Pytest support for asyncio"
 groups = ["dev"]
@@ -3734,8 +3735,8 @@ dependencies = [
     "typing-extensions>=4.12; python_version < \"3.10\"",
 ]
 files = [
-    {file = "pytest_asyncio-0.26.0-py3-none-any.whl", hash = "sha256:7b51ed894f4fbea1340262bdae5135797ebbe21d8638978e35d31c6d19f72fb0"},
-    {file = "pytest_asyncio-0.26.0.tar.gz", hash = "sha256:c4df2a697648241ff39e7f0e4a73050b03f123f760673956cf0d72a4990e312f"},
+    {file = "pytest_asyncio-1.0.0-py3-none-any.whl", hash = "sha256:4f024da9f1ef945e680dc68610b52550e36590a67fd31bb3b4943979a1f90ef3"},
+    {file = "pytest_asyncio-1.0.0.tar.gz", hash = "sha256:d15463d13f4456e1ead2594520216b225a16f781e144f8fdf6c5bb4667c48b3f"},
 ]
 
 [[package]]
