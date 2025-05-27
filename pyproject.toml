@@ -185,4 +185,5 @@ exempt-modules = [
     "pathlib",
     "nonebot",
     "nonebot_plugin_alconna",
+    "nonebot_plugin_uninfo",
 ]
