@@ -3122,7 +3122,7 @@ files = [
 
 [[package]]
 name = "praat-parselmouth"
-version = "0.4.5"
+version = "0.4.6"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 summary = "Praat in Python, the Pythonic way"
 groups = ["dev"]
@@ -3130,52 +3130,57 @@ dependencies = [
     "numpy>=1.7.0",
 ]
 files = [
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:4b645f1184edab1e4d5a8385ea12a73bec84eedfee19dd80126ec6847d0dadbe"},
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:2e8eec77441a7746e89be4f16f7ddd2c21446dfa1e65e495d8557d8dee5f981c"},
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:3e9f4fcbdf2355d7530997a26360611a2799c845ebe04f7f9b8ab9ff50965775"},
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:57e635ccc72ebf37d14c721df073b1f40f9bfe27d9caaf6c76d99b9f848fd6cb"},
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e0dcafb0b5239ca24b7f3cdca13b333406234f7e0c4718cf3d629395e2d2ed9f"},
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-win32.whl", hash = "sha256:5b041bfaee08ab95ebfaa3d7bf0f59815806a7707668eaf2d324786a1e3d264a"},
-    {file = "praat_parselmouth-0.4.5-cp310-cp310-win_amd64.whl", hash = "sha256:7d4956d64de4414636b0835645604ac2ae33e8f76426dd7fc06627f2d11b06ec"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:b6527d73f5d433755d1961e3942cee1b20c993e1fe011171728149548df61b9a"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:de2bd279aaca097d480ae2899db3360ff4696c7b07c64008c5c91bb3e2bb7585"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:f429296783e8c5c513de976b90e0c2f7300cc61acc459b341dc7dbd302848ec2"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:baafa43a972b8e26be5efa82d4fd2dd5acb64926d70eec08507b359d6c80ca3b"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:89e291407b3bb652faf06bc500075db8e2fca9cd46077e0172e0c22ce71fb11a"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-win32.whl", hash = "sha256:72aa1deea176f89c8fcfa327cacf8d3d6fcd60f116b31a614d10bc2b08120151"},
-    {file = "praat_parselmouth-0.4.5-cp311-cp311-win_amd64.whl", hash = "sha256:a6882bfda0b2e1276ef138f7cf73e0643cf400225f757fcaecf41636a08b7443"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:4fa9e8106b555a470c1a9779416b88fa0375568554ad1d321afaac0dbf8674b6"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:89708e5d9a7f8e7fe7d3e5619ba5ae2a1e219856748a1f7c627084cc0529bd9c"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:cbb7dc9f3346306681f4cef0482a2b9b23d2d750b2bfe412d6d96df42c7ae042"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:95d97bf3d4ccdac279afefa32b47565e7e102cd1f7703542048e7bec6c6ed764"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5bf8b5f844a8d56cd3fbad35515072bea92b5da11f52f20e71e52b05407c2fa3"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-win32.whl", hash = "sha256:88af97081f7e70b660dae62727a022168e21923309105219a2a16fb5f1abb76c"},
-    {file = "praat_parselmouth-0.4.5-cp312-cp312-win_amd64.whl", hash = "sha256:8363d848e9f8ad54c9ca5b9aa1cbe8ea478465ca547e573e306d081a7646d37c"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:34293721407f14a667993f81fcbef1d6f3714ade8a3745ee5b2a9797779ab09f"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:d37040ad1b665a4286b982ef6200853bce40633a4ec867f40383d19daf0ff165"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:0a5083533c37415d2d19b95d277a113f0aa3285075462437136de1015dc25113"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:ee6d26994c9b81d8911127a0f479b21eabef24c97bd4e9fc5dedf76f2b15ce9a"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:980031135f412649cd36055924fd563b556c3321246acb261ebf48835a43bda0"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-win32.whl", hash = "sha256:5221de5fe2d95733be082637cdc985437a7d186c180331228719cc582e76e768"},
-    {file = "praat_parselmouth-0.4.5-cp313-cp313-win_amd64.whl", hash = "sha256:f6e2d3026c44d96cb87f3b74e99a03878fd6344e957c1a749c82ba5db1f81445"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:44fa86543c8c780cb3337b6aa253e67cd2b9cc5f6f7f1e4eed23fce4e5174666"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:b0eee352da79ff72a03b2afe18e4c8ca422a2f66c30d9736bcab7964e76beee7"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:03752d5ffbe5d7637b79ee179f1bfe03f8816bd7435f1977f1d4863a93fc3865"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:403464c066f0be39985a8dcfca0d28139d9a119b6a9ad7937303ea06f450319c"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:dcffc9a2b3187d7500546e0ae9796dd3a7d33ac746d053c66e1f7c6badedb9a2"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-win32.whl", hash = "sha256:63b253569cda13817317d98a59a006fefa2e3f937996821145f10d46e065d348"},
-    {file = "praat_parselmouth-0.4.5-cp39-cp39-win_amd64.whl", hash = "sha256:1bbff75c66384746b4d90cc7487703061e3d53e7114b484937c79e155761b3e0"},
-    {file = "praat_parselmouth-0.4.5-pp310-pypy310_pp73-macosx_10_15_x86_64.whl", hash = "sha256:075a7e636387ce3f8ec406ff3ad914dafbb173deb933f7c1864d8311e922f1fe"},
-    {file = "praat_parselmouth-0.4.5-pp310-pypy310_pp73-macosx_11_0_arm64.whl", hash = "sha256:42fc0ef665af6b2add1c305e983c7662b01241ae9f9a3fab22327e299639668d"},
-    {file = "praat_parselmouth-0.4.5-pp310-pypy310_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b39d1730bada851ac978c8749064cb9da7cd509f9d9edf41bcfbc0c76f1bc393"},
-    {file = "praat_parselmouth-0.4.5-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:66f9bc5caefaf4751c904d980e4e3bd7b61910034a9427e44e63364df5519003"},
-    {file = "praat_parselmouth-0.4.5-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:031b9f8de8a97b3dce5247cfd3e165fd960b1d66b0c6ed944f4cc628d66596a8"},
-    {file = "praat_parselmouth-0.4.5-pp39-pypy39_pp73-macosx_10_15_x86_64.whl", hash = "sha256:7ee90ccfe5664a02136df574ef1e6f8061a766d9406cfde1ca26cf2ecd8ae001"},
-    {file = "praat_parselmouth-0.4.5-pp39-pypy39_pp73-macosx_11_0_arm64.whl", hash = "sha256:3421eee0ef3fa48fb5c2278284b40d25d8376c6a7e496fe8f36fbe832de05805"},
-    {file = "praat_parselmouth-0.4.5-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:872149c1af429c832103bfa5c598065382b42041d765a9f7301dba3350c6be1f"},
-    {file = "praat_parselmouth-0.4.5-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5d735cb3f8f5c9fb70719ea84e0407a705a4807c6d50dd369673d82119189e17"},
-    {file = "praat_parselmouth-0.4.5-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:88c8f65cd74a5344c8e22cbc14eb2743d10aacef0aea125b5d19f573973ab191"},
-    {file = "praat_parselmouth-0.4.5.tar.gz", hash = "sha256:c6393ddede06ce81a8b178ce9aa1c0fc7fd98af68a650cadd22c953fed6e4745"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:9ac98501a8302d05c33ed7d1cced38093157b395056b52ab29fa875307eaf2c8"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:7f694798763199011fdc1acd0435cc2ba5497487adc68e93e27582c2f82464c9"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:c91838cb1a3a36a718833f8bf71604aca46b5443f329dc07b91433417b9b1862"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:beb6487e0fcc1253e114dd72b0abeb2ba57a6dd007eb4aff040141d89d859d93"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:2a0bd610b0a2fc9cc2b295a63e3c5e2415b3c68cde4b7daabd9be91ce0b90da2"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-win32.whl", hash = "sha256:bd0e399f0a40aa038cfea6282b8624cd2862c158456e940054f728490bec946c"},
+    {file = "praat_parselmouth-0.4.6-cp310-cp310-win_amd64.whl", hash = "sha256:75f745c91e29de5532b72661ab5d5c7406d38a29219b5951a6568de4edd0cc05"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:635dba352473f20921a9a30616b69316f95035cf6ac948e842de155216e90754"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:1e4da9784e0a50b9bacdc361d9855dd645d4b7eb2385f17ef462199ccee56219"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:3719f157cd8d3254e5142b3d1bd378d3046f2fc6ecb245897277fb862cf22905"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:be71ee397f65af0f4029e27791a53dfe402c5663c2ebd2175e771e82a851ecaa"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0c735f483c5a8c744d24e2ef69c0156dccf03e42ce477c64a8e1e5a628bc79f3"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-win32.whl", hash = "sha256:dd4cdb05dd6c68fd65ddeac956fc732a09a6e83f334c7cb70084c37809b00986"},
+    {file = "praat_parselmouth-0.4.6-cp311-cp311-win_amd64.whl", hash = "sha256:10dfdbd518f3ccae769dde28bc7b64efb927ee35c935124daf971421dba281c6"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:b2c146a1cbc0d7c8fa8f9c18a69bf1d78d9e16b1ee30ffacabd0c24a5212d6d6"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:9be48b8a5508bdcdc2c5dbd7a55fbe4c01ff1f87c61e8efdf8265efdc0c1dfae"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:65d1729828559645f711855a268ab17f760a3f6031095c3c3af0ceb251251722"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2d3c90368bbdef09a65458cfa1e4c560765f7696b90232eeb3baa647b3c22859"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:77f12a873fce8a259dad59db2f48462781f0e75fc0b84efcbe0ac3785be583ab"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-win32.whl", hash = "sha256:26ef62bad04fac47138f7aacf2255b1cca0247a8e29b6e8d4a848e7d009a168c"},
+    {file = "praat_parselmouth-0.4.6-cp312-cp312-win_amd64.whl", hash = "sha256:c7649d83870e8af3853447d19a21ab8d113c69a95d79eb88056ef40439b75bae"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:0b3c05ddeb2399e5143f254ab19dec5e905f0b38b3fbbdf2e4375d9f5ed22031"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:9e8a5c817291bb6f762297b56a02720847ca21f9c531abd0653f98d84458bc5a"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:7181ddbfa255cadf96b5f16ee42330abd55d1f2c4319afe47b04e2953b38ac70"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:87e163dea1ca05c7528a0e394868bcc9fd24e4c453b95bcf40e3d7ec409e0c27"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d42e2a135237f3bfef48e3f9a1a062153e9c6ddaec91ee34c56a04c2f4ebc22e"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-win32.whl", hash = "sha256:9c9eed68f4dc39d294bd29bf747e82a9c733030fcc06a2efd736d062cde5633c"},
+    {file = "praat_parselmouth-0.4.6-cp313-cp313-win_amd64.whl", hash = "sha256:2f90ad3dcc7e8e6c29cc5ccf78d34973f8d1d3bcd5e77574c584e169cffb3b50"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:0598dc88ac444011758ce3a3ee8c35f67601ee94c553f2bc6ba87b225576f318"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:3eefa27b34e444c9b8312bc9719deb8dd25ac28af7cb86c6494ee23818a18c85"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:4059342a0cba17c50767ffcf531da0b4108dd00d58513759186c40a759e5342f"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:d861b4ef2d27f791938cf55f615ef689c74126c6b6ecea9f016ae4e92c1e41a3"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:77490629a654238919de81161d9fd1fc346283be06228a6a90b97921e7cfe7a4"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-win32.whl", hash = "sha256:f772adcf270f4267080c2d33fb323fb0ad1066b820f5d6ac7fb621728f92adcf"},
+    {file = "praat_parselmouth-0.4.6-cp39-cp39-win_amd64.whl", hash = "sha256:0c951220168a3f547d6a8812932de3edb05287ab71fcdfb73c619c403ad8931a"},
+    {file = "praat_parselmouth-0.4.6-pp310-pypy310_pp73-macosx_10_15_x86_64.whl", hash = "sha256:55fdc10f4ff97263d155d6d7912275093ed72d3f160a1251baafebd1915076b0"},
+    {file = "praat_parselmouth-0.4.6-pp310-pypy310_pp73-macosx_11_0_arm64.whl", hash = "sha256:f6100b0c9ec08ec05a5cd79cce2975bc9d6954f4ce3e39a03e0bbc3c0d70d28f"},
+    {file = "praat_parselmouth-0.4.6-pp310-pypy310_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:4922b6c1d9fcc58bb2f55cfea63c3f816692f6c91abcdc638290325b4e944bc8"},
+    {file = "praat_parselmouth-0.4.6-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6a5c28fdf1908e85818a18c155809949df3b14a463b76d3ce63736da7106ed85"},
+    {file = "praat_parselmouth-0.4.6-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:ce0e54e62ea8b120772c8135537d110abeb3719cf1e3e025eaa1ff6017401f66"},
+    {file = "praat_parselmouth-0.4.6-pp311-pypy311_pp73-macosx_10_15_x86_64.whl", hash = "sha256:6c884cfeb5eb3044b0cc0ae23636ceebbb363cf3454d62fc3e9c70f36e007ba8"},
+    {file = "praat_parselmouth-0.4.6-pp311-pypy311_pp73-macosx_11_0_arm64.whl", hash = "sha256:139db6e590ed8dbab08f737f376f0d93d1acf3b1ad5c0606aa7d522a99171691"},
+    {file = "praat_parselmouth-0.4.6-pp311-pypy311_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:00bd04bd69276735de6a39960bab7c375cb0647ea81d975a8b8e3e70bb90a4db"},
+    {file = "praat_parselmouth-0.4.6-pp311-pypy311_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:264daa81d4af6764d8ddee7cf4a7ebe2153f5f0023a949c2f77b05cf866a7a96"},
+    {file = "praat_parselmouth-0.4.6-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:a0cc464ada38a1a7743038387f38f4c97ea0bd67ade34b36793303d3285863fb"},
+    {file = "praat_parselmouth-0.4.6-pp39-pypy39_pp73-macosx_10_15_x86_64.whl", hash = "sha256:84a4859b664af790176d548a380ea9af46b33d8ec032a0b031e1d0d5adc82f20"},
+    {file = "praat_parselmouth-0.4.6-pp39-pypy39_pp73-macosx_11_0_arm64.whl", hash = "sha256:ca17f55d091d1cee867450183477e6deaeacc3786d5e7138b30e0f3cd842316e"},
+    {file = "praat_parselmouth-0.4.6-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:25d2447dc9e82adc15c4e99c3861531a8ad5059fb1e736d77aac1cce895f1d0c"},
+    {file = "praat_parselmouth-0.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d84ec07e18243dd0519075dee03652680687823155243cc1b030733378b9b28f"},
+    {file = "praat_parselmouth-0.4.6-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:25008e6fa5eb441caf955648607fccc3834d96136fdbd4ff39fb9ffc27a05985"},
+    {file = "praat_parselmouth-0.4.6.tar.gz", hash = "sha256:844e09cfcab9d202043f2aaaf803908a54be6e1953c2f01c386cc2ea7cc6851a"},
 ]
 
 [[package]]
@@ -5139,11 +5144,11 @@ files = [
 
 [[package]]
 name = "zipp"
-version = "3.22.0"
+version = "3.23.0"
 requires_python = ">=3.9"
 summary = "Backport of pathlib-compatible object wrapper for zip files"
 groups = ["dev"]
 files = [
-    {file = "zipp-3.22.0-py3-none-any.whl", hash = "sha256:fe208f65f2aca48b81f9e6fd8cf7b8b32c26375266b009b413d45306b6148343"},
-    {file = "zipp-3.22.0.tar.gz", hash = "sha256:dd2f28c3ce4bc67507bfd3781d21b7bb2be31103b51a4553ad7d90b84e57ace5"},
+    {file = "zipp-3.23.0-py3-none-any.whl", hash = "sha256:071652d6115ed432f5ce1d34c336c0adfd6a884660d1e9712a256d3d3bd4b14e"},
+    {file = "zipp-3.23.0.tar.gz", hash = "sha256:a07157588a12518c9d4034df3fbbee09c814741a33ff63c05fa29d26a2404166"},
 ]
