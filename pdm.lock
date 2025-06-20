@@ -1819,7 +1819,7 @@ files = [
 
 [[package]]
 name = "markdown"
-version = "3.8.1"
+version = "3.8.2"
 requires_python = ">=3.9"
 summary = "Python implementation of John Gruber's Markdown."
 groups = ["dev"]
@@ -1827,8 +1827,8 @@ dependencies = [
     "importlib-metadata>=4.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "markdown-3.8.1-py3-none-any.whl", hash = "sha256:46cc0c0f1e5211ab2e9d453582f0b28a1bfaf058a9f7d5c50386b99b588d8811"},
-    {file = "markdown-3.8.1.tar.gz", hash = "sha256:a2e2f01cead4828ee74ecca9623045f62216aef2212a7685d6eb9163f590b8c1"},
+    {file = "markdown-3.8.2-py3-none-any.whl", hash = "sha256:5c83764dbd4e00bdd94d85a19b8d55ccca20fe35b2e678a1422b380324dd5f24"},
+    {file = "markdown-3.8.2.tar.gz", hash = "sha256:247b9a70dd12e27f67431ce62523e675b866d254f900c4fe75ce3dda62237c45"},
 ]
 
 [[package]]
@@ -2292,7 +2292,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.58.4"
+version = "0.58.5"
 requires_python = ">=3.9"
 summary = "Alconna Adapter for Nonebot"
 groups = ["dev"]
@@ -2306,8 +2306,8 @@ dependencies = [
     "tarina<0.7,>=0.6.8",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.58.4-py3-none-any.whl", hash = "sha256:f15f7fc996568e8ead430587a629d267e3f17d193b41680595db79ce828beb67"},
-    {file = "nonebot_plugin_alconna-0.58.4.tar.gz", hash = "sha256:0a82b27418c45b4d4e225f38b8a7e730f4083bfa559393eb31490076efb03819"},
+    {file = "nonebot_plugin_alconna-0.58.5-py3-none-any.whl", hash = "sha256:92a3718ab1e61de0a8ad8cd7fdca1b77acb35793da208091196e563822f3c148"},
+    {file = "nonebot_plugin_alconna-0.58.5.tar.gz", hash = "sha256:dc43e1d626c6e5d63993858a62cc5ace7b74a6163f9877dab5fdb07d95bf3159"},
 ]
 
 [[package]]
@@ -2736,7 +2736,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-uninfo"
-version = "0.8.1"
+version = "0.8.2"
 requires_python = ">=3.9"
 summary = "Universal Information Model for Nonebot2"
 groups = ["dev"]
@@ -2745,8 +2745,8 @@ dependencies = [
     "nonebot2>=2.4.2",
 ]
 files = [
-    {file = "nonebot_plugin_uninfo-0.8.1-py3-none-any.whl", hash = "sha256:618c34a2a4c38682cb094f3dbc3be2d1550c037e5b75a6a30b6189d67d6d9e68"},
-    {file = "nonebot_plugin_uninfo-0.8.1.tar.gz", hash = "sha256:b5f82b281cb60df33eb335201ada74b5f7c855445b28919c5cb9ab4c93fff94d"},
+    {file = "nonebot_plugin_uninfo-0.8.2-py3-none-any.whl", hash = "sha256:c1c0b1152cc3a22b85d1973441d08e93dd73d2a9b5d54dad9ba89507eb68b488"},
+    {file = "nonebot_plugin_uninfo-0.8.2.tar.gz", hash = "sha256:143fc4150a4d372c1996fbb499ca64500af2233cab94b62fb241892ec213d83f"},
 ]
 
 [[package]]
