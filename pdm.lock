@@ -2539,7 +2539,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-orm"
-version = "0.8.1"
+version = "0.8.2"
 requires_python = "<4.0,>=3.9"
 summary = "SQLAlchemy ORM support for nonebot"
 groups = ["dev"]
@@ -2554,24 +2554,24 @@ dependencies = [
     "typing-extensions~=4.13",
 ]
 files = [
-    {file = "nonebot_plugin_orm-0.8.1-py3-none-any.whl", hash = "sha256:ac10a48b8c8ef90d4506acd6f5f46c02cf9ab76935856532ba15ab9c00684cd7"},
-    {file = "nonebot_plugin_orm-0.8.1.tar.gz", hash = "sha256:5c90c84ce7ebd8da5244b72ede85d3c4f08e94190526066c8955fd94bde6ffdf"},
+    {file = "nonebot_plugin_orm-0.8.2-py3-none-any.whl", hash = "sha256:be870742127714e7d54f1510f017027b82a5e0bf267e2cd239cac8fa471b1f5b"},
+    {file = "nonebot_plugin_orm-0.8.2.tar.gz", hash = "sha256:faa9c9d1e957518f93e513914846e9c69d501cf8b0fc3dcf9489aafd9a5c935a"},
 ]
 
 [[package]]
 name = "nonebot-plugin-orm"
-version = "0.8.1"
+version = "0.8.2"
 extras = ["sqlite"]
 requires_python = "<4.0,>=3.9"
 summary = "SQLAlchemy ORM support for nonebot"
 groups = ["dev"]
 dependencies = [
-    "nonebot-plugin-orm==0.8.1",
+    "nonebot-plugin-orm==0.8.2",
     "sqlalchemy[aiosqlite]",
 ]
 files = [
-    {file = "nonebot_plugin_orm-0.8.1-py3-none-any.whl", hash = "sha256:ac10a48b8c8ef90d4506acd6f5f46c02cf9ab76935856532ba15ab9c00684cd7"},
-    {file = "nonebot_plugin_orm-0.8.1.tar.gz", hash = "sha256:5c90c84ce7ebd8da5244b72ede85d3c4f08e94190526066c8955fd94bde6ffdf"},
+    {file = "nonebot_plugin_orm-0.8.2-py3-none-any.whl", hash = "sha256:be870742127714e7d54f1510f017027b82a5e0bf267e2cd239cac8fa471b1f5b"},
+    {file = "nonebot_plugin_orm-0.8.2.tar.gz", hash = "sha256:faa9c9d1e957518f93e513914846e9c69d501cf8b0fc3dcf9489aafd9a5c935a"},
 ]
 
 [[package]]
