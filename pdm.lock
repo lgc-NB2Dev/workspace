@@ -621,13 +621,13 @@ files = [
 
 [[package]]
 name = "cashews"
-version = "7.4.0"
+version = "7.4.1"
 requires_python = ">=3.9"
 summary = "cache tools with async power"
 groups = ["dev"]
 files = [
-    {file = "cashews-7.4.0-py3-none-any.whl", hash = "sha256:e881cc9b4be05ac9ce2c448784bca2864776b1c13ee262658d7c0ebf0d3d257a"},
-    {file = "cashews-7.4.0.tar.gz", hash = "sha256:c9d22b9b9da567788f232374a5de3b30ceed1e5c24085c96d304b696df0dcbd8"},
+    {file = "cashews-7.4.1-py3-none-any.whl", hash = "sha256:868019e9c8b0a75f345ea58b71197640b20dc2fe0892eb5ef6537f5652299ba4"},
+    {file = "cashews-7.4.1.tar.gz", hash = "sha256:9d4ac7b0d0e20ec96680af60ae15dc26c19ccc267baa84a472c54bef86a93a8a"},
 ]
 
 [[package]]
