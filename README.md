@@ -23,7 +23,7 @@ pdm install -G:all
 使用下面的命令安装工作区内的 `nb-cli-plugin-bootstrap` 插件到你的 `nb-cli` 中
 
 ```bash
-nb self install -e ./packages/nb-cli-plugin-bootstrap
+nb self install -e ./plugins/nb-cli-plugin-bootstrap
 ```
 
 ### 配置调试环境
