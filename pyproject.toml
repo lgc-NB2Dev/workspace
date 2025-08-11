@@ -3,23 +3,23 @@ name = "nb2-workspace"
 version = "0"
 authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
 dependencies = []
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 
 [dependency-groups]
 dev = [
     # pip
-    "setuptools>=80.7.1",
-    "pip>=24.3.1",
+    "setuptools>=80.9.0",
+    "pip>=25.2",
     # tools
-    "basedpyright>=1.29.1",
-    "ruff>=0.11.9",
-    "pytest>=8.3.5",
-    "pytest-asyncio>=0.26.0",
+    "basedpyright>=1.31.1",
+    "ruff>=0.12.8",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
     # nonebot
-    "nonebot2[all]>=2.4.2",
+    "nonebot2[all]>=2.4.3",
     "nonebot-adapter-onebot>=2.4.6",
-    "nonebot-plugin-orm[sqlite]>=0.7.7",
+    "nonebot-plugin-orm[sqlite]>=0.8.2",
     # external
     "-e file:///${PROJECT_ROOT}/external/cookit#egg=cookit",
     "-e file:///${PROJECT_ROOT}/external/cooaki#egg=cooaki",
@@ -58,7 +58,7 @@ up = { call = "scripts.up:main" }
 locks = { call = "scripts.lock:main" }
 
 [tool.basedpyright]
-pythonVersion = "3.9"
+pythonVersion = "3.10"
 defineConstant = { PYDANTIC_V2 = true }
 typeCheckingMode = "standard"
 reportShadowedImports = false
@@ -74,7 +74,7 @@ executionEnvironments = [
 ]
 
 [tool.ruff]
-target-version = "py39"
+target-version = "py310"
 extend-exclude = [
     "./plugins/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
