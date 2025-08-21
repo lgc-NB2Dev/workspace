@@ -422,7 +422,7 @@ files = [
 
 [[package]]
 name = "basedpyright"
-version = "1.31.2"
+version = "1.31.3"
 requires_python = ">=3.8"
 summary = "static type checking for Python (but based)"
 groups = ["dev"]
@@ -430,8 +430,8 @@ dependencies = [
     "nodejs-wheel-binaries>=20.13.1",
 ]
 files = [
-    {file = "basedpyright-1.31.2-py3-none-any.whl", hash = "sha256:b3541fba56a69de826f77a15f8b864648d1cfbcb11a3ca530d82982e65e78d19"},
-    {file = "basedpyright-1.31.2.tar.gz", hash = "sha256:dd18ed85770f80723d4378b0a0f05f24ef205b71ba4b525242abf1782ed16d8f"},
+    {file = "basedpyright-1.31.3-py3-none-any.whl", hash = "sha256:bdb0b5a9abe287a023d330fc71eaed181aaffd48f1dec59567f912cf716f38ff"},
+    {file = "basedpyright-1.31.3.tar.gz", hash = "sha256:c77bff2dc7df4fe09c0ee198589d8d24faaf8bfd883ee9e0af770b1a275a58f8"},
 ]
 
 [[package]]
@@ -2368,7 +2368,7 @@ dependencies = [
 
 [[package]]
 name = "nonebot-plugin-picmcstat"
-version = "0.7.2"
+version = "0.7.3"
 requires_python = "<4.0,>=3.10"
 editable = true
 path = "./plugins/nonebot-plugin-picmcstat"
@@ -2377,7 +2377,7 @@ groups = ["dev"]
 dependencies = [
     "cookit[pydantic]>=0.13.0",
     "dnspython>=2.7.0",
-    "mcstatus>=12.0.3",
+    "mcstatus>=12.0.5",
     "nonebot-plugin-alconna>=0.59.4",
     "nonebot2>=2.4.3",
     "pil-utils>=0.2.2",
