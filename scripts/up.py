@@ -1,45 +1,23 @@
-from typing import TYPE_CHECKING, Union
+import asyncio
+from pathlib import Path
+from typing_extensions import override
 
-from .utils import iter_modules, ok, system
-
-if TYPE_CHECKING:
-    from pathlib import Path
-    from subprocess import CompletedProcess
+from .utils import BaseAsyncTask, proc_exec, summon_workspace_tasks
 
 
-def commit(cwd: Union[str, "Path", None] = None, **kwargs):
-    return system("git", "commit", "-m", "up", cwd=cwd, **kwargs)
+class UpTask(BaseAsyncTask):
+    @override
+    async def do(self, path: Path):
+        x = await proc_exec("git", "status", "-s", cwd=path)
+        if x.stdout:
+            self.print("Committing...")
+            await proc_exec("git", "add", ".", cwd=path)
+            await proc_exec("git", "commit", "-m", "up", cwd=path)
+            self.print("Pushing...")
+        else:
+            self.print("Nothing to commit, pushing...")
+        await proc_exec("git", "push", cwd=path)
+        self.print("Success")
 
 
-def up(cwd: Union[str, "Path", None] = None):
-    status_p: CompletedProcess[bytes] = system(
-        *("git", "status", "-s"),
-        capture_output=True,
-        cwd=cwd,
-    )
-    if status_p.stdout.strip():
-        system("git", "add", ".", cwd=cwd)
-        commit(cwd)
-
-    branch_p: CompletedProcess[str] = system(
-        *("git", "branch", "--show-current"),
-        capture_output=True,
-        text=True,
-        cwd=cwd,
-    )
-    branch = branch_p.stdout.strip()
-    log_p: CompletedProcess[str] = system(
-        *("git", "log", f"origin/{branch}..{branch}"),
-        capture_output=True,
-        text=True,
-        cwd=cwd,
-    )
-    if log_p.stdout.strip() and (not ok(system("git", "push", cwd=cwd, check=False))):
-        system("git", "pull", cwd=cwd)
-        system("git", "push", cwd=cwd)
-
-
-def main():
-    for p in iter_modules():
-        up(p)
-    up()
+asyncio.run(summon_workspace_tasks(UpTask))

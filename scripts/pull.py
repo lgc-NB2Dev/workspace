@@ -1,32 +1,16 @@
-from typing import TYPE_CHECKING
+import asyncio
+from pathlib import Path
+from typing_extensions import override
 
-from .utils import iter_modules, ok, system, tip_entering
-
-if TYPE_CHECKING:
-    from pathlib import Path
+from .utils import BaseAsyncTask, proc_exec, summon_workspace_tasks
 
 
-def main():
-    max_retry = 3
+class PullTask(BaseAsyncTask):
+    @override
+    async def do(self, path: Path):
+        self.print("Pulling...")
+        await proc_exec("git", "pull", cwd=path)
+        self.print("Success")
 
-    paths = [*iter_modules(tip=False)]
-    for i in range(1, max_retry + 1):
-        if not paths:
-            break
-        if i > 1:
-            print(f"Starting retry failed operations ({i} / {max_retry})")
 
-        failed_paths: list[ Path] = []
-        for p in paths:
-            tip_entering(p)
-            if not ok(system("git", "pull", cwd=str(p), check=False)):
-                print("Pull failed, retry scheduled")
-                failed_paths.append(p)
-
-        paths = failed_paths
-
-    else:
-        print(f"Still have failed operations after {max_retry} tries, stopping")
-        return
-
-    system("git", "pull")
+asyncio.run(summon_workspace_tasks(PullTask))

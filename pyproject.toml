@@ -5,6 +5,7 @@ authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
 dependencies = []
 requires-python = ">=3.10"
 license = { text = "MIT" }
+classifiers = ["Private :: Do Not Upload"]
 
 [dependency-groups]
 dev = [
@@ -12,50 +13,65 @@ dev = [
     "setuptools>=80.9.0",
     "pip>=25.2",
     # tools
-    "basedpyright>=1.31.1",
-    "ruff>=0.12.8",
+    "basedpyright>=1.31.3",
+    "ruff>=0.12.10",
     "pytest>=8.4.1",
     "pytest-asyncio>=1.1.0",
+    # scripts
+    "tenacity>=9.1.2",
     # nonebot
     "nonebot2[all]>=2.4.3",
     "nonebot-adapter-onebot>=2.4.6",
     "nonebot-plugin-orm[sqlite]>=0.8.2",
-    # external
-    "-e file:///${PROJECT_ROOT}/external/cookit#egg=cookit",
-    "-e file:///${PROJECT_ROOT}/external/cooaki#egg=cooaki",
-    # plugins
-    "-e file:///${PROJECT_ROOT}/plugins/nb-cli-plugin-bootstrap#egg=nb-cli-plugin-bootstrap",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-akinator#egg=nonebot-plugin-akinator",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-autoreply#egg=nonebot-plugin-autoreply",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-callapi#egg=nonebot-plugin-callapi",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-cnrail#egg=nonebot-plugin-cnrail",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-color#egg=nonebot-plugin-color",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-fix-qq-img-ssl#egg=nonebot-plugin-fix-qq-img-ssl",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-fuckyou#egg=nonebot-plugin-fuckyou",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-kawaii-robot#egg=nonebot-plugin-kawaii-robot",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-meme-stickers#egg=nonebot-plugin-meme-stickers",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-multincm#egg=nonebot-plugin-multincm",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-nonememe#egg=nonebot-plugin-nonememe",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-ottohzys#egg=nonebot-plugin-ottohzys",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picmcstat#egg=nonebot-plugin-picmcstat",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picmenu-next#egg=nonebot-plugin-picmenu-next",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picstatus#egg=nonebot-plugin-picstatus",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-picstatus-template-zhenxun#egg=nonebot-plugin-picstatus-template-zhenxun",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pingti#egg=nonebot-plugin-pingti",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-random-stereotypes#egg=nonebot-plugin-random-stereotypes",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-rimofun#egg=nonebot-plugin-rimofun",
-    "-e file:///${PROJECT_ROOT}/plugins/YetAnotherPicSearch#egg=YetAnotherPicSearch",
+    # workspace
+    "cookit",
+    "cooaki",
+    "nb-cli-plugin-bootstrap",
+    "nonebot-plugin-akinator",
+    "nonebot-plugin-autoreply",
+    "nonebot-plugin-callapi",
+    "nonebot-plugin-color",
+    "nonebot-plugin-fix-qq-img-ssl",
+    "nonebot-plugin-fuckyou",
+    "nonebot-plugin-kawaii-robot",
+    "nonebot-plugin-meme-stickers",
+    "nonebot-plugin-multincm",
+    "nonebot-plugin-nonememe",
+    "nonebot-plugin-ottohzys",
+    "nonebot-plugin-picmcstat",
+    "nonebot-plugin-picmenu-next",
+    "nonebot-plugin-picstatus",
+    "nonebot-plugin-picstatus-template-zhenxun",
+    "nonebot-plugin-random-stereotypes",
+    "nonebot-plugin-rimofun",
+    "YetAnotherPicSearch",
 ]
 
-[tool.pdm]
-distribution = false
+[tool.uv.workspace]
+members = ["external/*", "plugins/*"]
 
-[tool.pdm.scripts]
-dep = { call = "scripts.dep:main" }
-pull = { call = "scripts.pull:main" }
-switch = { call = "scripts.switch:main" }
-up = { call = "scripts.up:main" }
-locks = { call = "scripts.lock:main" }
+[tool.uv.sources]
+cookit = { workspace = true }
+cooaki = { workspace = true }
+nb-cli-plugin-bootstrap = { workspace = true }
+nonebot-plugin-akinator = { workspace = true }
+nonebot-plugin-autoreply = { workspace = true }
+nonebot-plugin-callapi = { workspace = true }
+nonebot-plugin-color = { workspace = true }
+nonebot-plugin-fix-qq-img-ssl = { workspace = true }
+nonebot-plugin-fuckyou = { workspace = true }
+nonebot-plugin-kawaii-robot = { workspace = true }
+nonebot-plugin-meme-stickers = { workspace = true }
+nonebot-plugin-multincm = { workspace = true }
+nonebot-plugin-nonememe = { workspace = true }
+nonebot-plugin-ottohzys = { workspace = true }
+nonebot-plugin-picmcstat = { workspace = true }
+nonebot-plugin-picmenu-next = { workspace = true }
+nonebot-plugin-picstatus = { workspace = true }
+nonebot-plugin-picstatus-template-zhenxun = { workspace = true }
+nonebot-plugin-random-stereotypes = { workspace = true }
+nonebot-plugin-rimofun = { workspace = true }
+YetAnotherPicSearch = { workspace = true }
 
 [tool.basedpyright]
 pythonVersion = "3.10"
@@ -91,7 +107,7 @@ ignore = [
     "B905",
     # "COM812",
     "E501",
-    "F821",    # conflict with pyright
+    "F821",
     "FBT001",
     "FBT002",
     "ISC001",

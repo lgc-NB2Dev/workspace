@@ -14,10 +14,6 @@
 	path = plugins/nonebot-plugin-callapi
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
 	branch = master
-[submodule "plugins/nonebot-plugin-cnrail"]
-	path = plugins/nonebot-plugin-cnrail
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-cnrail
-	branch = master
 [submodule "plugins/nonebot-plugin-color"]
 	path = plugins/nonebot-plugin-color
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
@@ -59,10 +55,6 @@
 [submodule "plugins/nonebot-plugin-picstatus-template-zhenxun"]
 	path = plugins/nonebot-plugin-picstatus-template-zhenxun
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus-template-zhenxun
-	branch = master
-[submodule "plugins/nonebot-plugin-pingti"]
-	path = plugins/nonebot-plugin-pingti
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-pingti
 	branch = master
 [submodule "plugins/nonebot-plugin-random-stereotypes"]
 	path = plugins/nonebot-plugin-random-stereotypes
