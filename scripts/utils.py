@@ -66,6 +66,7 @@ class BaseAsyncTask(ABC, Generic[P]):
     reraise: bool = False
 
     stop_retry_now: bool = False
+    failed_with_exception: bool = False
 
     @cached_property
     def current_s(self):
@@ -122,6 +123,7 @@ class BaseAsyncTask(ABC, Generic[P]):
         try:
             return await self.retrying_f(*args, **kwds)
         except RetryError as e:
+            self.failed_with_exception = True
             if self.reraise:
                 e.reraise()
 
@@ -157,7 +159,7 @@ async def summon_workspace_tasks(task_cls: type[BaseAsyncTask[[Path]]]):
         (partial(t, p) for t, p in tasks),
     )
 
-    if any(x.attempts > 1 for x, _ in tasks):
+    if any(x.failed_with_exception for x, _ in tasks):
         print("Error occurred, will not continue committing root workspace")
         return
 
