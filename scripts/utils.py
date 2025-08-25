@@ -11,7 +11,15 @@ from functools import cached_property, partial
 from pathlib import Path
 from signal import SIGTERM
 from subprocess import PIPE
-from typing import TYPE_CHECKING, Any, Generic, NamedTuple, ParamSpec
+from typing import (
+    TYPE_CHECKING,
+    Any,
+    Concatenate,
+    Generic,
+    NamedTuple,
+    ParamSpec,
+    TypeVar,
+)
 
 from tenacity import RetryCallState, RetryError, retry, wait_fixed
 
@@ -22,6 +30,7 @@ SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
 
 P = ParamSpec("P")
+R = TypeVar("R")
 
 
 def discover_submodules() -> list[Path]:
@@ -129,6 +138,23 @@ class BaseAsyncTask(ABC, Generic[P]):
             self.failed_with_exception = True
             if self.reraise:
                 e.reraise()
+
+
+def pascal_case(snake_str: str) -> str:
+    return "".join(word.capitalize() for word in snake_str.split("_"))
+
+
+def task(cls_name: str | None = None):
+    def deco(
+        func: Callable[Concatenate[BaseAsyncTask[P], P], R],
+    ) -> type[BaseAsyncTask[P]]:
+        return type(  # pyright: ignore[reportReturnType]
+            cls_name or f"{pascal_case(func.__name__)}Task",
+            (BaseAsyncTask,),
+            {"do": func},
+        )
+
+    return deco
 
 
 NAME_REPLACE_LIST = [
