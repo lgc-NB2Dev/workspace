@@ -13,4 +13,5 @@ class PullTask(BaseAsyncTask):
         self.print("Success")
 
 
-asyncio.run(summon_workspace_tasks(PullTask))
+def main():
+    asyncio.run(summon_workspace_tasks(PullTask))

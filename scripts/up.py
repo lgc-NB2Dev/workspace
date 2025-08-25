@@ -20,4 +20,5 @@ class UpTask(BaseAsyncTask):
         self.print("Success")
 
 
-asyncio.run(summon_workspace_tasks(UpTask))
+def main():
+    asyncio.run(summon_workspace_tasks(UpTask))

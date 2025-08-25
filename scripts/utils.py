@@ -143,10 +143,9 @@ def replace_name(name: str) -> str:
 
 async def summon_workspace_tasks(task_cls: type[BaseAsyncTask[[Path]]]):
     paths = discover_submodules()
-    sub_total = len(paths)
-    print(f"Discovered {sub_total} submodules in workspace")
+    total = len(paths)
+    print(f"Discovered {total} submodules in workspace")
 
-    total = sub_total + 1
     names = [replace_name(p.name) for p in paths]
     max_path_len = max(len(x) for x in names)
 
@@ -163,7 +162,7 @@ async def summon_workspace_tasks(task_cls: type[BaseAsyncTask[[Path]]]):
         print("Error occurred, will not continue committing root workspace")
         return
 
-    await task_cls(total, total, "<root>".ljust(max_path_len))(ROOT_DIR)
+    await task_cls(1, 1, "<root>".ljust(max_path_len))(ROOT_DIR)
 
 
 class ExecResult(NamedTuple):
@@ -197,7 +196,3 @@ async def proc_exec(*args: str, check: bool = True, **kwargs):
     if check and r.code != 0:
         raise CommandFailedError(r)
     return r
-
-
-def get_current_remote():
-    pass

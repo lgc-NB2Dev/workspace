@@ -15,22 +15,25 @@ dev = [
     # tools
     "basedpyright>=1.31.3",
     "ruff>=0.12.10",
+    "poethepoet>=0.37.0",
     "pytest>=8.4.1",
     "pytest-asyncio>=1.1.0",
     # scripts
     "tenacity>=9.1.2",
     # nonebot
     "nonebot2[all]>=2.4.3",
+    "nonebug>=0.4.3",
     "nonebot-adapter-onebot>=2.4.6",
+    "nonebot-adapter-satori>=0.13.7",    # for cookit test
     "nonebot-plugin-orm[sqlite]>=0.8.2",
     # workspace
-    "cookit",
-    "cooaki",
+    "cookit[all]",
+    "cooaki[all]",
     "nb-cli-plugin-bootstrap",
-    "nonebot-plugin-akinator",
+    "nonebot-plugin-akinator[all]",
     "nonebot-plugin-autoreply",
     "nonebot-plugin-callapi",
-    "nonebot-plugin-color",
+    "nonebot-plugin-color[all]",
     "nonebot-plugin-fix-qq-img-ssl",
     "nonebot-plugin-fuckyou",
     "nonebot-plugin-kawaii-robot",
@@ -42,9 +45,9 @@ dev = [
     "nonebot-plugin-picmenu-next",
     "nonebot-plugin-picstatus",
     "nonebot-plugin-picstatus-template-zhenxun",
-    "nonebot-plugin-random-stereotypes",
+    "nonebot-plugin-random-stereotypes[all]",
     "nonebot-plugin-rimofun",
-    "YetAnotherPicSearch",
+    "YetAnotherPicSearch[all]",
 ]
 
 [tool.uv.workspace]
@@ -72,6 +75,10 @@ nonebot-plugin-picstatus-template-zhenxun = { workspace = true }
 nonebot-plugin-random-stereotypes = { workspace = true }
 nonebot-plugin-rimofun = { workspace = true }
 YetAnotherPicSearch = { workspace = true }
+
+[tool.poe.tasks]
+pull.script = "scripts.pull:main"
+up.script = "scripts.up:main"
 
 [tool.basedpyright]
 pythonVersion = "3.10"
