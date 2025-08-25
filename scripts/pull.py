@@ -2,7 +2,7 @@ import asyncio
 from pathlib import Path
 from typing_extensions import override
 
-from .utils import BaseAsyncTask, proc_exec, summon_workspace_tasks
+from .utils import BaseAsyncTask, handle_interrupt, proc_exec, summon_workspace_tasks
 
 
 class PullTask(BaseAsyncTask):
@@ -14,4 +14,5 @@ class PullTask(BaseAsyncTask):
 
 
 def main():
-    asyncio.run(summon_workspace_tasks(PullTask))
+    with handle_interrupt():
+        asyncio.run(summon_workspace_tasks(PullTask))

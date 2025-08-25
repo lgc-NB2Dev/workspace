@@ -1,13 +1,15 @@
 import asyncio
 import re
+import textwrap
 from abc import ABC, abstractmethod
-from asyncio import Event, Semaphore, Task
+from asyncio import CancelledError, Event, Semaphore, Task
 from asyncio.taskgroups import TaskGroup
 from collections.abc import Callable, Coroutine, Iterable
-from contextlib import suppress
+from contextlib import contextmanager, suppress
 from dataclasses import dataclass
 from functools import cached_property, partial
 from pathlib import Path
+from signal import SIGTERM
 from subprocess import PIPE
 from typing import TYPE_CHECKING, Any, Generic, NamedTuple, ParamSpec
 
@@ -54,6 +56,7 @@ async def dynamic_tasks(
                 await _ev.wait()
             task = group.create_task(_w(con()))
             task.add_done_callback(_cb)
+            await asyncio.sleep(0)  # yield to let semaphore acquire
 
 
 @dataclass
@@ -141,10 +144,13 @@ def replace_name(name: str) -> str:
     return name
 
 
-async def summon_workspace_tasks(task_cls: type[BaseAsyncTask[[Path]]]):
+async def summon_workspace_tasks(
+    task_cls: type[BaseAsyncTask[[Path]]],
+    with_root: bool = True,
+):
     paths = discover_submodules()
     total = len(paths)
-    print(f"Discovered {total} submodules in workspace")
+    print(f"* Discovered {total} submodules in workspace")
 
     names = [replace_name(p.name) for p in paths]
     max_path_len = max(len(x) for x in names)
@@ -154,15 +160,16 @@ async def summon_workspace_tasks(task_cls: type[BaseAsyncTask[[Path]]]):
         for i, (n, p) in enumerate(zip(names, paths), 1)
     ]
     await dynamic_tasks(
-        Semaphore(4),
+        Semaphore(8),
         (partial(t, p) for t, p in tasks),
     )
 
-    if any(x.failed_with_exception for x, _ in tasks):
-        print("Error occurred, will not continue committing root workspace")
+    if not with_root:
         return
-
-    await task_cls(1, 1, "<root>".ljust(max_path_len))(ROOT_DIR)
+    if any(x.failed_with_exception for x, _ in tasks):
+        print("* Error occurred, will not continue committing root workspace")
+        return
+    await task_cls(1, 1, "<root>")(ROOT_DIR)
 
 
 class ExecResult(NamedTuple):
@@ -174,7 +181,9 @@ class ExecResult(NamedTuple):
 
 class CommandFailedError(RuntimeError):
     def __init__(self, r: ExecResult) -> None:
-        super().__init__(f"Command failed with code {r.code}\n{r.stderr}")
+        super().__init__(
+            f"Command failed with code {r.code}\n{textwrap.indent(r.stderr, '    ')}",
+        )
 
 
 async def proc_exec(*args: str, check: bool = True, **kwargs):
@@ -185,7 +194,12 @@ async def proc_exec(*args: str, check: bool = True, **kwargs):
         stderr=kwargs.pop("stderr", PIPE),
         **kwargs,
     )
-    stdout, stderr = await p.communicate()
+    try:
+        stdout, stderr = await p.communicate()
+    except CancelledError:
+        p.send_signal(SIGTERM)
+        await p.wait()
+        raise
     assert p.returncode is not None
     r = ExecResult(
         process=p,
@@ -196,3 +210,11 @@ async def proc_exec(*args: str, check: bool = True, **kwargs):
     if check and r.code != 0:
         raise CommandFailedError(r)
     return r
+
+
+@contextmanager
+def handle_interrupt():
+    try:
+        yield
+    except (KeyboardInterrupt, asyncio.CancelledError):
+        print("* Cancelled")

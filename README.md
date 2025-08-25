@@ -11,24 +11,18 @@
 使用以下命令来克隆本工作区进行插件开发
 
 ```bash
-git clone --recurse-submodules --depth=1 https://github.com/lgc-NB2Dev/workspace
+git clone --recursive --depth=1 https://github.com/lgc-NB2Dev/workspace
 ```
 
-使用 `pdm` 来安装工作区内所有插件及其依赖到当前环境中
+使用 `uv` 来安装工作区内所有插件及其依赖到当前环境中
 
 ```bash
-pdm install -G:all
-```
-
-使用下面的命令安装工作区内的 `nb-cli-plugin-bootstrap` 插件到你的 `nb-cli` 中
-
-```bash
-nb self install -e ./plugins/nb-cli-plugin-bootstrap
+uv sync -U
 ```
 
 ### 配置调试环境
 
-使用刚刚安装的 `nb-cli-plugin-bootstrap` 创建一个测试用的 NoneBot2 项目
+使用环境中的 `nb-cli` 与 `nb-cli-plugin-bootstrap` 创建一个测试用的 NoneBot2 项目
 
 ```bash
 cd private && nb bs
