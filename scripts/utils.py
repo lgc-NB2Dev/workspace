@@ -69,7 +69,7 @@ async def dynamic_tasks(
 
 
 @dataclass
-class BaseAsyncTask(ABC, Generic[P]):
+class BaseAsyncTask(ABC, Generic[P, R]):
     current: int
     total: int
     name: str
@@ -129,9 +129,9 @@ class BaseAsyncTask(ABC, Generic[P]):
         self.print_retry_msg(s)
 
     @abstractmethod
-    async def do(self, *args: P.args, **kwargs: P.kwargs) -> Any: ...
+    async def do(self, *args: P.args, **kwargs: P.kwargs) -> R: ...
 
-    async def __call__(self, *args: P.args, **kwds: P.kwargs) -> Any:
+    async def __call__(self, *args: P.args, **kwds: P.kwargs) -> R | None:
         try:
             return await self.retrying_f(*args, **kwds)
         except RetryError as e:
@@ -146,8 +146,8 @@ def pascal_case(snake_str: str) -> str:
 
 def task(cls_name: str | None = None):
     def deco(
-        func: Callable[Concatenate[BaseAsyncTask[P], P], R],
-    ) -> type[BaseAsyncTask[P]]:
+        func: Callable[Concatenate[BaseAsyncTask[P, R], P], R],
+    ) -> type[BaseAsyncTask[P, R]]:
         return type(  # pyright: ignore[reportReturnType]
             cls_name or f"{pascal_case(func.__name__)}Task",
             (BaseAsyncTask,),
@@ -171,7 +171,7 @@ def replace_name(name: str) -> str:
 
 
 async def summon_workspace_tasks(
-    task_cls: type[BaseAsyncTask[[Path]]],
+    task_cls: type[BaseAsyncTask[[Path], Any]],
     with_root: bool = True,
 ):
     paths = discover_submodules()

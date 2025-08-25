@@ -80,6 +80,8 @@ YetAnotherPicSearch = { workspace = true }
 [tool.poe.tasks]
 pull.script = "scripts.pull:main"
 up.script = "scripts.up:main"
+run.cmd = "python -m nb_cli run"
+run.cwd = "private/test-nb2"
 
 [tool.basedpyright]
 pythonVersion = "3.10"
