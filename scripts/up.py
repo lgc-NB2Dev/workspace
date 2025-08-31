@@ -4,19 +4,19 @@ from pathlib import Path
 from .utils import (
     BaseAsyncTask,
     handle_interrupt,
+    make_workspace_task_runner,
     proc_exec,
-    summon_workspace_tasks,
     task,
 )
 
 
 @task()
-async def up(self: BaseAsyncTask, path: Path):
+async def up(self: BaseAsyncTask, path: Path, msg: str = "up"):
     x = await proc_exec("git", "status", "-s", cwd=path)
     if x.stdout:
         self.print("Committing...")
         await proc_exec("git", "add", ".", cwd=path)
-        await proc_exec("git", "commit", "-m", "up", cwd=path)
+        await proc_exec("git", "commit", "-m", msg, cwd=path)
         self.print("Pushing...")
     else:
         self.print("Nothing to commit, pushing...")
@@ -24,6 +24,6 @@ async def up(self: BaseAsyncTask, path: Path):
     self.print("Success")
 
 
-def main():
+def main(msg: str = "up"):
     with handle_interrupt():
-        asyncio.run(summon_workspace_tasks(up))
+        asyncio.run(make_workspace_task_runner(up)(msg))

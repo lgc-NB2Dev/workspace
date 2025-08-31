@@ -4,8 +4,8 @@ from pathlib import Path
 from .utils import (
     BaseAsyncTask,
     handle_interrupt,
+    make_workspace_task_runner,
     proc_exec,
-    summon_workspace_tasks,
     task,
 )
 
@@ -19,4 +19,4 @@ async def pull(self: BaseAsyncTask, path: Path):
 
 def main():
     with handle_interrupt():
-        asyncio.run(summon_workspace_tasks(pull))
+        asyncio.run(make_workspace_task_runner(pull)())

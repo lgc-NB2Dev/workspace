@@ -18,6 +18,7 @@ from typing import (
     Generic,
     NamedTuple,
     ParamSpec,
+    TypeAlias,
     TypeVar,
 )
 
@@ -31,6 +32,8 @@ ROOT_DIR = SCRIPTS_DIR.parent
 
 P = ParamSpec("P")
 R = TypeVar("R")
+
+Co: TypeAlias = Coroutine[Any, Any, R]
 
 
 def discover_submodules() -> list[Path]:
@@ -170,32 +173,35 @@ def replace_name(name: str) -> str:
     return name
 
 
-async def summon_workspace_tasks(
-    task_cls: type[BaseAsyncTask[[Path], Any]],
+def make_workspace_task_runner(
+    task_cls: type[BaseAsyncTask[Concatenate[Path, P], Any]],
     with_root: bool = True,
-):
-    paths = discover_submodules()
-    total = len(paths)
-    print(f"* Discovered {total} submodules in workspace")
+) -> Callable[P, Co[None]]:
+    async def wrapper(*args: P.args, **kwargs: P.kwargs) -> None:
+        paths = discover_submodules()
+        total = len(paths)
+        print(f"* Discovered {total} submodules in workspace")
 
-    names = [replace_name(p.name) for p in paths]
-    max_path_len = max(len(x) for x in names)
+        names = [replace_name(p.name) for p in paths]
+        max_path_len = max(len(x) for x in names)
 
-    tasks = [
-        (task_cls(i, total, n.ljust(max_path_len)), p)
-        for i, (n, p) in enumerate(zip(names, paths), 1)
-    ]
-    await dynamic_tasks(
-        Semaphore(8),
-        (partial(t, p) for t, p in tasks),
-    )
+        tasks = [
+            (task_cls(i, total, n.ljust(max_path_len)), p)
+            for i, (n, p) in enumerate(zip(names, paths), 1)
+        ]
+        await dynamic_tasks(
+            Semaphore(8),
+            (partial(t, p) for t, p in tasks),
+        )
 
-    if not with_root:
-        return
-    if any(x.failed_with_exception for x, _ in tasks):
-        print("* Error occurred, will not continue committing root workspace")
-        return
-    await task_cls(1, 1, "<root>")(ROOT_DIR)
+        if not with_root:
+            return
+        if any(x.failed_with_exception for x, _ in tasks):
+            print("* Error occurred, will not continue committing root workspace")
+            return
+        await task_cls(1, 1, "<root>")(ROOT_DIR, *args, **kwargs)
+
+    return wrapper
 
 
 class ExecResult(NamedTuple):

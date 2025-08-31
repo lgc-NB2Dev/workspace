@@ -84,7 +84,10 @@ nb2-workspace-private = { workspace = true }
 
 [tool.poe.tasks]
 pull.script = "scripts.pull:main"
+
 up.script = "scripts.up:main"
+up.args = [{ name = "msg", positional = true, default = "up" }]
+
 run.cmd = "python -m nb_cli run"
 run.cwd = "private/test-nb2"
 
