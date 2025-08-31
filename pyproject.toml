@@ -49,10 +49,14 @@ dev = [
     "nonebot-plugin-random-stereotypes[all]",
     "nonebot-plugin-rimofun",
     "YetAnotherPicSearch[all]",
+    "nb2-workspace-private",
 ]
 
+[tool.uv]
+package = false
+
 [tool.uv.workspace]
-members = ["external/*", "plugins/*"]
+members = ["external/*", "plugins/*", "private"]
 
 [tool.uv.sources]
 cookit = { workspace = true }
@@ -76,6 +80,7 @@ nonebot-plugin-picstatus-template-zhenxun = { workspace = true }
 nonebot-plugin-random-stereotypes = { workspace = true }
 nonebot-plugin-rimofun = { workspace = true }
 YetAnotherPicSearch = { workspace = true }
+nb2-workspace-private = { workspace = true }
 
 [tool.poe.tasks]
 pull.script = "scripts.pull:main"

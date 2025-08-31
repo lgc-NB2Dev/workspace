@@ -1,0 +1,16 @@
+[project]
+name = "nb2-workspace-private"
+version = "0"
+authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    # "some-package"
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+# some-package = { path = "some-package", editable = true }

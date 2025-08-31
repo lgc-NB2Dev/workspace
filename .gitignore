@@ -7,3 +7,4 @@ pyrightconfig.json
 __pycache__/
 .idea/
 .yarn/
+uv.lock
