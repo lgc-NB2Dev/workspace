@@ -43,7 +43,7 @@ dev = [
     "nonebot-plugin-nonememe",
     "nonebot-plugin-ottohzys",
     "nonebot-plugin-picmcstat",
-    "nonebot-plugin-picmenu-next",
+    "nonebot-plugin-picmenu-next[all]",
     "nonebot-plugin-picstatus",
     "nonebot-plugin-picstatus-template-zhenxun",
     "nonebot-plugin-random-stereotypes[all]",
