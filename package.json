@@ -1,5 +1,8 @@
 {
   "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "./plugins/nonebot-plugin-autoreply/marketplace"
+  ],
   "devDependencies": {
     "@types/katex": "^0.16.7"
   }
