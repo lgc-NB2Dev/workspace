@@ -1,5 +1,6 @@
 import asyncio
 import re
+import sys
 import textwrap
 from abc import ABC, abstractmethod
 from asyncio import CancelledError, Event, Semaphore, Task
@@ -26,6 +27,12 @@ from tenacity import RetryCallState, RetryError, retry, wait_fixed
 
 if TYPE_CHECKING:
     from asyncio.subprocess import Process
+
+if sys.version_info < (3, 11):
+    from asyncio.taskgroups import TaskGroup
+else:
+    from taskgroup import TaskGroup
+
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent

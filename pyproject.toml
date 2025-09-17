@@ -3,7 +3,7 @@ name = "nb2-workspace"
 version = "0"
 authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
 dependencies = []
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 classifiers = ["Private :: Do Not Upload"]
 
@@ -13,13 +13,14 @@ dev = [
     "setuptools>=80.9.0",
     "pip>=25.2",
     # tools
-    "basedpyright>=1.31.3",
-    "ruff>=0.12.10",
+    "basedpyright>=1.31.4",
+    "ruff>=0.13.0",
     "poethepoet>=0.37.0",
-    "pytest>=8.4.1",
-    "pytest-asyncio>=1.1.0",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
     # scripts
     "tenacity>=9.1.2",
+    "taskgroup>=0.2.2; python_version<'3.11'",
     # nonebot
     "nonebot2[all]>=2.4.3",
     "nb-cli>=1.4.2",
@@ -199,7 +200,7 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"private/test/*" = ["B018", "INP001"]
+"private/misc/*" = ["B018", "INP001"]
 "typings/skia/*" = ["A002", "E743", "N8", "PLW0211", "PYI021", "PYI034"]
 "typings/thefuzz/*" = ["N802"]
 
