@@ -28,7 +28,7 @@ from tenacity import RetryCallState, RetryError, retry, wait_fixed
 if TYPE_CHECKING:
     from asyncio.subprocess import Process
 
-if sys.version_info < (3, 11):
+if sys.version_info >= (3, 11):
     from asyncio.taskgroups import TaskGroup
 else:
     from taskgroup import TaskGroup
