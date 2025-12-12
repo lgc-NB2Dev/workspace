@@ -86,10 +86,14 @@ nb2-workspace-private = { workspace = true }
 [tool.poe.tasks]
 pull.script = "scripts.pull:main"
 switch.script = "scripts.switch:main"
-up.script = "scripts.up:main"
-up.args = [{ name = "msg", positional = true, default = "up" }]
-run.cmd = "python -m nb_cli run"
-run.cwd = "private/test-nb2"
+
+[tool.poe.tasks.up]
+script = "scripts.up:main"
+args = [{ name = "msg", positional = true, default = "up" }]
+
+[tool.poe.tasks.run]
+cmd = "python -m nb_cli run"
+cwd = "private/test-nb2"
 
 [tool.basedpyright]
 pythonVersion = "3.10"
@@ -109,7 +113,7 @@ executionEnvironments = [
 
 [tool.ruff]
 target-version = "py310"
-include = ["private"]
+respect-gitignore = false
 extend-exclude = [
     "./plugins/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
     "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",

@@ -36,7 +36,7 @@ async def switch(self: BaseAsyncTask, path: Path):
         self.print(f"Already on branch `{target_branch}`")
         return
 
-    await proc_exec("git", "checkout", target_branch, cwd=path)
+    await proc_exec("git", "switch", target_branch, cwd=path)
     self.print(f"Switched to branch `{target_branch}`")
 
 
