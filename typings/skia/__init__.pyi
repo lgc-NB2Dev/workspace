@@ -3,7 +3,7 @@
 import datetime
 import typing
 import typing_extensions
-from typing_extensions import TypeAlias
+from typing import TypeAlias
 
 import numpy
 

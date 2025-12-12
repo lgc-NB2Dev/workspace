@@ -1,5 +1,5 @@
-from collections.abc import Generator, Mapping, Sequence
-from typing import Callable, TypeVar, overload
+from collections.abc import Callable, Generator, Mapping, Sequence
+from typing import TypeVar, overload
 
 from . import fuzz as fuzz, utils as utils
 

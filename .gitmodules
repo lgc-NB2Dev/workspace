@@ -1,7 +1,3 @@
-[submodule "plugins/nb-cli-plugin-bootstrap"]
-	path = plugins/nb-cli-plugin-bootstrap
-	url = https://github.com/lgc-NB2Dev/nb-cli-plugin-bootstrap
-	branch = master
 [submodule "plugins/nonebot-plugin-akinator"]
 	path = plugins/nonebot-plugin-akinator
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
