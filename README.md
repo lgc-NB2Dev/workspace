@@ -20,6 +20,12 @@ git clone --recursive --depth=1 https://github.com/lgc-NB2Dev/workspace
 uv sync -U
 ```
 
+切换所有 submodules 到主分支
+
+```bash
+poe switch
+```
+
 ### 配置调试环境
 
 使用环境中的 `nb-cli` 创建一个测试用的 NoneBot2 项目
@@ -34,7 +40,7 @@ cd private && nb init
 
 配置好后使用 VSCode 的“运行和调试”标签页和“Run TestNB2”运行项来启动 NoneBot2
 
-如果想要测试工作区内的插件，在 bot 项目的 `pyproject.toml` 中的 `tool.nonebot.plugins` 项中添加插件的包名即可
+如果想要测试工作区内的插件，在 bot 项目的 `pyproject.toml` 中的 `tool.nonebot.plugins.@local` 项中添加插件的包名即可
 
 ## 联系我
 

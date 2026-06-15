@@ -15,3 +15,4 @@
 [submodule "others/nonebot-plugin-template"]
 	path = others/nonebot-plugin-template
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
+	branch = master
