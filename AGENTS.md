@@ -49,11 +49,16 @@ Refer to `README.md` for workspace initialization.
 ## Workspace Rules
 
 Before editing a sub-project, check whether it has its own `AGENTS.md`. Sub-project `AGENTS.md` instructions override this file.
+Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working root check.
 
-- Before writing NoneBot-related code, check the docs for current APIs and code style.
+- IMPORTANT: Before touching NoneBot related code, check the docs for current APIs and code style.
   - If you are not sure which NoneBot2 docs page to read, use `docs/nonebot2-docs-index.md`.
   - Use `uv pip show nonebot2` to check the installed NoneBot2 version.
   - Keep `private/references/nonebot2` as an up-to-date depth-1 clone of `https://github.com/nonebot/nonebot2`.
   - `poe docs-index` uses the installed version and local versioned docs to regenerate the index.
   - Regenerate docs index after the local reference repo or installed NoneBot2 version changes: `poe docs-index`.
 - Prefer putting reusable utility classes in `cookit` when they are worth sharing.
+
+## Gotchas
+
+- When importing another NoneBot plugin for inspection or tests, initialize NoneBot first, then use `nonebot.require()` or `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.

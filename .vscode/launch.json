@@ -16,7 +16,8 @@
       "name": "TestNB2",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/private/test-nb2/bot.py",
+      "module": "nb_cli",
+      "args": ["run"],
       "cwd": "${workspaceFolder}/private/test-nb2",
       "console": "integratedTerminal",
       "justMyCode": false,
@@ -39,15 +40,6 @@
       "request": "launch",
       "module": "tests_standalone",
       "cwd": "${workspaceFolder}/external/cookit",
-      "console": "integratedTerminal",
-      "justMyCode": false
-    },
-    {
-      "name": "cooaki: Console demo",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "cooaki",
-      "cwd": "${workspaceFolder}/external/cooaki",
       "console": "integratedTerminal",
       "justMyCode": false
     }
