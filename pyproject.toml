@@ -31,25 +31,7 @@ dev = [
     "nonebot-plugin-orm[sqlite]>=0.8.2",
     # workspace
     "cookit[all]",
-    "cooaki[all]",
-    "nonebot-plugin-akinator[all]",
-    "nonebot-plugin-autoreply",
-    "nonebot-plugin-callapi",
-    "nonebot-plugin-color[all]",
-    "nonebot-plugin-fix-qq-img-ssl",
-    "nonebot-plugin-fuckyou",
-    "nonebot-plugin-kawaii-robot",
-    "nonebot-plugin-meme-stickers",
-    "nonebot-plugin-multincm",
-    "nonebot-plugin-nonememe",
-    "nonebot-plugin-ottohzys",
-    "nonebot-plugin-picmcstat",
     "nonebot-plugin-picmenu-next[all]",
-    "nonebot-plugin-picstatus",
-    "nonebot-plugin-picstatus-template-zhenxun",
-    "nonebot-plugin-random-stereotypes[all]",
-    "nonebot-plugin-rimofun",
-    "YetAnotherPicSearch[all]",
     "nb2-workspace-private",
 ]
 
@@ -62,26 +44,7 @@ members = ["external/*", "plugins/*", "private"]
 
 [tool.uv.sources]
 cookit = { workspace = true }
-cooaki = { workspace = true }
-nb-cli-plugin-bootstrap = { workspace = true }
-nonebot-plugin-akinator = { workspace = true }
-nonebot-plugin-autoreply = { workspace = true }
-nonebot-plugin-callapi = { workspace = true }
-nonebot-plugin-color = { workspace = true }
-nonebot-plugin-fix-qq-img-ssl = { workspace = true }
-nonebot-plugin-fuckyou = { workspace = true }
-nonebot-plugin-kawaii-robot = { workspace = true }
-nonebot-plugin-meme-stickers = { workspace = true }
-nonebot-plugin-multincm = { workspace = true }
-nonebot-plugin-nonememe = { workspace = true }
-nonebot-plugin-ottohzys = { workspace = true }
-nonebot-plugin-picmcstat = { workspace = true }
 nonebot-plugin-picmenu-next = { workspace = true }
-nonebot-plugin-picstatus = { workspace = true }
-nonebot-plugin-picstatus-template-zhenxun = { workspace = true }
-nonebot-plugin-random-stereotypes = { workspace = true }
-nonebot-plugin-rimofun = { workspace = true }
-YetAnotherPicSearch = { workspace = true }
 nb2-workspace-private = { workspace = true }
 
 [tool.poe.tasks]
@@ -101,12 +64,7 @@ pythonVersion = "3.10"
 defineConstant = { PYDANTIC_V2 = true }
 typeCheckingMode = "standard"
 reportShadowedImports = false
-exclude = [
-    "**/node_modules",
-    "**/.venv",
-    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
-    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
-]
+exclude = ["**/node_modules", "**/.venv"]
 executionEnvironments = [
     { root = "typings", reportIncompatibleMethodOverride = false, reportSelfClsParameterName = false },
     { root = "." },
@@ -115,11 +73,7 @@ executionEnvironments = [
 [tool.ruff]
 target-version = "py310"
 respect-gitignore = false
-extend-exclude = [
-    "./plugins/nb-cli-plugin-bootstrap/nb_cli_plugin_bootstrap/templates/bootstrap",
-    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/bnhhsh",
-    "./plugins/nonebot-plugin-rimofun/nonebot_plugin_rimofun/not_translator",
-]
+extend-exclude = []
 
 [tool.ruff.format]
 docstring-code-format = true

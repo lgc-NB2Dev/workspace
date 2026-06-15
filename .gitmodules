@@ -1,78 +1,12 @@
-[submodule "plugins/nonebot-plugin-akinator"]
-	path = plugins/nonebot-plugin-akinator
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-akinator
-	branch = master
-[submodule "plugins/nonebot-plugin-autoreply"]
-	path = plugins/nonebot-plugin-autoreply
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply
-	branch = master
-[submodule "plugins/nonebot-plugin-callapi"]
-	path = plugins/nonebot-plugin-callapi
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-callapi
-	branch = master
-[submodule "plugins/nonebot-plugin-color"]
-	path = plugins/nonebot-plugin-color
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-color
-	branch = main
-[submodule "plugins/nonebot-plugin-fuckyou"]
-	path = plugins/nonebot-plugin-fuckyou
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou
-	branch = master
-[submodule "plugins/nonebot-plugin-kawaii-robot"]
-	path = plugins/nonebot-plugin-kawaii-robot
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-kawaii-robot
-[submodule "plugins/nonebot-plugin-meme-stickers"]
-	path = plugins/nonebot-plugin-meme-stickers
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-meme-stickers
-	branch = master
-[submodule "plugins/nonebot-plugin-multincm"]
-	path = plugins/nonebot-plugin-multincm
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-multincm
-	branch = master
-[submodule "plugins/nonebot-plugin-nonememe"]
-	path = plugins/nonebot-plugin-nonememe
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-nonememe
-	branch = master
-[submodule "plugins/nonebot-plugin-ottohzys"]
-	path = plugins/nonebot-plugin-ottohzys
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-ottohzys
-	branch = master
-[submodule "plugins/nonebot-plugin-picmcstat"]
-	path = plugins/nonebot-plugin-picmcstat
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmcstat
 [submodule "plugins/nonebot-plugin-picmenu-next"]
 	path = plugins/nonebot-plugin-picmenu-next
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
 	branch = master
-[submodule "plugins/nonebot-plugin-picstatus"]
-	path = plugins/nonebot-plugin-picstatus
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
-	branch = master
-[submodule "plugins/nonebot-plugin-picstatus-template-zhenxun"]
-	path = plugins/nonebot-plugin-picstatus-template-zhenxun
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus-template-zhenxun
-	branch = master
-[submodule "plugins/nonebot-plugin-random-stereotypes"]
-	path = plugins/nonebot-plugin-random-stereotypes
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes
-	branch = master
-[submodule "plugins/nonebot-plugin-rimofun"]
-	path = plugins/nonebot-plugin-rimofun
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-rimofun
-	branch = master
-[submodule "plugins/YetAnotherPicSearch"]
-	path = plugins/YetAnotherPicSearch
-	url = https://github.com/lgc-NB2Dev/YetAnotherPicSearch
-	branch = main
 
 [submodule "external/cookit"]
 	path = external/cookit
 	url = https://github.com/lgc2333/cookit
 	branch = main
-[submodule "external/cooaki"]
-	path = external/cooaki
-	url = https://github.com/lgc2333/cooaki
-	branch = master
 
 [submodule "others/readme"]
 	path = others/readme
@@ -81,6 +15,3 @@
 [submodule "others/nonebot-plugin-template"]
 	path = others/nonebot-plugin-template
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
-[submodule "plugins/nonebot-plugin-fix-qq-img-ssl"]
-	path = plugins/nonebot-plugin-fix-qq-img-ssl
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-fix-qq-img-ssl

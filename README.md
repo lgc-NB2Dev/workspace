@@ -22,15 +22,13 @@ uv sync -U
 
 ### 配置调试环境
 
-使用环境中的 `nb-cli` 与 `nb-cli-plugin-bootstrap` 创建一个测试用的 NoneBot2 项目
+使用环境中的 `nb-cli` 创建一个测试用的 NoneBot2 项目
 
 ```bash
-cd private && nb bs
+cd private && nb init
 ```
 
-运行上方命令进入创建向导之后，项目名称填写 `test-nb2`，不要创建虚拟环境，其他按需要选择即可
-
-你也可以使用 `nb init` 来创建，不过创建项目后可能需要你手动生成 `bot.py`
+运行上方命令进入创建向导之后，项目名称填写 `test-nb2`，不要创建虚拟环境（如有请删除），其他按需要选择即可
 
 创建好之后自行安装需要的依赖到当前环境中即可
 
