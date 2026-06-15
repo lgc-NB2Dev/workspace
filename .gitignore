@@ -8,3 +8,4 @@ __pycache__/
 .idea/
 .yarn/
 uv.lock
+docs/nonebot2-docs-index.md

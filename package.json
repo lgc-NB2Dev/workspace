@@ -1,6 +1,7 @@
 {
   "packageManager": "yarn@4.17.0",
   "devDependencies": {
-    "@types/katex": "^0.16.8"
+    "@types/katex": "^0.16.8",
+    "prettier": "^3.8.4"
   }
 }
