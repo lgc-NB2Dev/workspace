@@ -1,7 +1,7 @@
 [project]
 name = "nb2-workspace-private"
 version = "0"
-authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
+authors = [{ name = "LgCuwukii", email = "lgc2333@126.com" }]
 requires-python = ">=3.10"
 license = { text = "MIT" }
 classifiers = ["Private :: Do Not Upload"]
