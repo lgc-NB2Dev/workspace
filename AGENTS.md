@@ -57,6 +57,7 @@ Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working roo
   - Use `uv pip show nonebot2` to check the installed NoneBot2 version.
   - Keep `private/references/nonebot2` as an up-to-date depth-1 clone of `https://github.com/nonebot/nonebot2`.
   - Regenerate docs index after the local reference repo or installed NoneBot2 version changes: `poe docs-index`.
+- IMPORTANT: Before implementing any features or fixing any bugs, ask user should we use TDD (Test-Driven Development, write tests first, watch it red, implement, watch it green, refactor and cleanup code to reduce complexity, watch it green).
 - Prefer putting reusable utility classes in `cookit` when they are worth sharing.
 - Prefer Context7 and WebSearch for library/API documentation lookup first; only inspect installed package source code after docs are unavailable, insufficient, or clearly inconsistent with the local installed version.
 
@@ -64,6 +65,6 @@ Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working roo
 
 You need to record reusable gotchas as soon as they are discovered, without waiting for the user to ask. If they are for an explicit sub-project, put them in its `AGENTS.md` (If there's no, copy one from `others/nonebot-plugin-template`).
 
-- IMPORTANT: Inside a NoneBot plugin, never directly import another NoneBot plugin module before loading it. Call `from nonebot import require` and `require("plugin_name")` first, then put imports or object access that depend on that plugin below the `require()` call.
+- IMPORTANT: Inside a NoneBot plugin, never directly import another NoneBot plugin module before loading it. Call `from nonebot import require` and `require("plugin_name")` first, then put imports depend on that plugin below the `require()` call. DO NOT use return value of `require()` as the imported module, it lacks type hints and documented as unrecommended operation.
 - When importing a NoneBot plugin during local inspection, scripts, or tests loaded in `bot.py` style, initialize NoneBot first, then use `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.
 - When multiple pytest `conftest.py` files configure NoneBug `NONEBOT_INIT_KWARGS` in one workspace test run, merge with the existing stash value instead of replacing it, otherwise VSCode or mixed-directory pytest runs can lose settings such as `render_backend`.
