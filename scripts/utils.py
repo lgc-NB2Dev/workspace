@@ -198,7 +198,7 @@ def make_workspace_task_runner(
         ]
         await dynamic_tasks(
             Semaphore(8),
-            (partial(t, p) for t, p in tasks),
+            (partial(t, p, *args, **kwargs) for t, p in tasks),
         )
 
         if not with_root:
