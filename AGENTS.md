@@ -66,3 +66,4 @@ You need to record reusable gotchas as soon as they are discovered, without wait
 
 - IMPORTANT: Inside a NoneBot plugin, never directly import another NoneBot plugin module before loading it. Call `from nonebot import require` and `require("plugin_name")` first, then put imports or object access that depend on that plugin below the `require()` call.
 - When importing a NoneBot plugin during local inspection, scripts, or tests loaded in `bot.py` style, initialize NoneBot first, then use `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.
+- When multiple pytest `conftest.py` files configure NoneBug `NONEBOT_INIT_KWARGS` in one workspace test run, merge with the existing stash value instead of replacing it, otherwise VSCode or mixed-directory pytest runs can lose settings such as `render_backend`.
