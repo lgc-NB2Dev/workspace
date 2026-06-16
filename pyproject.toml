@@ -166,6 +166,7 @@ select = [
 
 [tool.ruff.lint.per-file-ignores]
 "private/misc/*" = ["B018", "INP001"]
+"plugins/nonebot-plugin-picmenu-next/tests/*" = ["INP001"]
 "typings/skia/*" = [
     "A002",
     "A003",

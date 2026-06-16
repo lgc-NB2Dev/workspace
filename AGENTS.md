@@ -52,13 +52,17 @@ Before editing a sub-project, check whether it has its own `AGENTS.md`. Sub-proj
 Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working root check.
 
 - IMPORTANT: Before touching NoneBot related code, check the docs for current APIs and code style.
-  - If you are not sure which NoneBot2 docs page to read, use `docs/nonebot2-docs-index.md`.
+  - If you are not sure which NoneBot2 docs page to read, use `docs/nonebot2-docs-index.md`, or use `rg` to search keywords.
+  - For code involving packages officially recommended in the NoneBot2 Best Practice docs, read the corresponding `best-practice/` page first and follow its guidance. This includes `nonebot-plugin-apscheduler`, `nonebot-plugin-localstore`, `nonebot-plugin-sentry`, `nonebot-plugin-htmlkit`, `nonebug`, `nonebot-plugin-alconna`, and `nonebot-plugin-orm`.
   - Use `uv pip show nonebot2` to check the installed NoneBot2 version.
   - Keep `private/references/nonebot2` as an up-to-date depth-1 clone of `https://github.com/nonebot/nonebot2`.
-  - `poe docs-index` uses the installed version and local versioned docs to regenerate the index.
   - Regenerate docs index after the local reference repo or installed NoneBot2 version changes: `poe docs-index`.
 - Prefer putting reusable utility classes in `cookit` when they are worth sharing.
+- Prefer Context7 and WebSearch for library/API documentation lookup first; only inspect installed package source code after docs are unavailable, insufficient, or clearly inconsistent with the local installed version.
 
 ## Gotchas
 
-- When importing another NoneBot plugin for inspection or tests, initialize NoneBot first, then use `nonebot.require()` or `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.
+You need to record reusable gotchas as soon as they are discovered, without waiting for the user to ask. If they are for an explicit sub-project, put them in its `AGENTS.md` (If there's no, copy one from `others/nonebot-plugin-template`).
+
+- IMPORTANT: Inside a NoneBot plugin, never directly import another NoneBot plugin module before loading it. Call `from nonebot import require` and `require("plugin_name")` first, then put imports or object access that depend on that plugin below the `require()` call.
+- When importing a NoneBot plugin during local inspection, scripts, or tests loaded in `bot.py` style, initialize NoneBot first, then use `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.
