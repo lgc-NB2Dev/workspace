@@ -25,14 +25,15 @@ poe up "message"
 # run private/test-nb2 from the workspace root environment
 poe run
 
-# test, type check, lint, format
+# test, type check, lint, format (Python), format (others)
 uv run pytest
 uv run basedpyright
 uv run ruff check .
 uv run ruff format .
+yarn prettier -cw .
 ```
 
-Type check, lint, format, after any code change. For formatting, Python use Ruff, others use Prettier.
+Type check, lint, format, after any code change. For formatting, Python files use Ruff, others use Prettier.
 
 Refer to `README.md` for workspace initialization.
 

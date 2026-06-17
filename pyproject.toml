@@ -36,7 +36,7 @@ dev = [
     ## external
     "cookit[all]",
     ## plugins
-    "nonebot-plugin-picmenu-next[all]",
+    "nonebot-plugin-picmenu-next[config-parsers, rjieba]",  # some deps need to build, lazy to install env
     ## private
     "nb2-workspace-private",
 ]
