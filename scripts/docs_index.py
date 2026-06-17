@@ -297,7 +297,8 @@ def main() -> None:
         f"- Docs root used: `{context.docs_dir.relative_to(REFERENCE_DIR).as_posix()}`.",
         f"- Source docs root: `{SOURCE_DOCS_DIR.relative_to(REFERENCE_DIR).as_posix()}`.",
         f"- Sidebar source: `{context.sidebar_file.relative_to(REFERENCE_DIR).as_posix()}`.",
-        "- Regenerate after the local reference repo or installed NoneBot2 version changes: `poe docs-index`.",
+        "",
+        "Paths listed below are relative to docs root, read them using `<local clone dir>/<docs root used>/<doc path>`.",
         "",
     ]
     lines.extend(render_nav_summary())
