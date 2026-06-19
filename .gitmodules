@@ -12,6 +12,10 @@
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
 	branch = master
 
+[submodule "plugins/nonebot-plugin-bawiki-revive"]
+	path = plugins/nonebot-plugin-bawiki-revive
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki-revive
+	branch = master
 [submodule "plugins/nonebot-plugin-picmenu-next"]
 	path = plugins/nonebot-plugin-picmenu-next
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next

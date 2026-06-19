@@ -36,7 +36,8 @@ dev = [
     ## external
     "cookit[all]",
     ## plugins
-    "nonebot-plugin-picmenu-next[config-parsers, rjieba]",  # some deps need to build, lazy to install env
+    "nonebot-plugin-bawiki-revive[all]",
+    "nonebot-plugin-picmenu-next[config-parsers, rjieba]", # some deps need to build, lazy to install env
     ## private
     "nb2-workspace-private",
 ]
@@ -50,6 +51,7 @@ members = ["external/*", "plugins/*", "private"]
 
 [tool.uv.sources]
 cookit = { workspace = true }
+nonebot-plugin-bawiki-revive = { workspace = true }
 nonebot-plugin-picmenu-next = { workspace = true }
 nb2-workspace-private = { workspace = true }
 
@@ -202,3 +204,4 @@ exempt-modules = [
 addopts = ["--ignore=private/references"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
