@@ -1,8 +1,3 @@
-[submodule "plugins/nonebot-plugin-picmenu-next"]
-	path = plugins/nonebot-plugin-picmenu-next
-	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
-	branch = master
-
 [submodule "external/cookit"]
 	path = external/cookit
 	url = https://github.com/lgc2333/cookit
@@ -15,4 +10,9 @@
 [submodule "others/nonebot-plugin-template"]
 	path = others/nonebot-plugin-template
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-template
+	branch = master
+
+[submodule "plugins/nonebot-plugin-picmenu-next"]
+	path = plugins/nonebot-plugin-picmenu-next
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
 	branch = master
