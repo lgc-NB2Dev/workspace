@@ -54,15 +54,15 @@ For workspace initialization, refer to `README.md`.
 Before editing a sub-project, check whether it has its own `AGENTS.md`. Sub-project `AGENTS.md` instructions override this file.
 Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working root check.
 
-### IMPORTANT Rules: Follow them to avoid common pitfalls
+### IMPORTANT Rules
 
+- Before implementing any features or fixing any bugs, ask user should we use TDD (Test-Driven Development, write tests first, watch it red, implement, watch it green, refactor and cleanup code to reduce complexity, watch it green).
 - Before touching NoneBot related code, check the docs for current APIs and code style.
   - If you are not sure which NoneBot2 docs page to read, use `docs/nonebot2-docs-index.md`, or use `rg` to search keywords.
   - For code involving packages officially recommended in the NoneBot2 Best Practice docs, read the corresponding `best-practice/` page first and follow its guidance. This includes `nonebot-plugin-apscheduler`, `nonebot-plugin-localstore`, `nonebot-plugin-sentry`, `nonebot-plugin-htmlkit`, `nonebug`, `nonebot-plugin-alconna`, and `nonebot-plugin-orm`.
   - Use `uv pip show nonebot2` to check the installed NoneBot2 version.
   - Keep `private/references/nonebot2` as an up-to-date depth-1 clone of `https://github.com/nonebot/nonebot2`.
   - Regenerate docs index after the local reference repo or installed NoneBot2 version changes: `poe docs-index`.
-- Before implementing any features or fixing any bugs, ask user should we use TDD (Test-Driven Development, write tests first, watch it red, implement, watch it green, refactor and cleanup code to reduce complexity, watch it green).
 - NoneBug tests that touch NoneBot plugins must load and import inside the test function. Put `from nonebot import require` inside the test, call `require("plugin_name")` for every plugin dependency needed by that test, then local-import the target module below those `require()` calls. Do not import NoneBot plugin modules at test module top level or through custom import helpers before NoneBot is initialized. This breaks modules that import `nonebot_plugin_localstore`, `nonebot_plugin_alconna`, `nonebot_plugin_waiter`, or call `get_plugin_config()`/localstore helpers at import time.
 - Never run `uv sync`, `uv run`, or other dependency commands from inside `private/test-nb2` if they may create or update a nested virtual environment. To run the test project, activate or reuse the workspace root virtual environment first, then run `nb run` in `private/test-nb2`.
 
@@ -71,11 +71,11 @@ Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working roo
 - Prefer putting reusable utility classes in `cookit` when they are worth sharing.
 - Prefer Context7 and WebSearch for library/API documentation lookup first; only inspect installed package source code after docs are unavailable, insufficient, or clearly inconsistent with the local installed version.
 - For code that needs to be compatible with both pydantic v1 and v2, prefer using `nonebot.compact` then `cookit.pyd.compat`.
-- Prefer `nonebot-plugin-waiter` for one-shot prompt-style interactive waits in NoneBot plugins.
+- Prefer `nonebot-plugin-waiter` for one-shot prompt-style interactive waits in NoneBot plugins. (For docs, sync a depth-1 clone of GitHub repo `RF-Tar-Railt/nonebot-plugin-waiter` to reference directory, like `nonebot2`.)
 
 ## Gotchas
 
-If you encounter a pitfall that might be reusable, you MUST record it in the corresponding `AGENTS.md` file as early as possible. (If there's no, copy one from `others/nonebot-plugin-template`.)
+ATTENTION: If you encounter a pitfall that might be reusable, you MUST record it in the corresponding `AGENTS.md` file as early as possible. (If there's no, copy one from `others/nonebot-plugin-template`.)
 
 ### Useful Gotchas
 
