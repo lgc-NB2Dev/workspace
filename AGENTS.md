@@ -71,6 +71,7 @@ Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working roo
 - Prefer putting reusable utility classes in `cookit` when they are worth sharing.
 - Prefer Context7 and WebSearch for library/API documentation lookup first; only inspect installed package source code after docs are unavailable, insufficient, or clearly inconsistent with the local installed version.
 - For code that needs to be compatible with both pydantic v1 and v2, prefer using `nonebot.compact` then `cookit.pyd.compat`.
+- Prefer `nonebot-plugin-waiter` for one-shot prompt-style interactive waits in NoneBot plugins.
 
 ## Gotchas
 
