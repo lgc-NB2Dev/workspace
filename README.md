@@ -14,16 +14,22 @@
 git clone --recursive --depth=1 https://github.com/lgc-NB2Dev/workspace
 ```
 
+切换所有 submodules 到主分支
+
+```bash
+poe switch
+```
+
 使用 `uv` 来安装工作区内所有插件及其依赖到当前环境中
 
 ```bash
 uv sync -U
 ```
 
-切换所有 submodules 到主分支
+安装工作区 Skills
 
 ```bash
-poe switch
+npx skills update -p
 ```
 
 ### 配置调试环境

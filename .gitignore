@@ -9,3 +9,6 @@ __pycache__/
 .yarn/
 uv.lock
 docs/nonebot2-docs-index.md
+temp/
+.agents/skills/*
+.claude/skills/*
