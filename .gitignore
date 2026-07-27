@@ -1,14 +1,18 @@
-.venv/
-.pdm-python
-__pypackages__/
-.coverage
-node_modules/
-pyrightconfig.json
-__pycache__/
 .idea/
 .yarn/
-uv.lock
-docs/nonebot2-docs-index.md
+.venv/
+.pdm-python
+__pycache__/
+__pypackages__/
+node_modules/
+pyrightconfig.json
+.coverage
 temp/
+
+# we have private packages so we shouldn't commit lockfile
+uv.lock
+
 .agents/skills/*
 .claude/skills/*
+
+docs/nonebot2-docs-index.md

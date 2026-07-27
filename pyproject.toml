@@ -10,14 +10,14 @@ classifiers = ["Private :: Do Not Upload"]
 [dependency-groups]
 dev = [
     # pip
-    "setuptools>=82.0.1",
+    "setuptools>=83.0.0",
     "pip>=26.1.2",
     # tools
-    "basedpyright>=1.39.8",
-    "ruff>=0.15.17",
-    "poethepoet>=0.46.0",
+    "basedpyright>=1.39.9",
+    "ruff>=0.16.0",
+    "poethepoet>=0.48.0",
     # testing
-    "pytest>=9.1.0",
+    "pytest>=9.1.1",
     "pytest-cov>=7.1.0",
     "pytest-asyncio>=1.4.0",
     "pytest-playwright-asyncio>=0.8.0",
