@@ -10,20 +10,21 @@
 ```bash
 uv sync -U  # install and update workspace dependencies
 
-poe switch  # switch submodules to main/master
-poe pull    # pull submodules and root workspace
-poe up "optional message"  # commit and push submodules and root workspace
-poe run     # run private/test-nb2 from the workspace root environment
+# test, type check, lint, format
+poe test       # pytest
+poe check      # basedpyright
+poe lint       # ruff check
+poe lint-fix   # ruff check --fix --unsafe-fixes
+poe format     # ruff format && pnpm prettier -cw .
 
-# test, type check, lint, format (Python files), format (others)
-uv run pytest
-uv run basedpyright
-uv run ruff check .
-uv run ruff format .
-yarn prettier -cw .
+poe switch      # switch submodules to main/master
+poe pull        # pull submodules and root workspace
+poe up "optional message"  # commit and push submodules and root workspace
+poe run         # run private/test-nb2 from the workspace root environment
+poe docs-index  # regenerate NoneBot2 docs index
 ```
 
-Type check, lint and format after your work done with any code change.
+Type check, lint concurrently then format after your work done with any code change.
 
 For workspace initialization, refer to `README.md`.
 
@@ -31,13 +32,21 @@ For workspace initialization, refer to `README.md`.
 
 - `external/`: External dependency projects.
   - `cookit/`: Project unrelated utility library.
-- `plugins/`: NoneBot plugins under development.
+- `plugins/`: NoneBot plugins under development. Simply `ls` it for a complete plugin list. It's token efficient rather than `rg`.
 - `others/`: Plugin source code not related repos.
 - `scripts/`: Workspace utility scripts.
 - `typings/`: Type stubs for libraries that not have them.
 - `private/`: Local private config and debug projects.
   - `test-nb2/`: NoneBot2 instance for plugin debugging.
   - `references/`: Local clone of reference repositories.
+
+### Structure Rules
+
+- Store temp/intermediate files in `temp/<category>/` at the project root. Skills can override this rule.
+
+- `plugins/` MUST contain submodules only. Never clone a repo directly into `plugins/` — use `git submodule add`.
+
+- Private plugins or repos (that should not be submodules) MUST be cloned into `private/` and added as a member of the private project.
 
 ## Workspace Rules
 
@@ -63,10 +72,6 @@ For workspace initialization, refer to `README.md`.
 ### Environment
 
 - Never run `uv sync`, `uv run`, or other dependency commands from inside `private/test-nb2` if they may create or update a nested virtual environment. To run the test project, activate or reuse the workspace root virtual environment first, then run `nb run` in `private/test-nb2`.
-
-### Workspace Structure Rules
-
-- Store temp/intermediate files in `temp/<category>/` at the project root. Skills can override this rule.
 
 ### Testing Rules
 

@@ -20,3 +20,6 @@
 	path = plugins/nonebot-plugin-picmenu-next
 	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picmenu-next
 	branch = master
+[submodule "plugins/nonebot-plugin-picstatus"]
+	path = plugins/nonebot-plugin-picstatus
+	url = https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus.git

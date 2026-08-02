@@ -11,10 +11,10 @@ classifiers = ["Private :: Do Not Upload"]
 dev = [
     # pip
     "setuptools>=83.0.0",
-    "pip>=26.1.2",
+    "pip>=26.2",
     # tools
     "basedpyright>=1.39.9",
-    "ruff>=0.16.0",
+    "ruff>=0.16.1",
     "poethepoet>=0.48.0",
     # testing
     "pytest>=9.1.1",
@@ -38,6 +38,7 @@ dev = [
     ## plugins
     "nonebot-plugin-bawiki-revive[all]",
     "nonebot-plugin-picmenu-next[config-parsers, rjieba]", # some deps need to build, lazy to install env
+    "nonebot-plugin-picstatus",
     ## private
     "nb2-workspace-private",
 ]
@@ -53,9 +54,16 @@ members = ["external/*", "plugins/*", "private"]
 cookit = { workspace = true }
 nonebot-plugin-bawiki-revive = { workspace = true }
 nonebot-plugin-picmenu-next = { workspace = true }
+nonebot-plugin-picstatus = { workspace = true }
 nb2-workspace-private = { workspace = true }
 
 [tool.poe.tasks]
+lint.cmd = "ruff check"
+lint-fix.cmd = "ruff check --fix --unsafe-fixes"
+check.cmd = "basedpyright"
+format.shell = "ruff format && pnpm prettier -cw ."
+test.cmd = "pytest"
+
 pull.script = "scripts.pull:main"
 switch.script = "scripts.switch:main"
 docs-index.script = "scripts.docs_index:main"
@@ -81,7 +89,7 @@ executionEnvironments = [
 [tool.ruff]
 target-version = "py310"
 respect-gitignore = false
-extend-exclude = []
+extend-exclude = ["private/test-nb2/debug", "private/references/"]
 
 [tool.ruff.format]
 docstring-code-format = true
