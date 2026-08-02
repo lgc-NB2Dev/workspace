@@ -45,7 +45,9 @@ dev = [
 
 [tool.uv]
 package = false
-prerelease = "allow"
+
+[tool.uv.prerelease-package]
+skia-python = "allow"
 
 [tool.uv.workspace]
 members = ["external/*", "plugins/*", "private"]
