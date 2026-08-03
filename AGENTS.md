@@ -11,11 +11,11 @@
 uv sync -U  # install and update workspace dependencies
 
 # test, type check, lint, format
-poe test       # pytest
-poe check      # basedpyright
-poe lint       # ruff check
-poe lint-fix   # ruff check --fix --unsafe-fixes
-poe format     # ruff format && pnpm prettier -cw .
+poe test [...]      # pytest
+poe check [...]     # basedpyright
+poe lint [...]      # ruff check
+poe lint-fix [...]  # ruff check --fix --unsafe-fixes
+poe format [...]    # ruff format && pnpm prettier -cw .
 
 poe switch      # switch submodules to main/master
 poe pull        # pull submodules and root workspace
@@ -72,6 +72,7 @@ For workspace initialization, refer to `README.md`.
 ### Environment
 
 - Never run `uv sync`, `uv run`, or other dependency commands from inside `private/test-nb2` if they may create or update a nested virtual environment. To run the test project, activate or reuse the workspace root virtual environment first, then run `nb run` in `private/test-nb2`.
+- Never run `pdm lock` in a legacy plugin: it creates a local `.venv`; migrate it and run uv from the workspace root.
 
 ### Testing Rules
 
