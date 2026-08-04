@@ -15,14 +15,18 @@ poe test [...]      # pytest
 poe check [...]     # basedpyright
 poe lint [...]      # ruff check
 poe lint-fix [...]  # ruff check --fix --unsafe-fixes
-poe format          # ruff format && pnpm prettier -cw .; no path args
+poe format          # ruff format
+poe prettier          # pnpm prettier -cw .
+poe format-all          # ruff format && pnpm prettier -cw . (no path args)
 
-poe switch      # switch submodules to main/master
-poe pull        # pull submodules and root workspace
+poe switch          # switch submodules to main/master
+poe pull            # pull submodules and root workspace
 poe up "optional message"  # commit and push submodules and root workspace
-poe run         # run private/test-nb2 from the workspace root environment
-poe docs-index  # regenerate NoneBot2 docs index
+poe run             # run private/test-nb2 from the workspace root environment
+poe docs-index      # regenerate NoneBot2 docs index
 ```
+
+If `poe` is not installed, ask user if we should install it: `uv tool install poethepoet`.
 
 Type check, lint concurrently then format after your work done with any code change.
 
@@ -67,17 +71,25 @@ For workspace initialization, refer to `README.md`.
 
 - Consider `cookit` for broadly useful utilities/classes or duplicated logic across packages. For reuse within one package, put it in that package's `utils.py` or create one.
 - Before adding a generic helper, decorator, formatter, async utility, data utility, compatibility wrapper, or Playwright/NoneBot helper, search `external/cookit/cookit` first.
-- For code that needs to be compatible with both pydantic v1 and v2, prefer using `nonebot.compact` then `cookit.pyd.compat`.
+
+- For code that needs to be compatible with both pydantic v1 and v2, prefer using `nonebot.compact` than `cookit.pyd.compat`.
 
 ### Environment
 
 - Never run `uv sync`, `uv run`, or other dependency commands from inside `private/test-nb2` if they may create or update a nested virtual environment. To run the test project, activate or reuse the workspace root virtual environment first, then run `nb run` in `private/test-nb2`.
+
 - Never run `pdm lock` in a legacy plugin: it creates a local `.venv`; migrate it and run uv from the workspace root.
+
+### Git
+
+- Do not create a new branch if user does not explicitly asked.
 
 ### Testing Rules
 
-- Before implementing a feature or fixing a bug, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code.
+- Before implementing a feature or fixing a bug, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Docs, tests, config changes do not need to do this.
+
 - DO NOT import NoneBot plugin modules at test module top level. NoneBug tests that touch NoneBot plugins must load and import inside the test function. Put `from nonebot import require` inside the test, call `require("plugin_name")` for every plugin dependency needed by that test, then local-import the target module below those `require()` calls.
+
 - Every testcase function should have a short description as its docstring.
 
 ### Preferred Libraries

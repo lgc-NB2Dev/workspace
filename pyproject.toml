@@ -15,7 +15,6 @@ dev = [
     # tools
     "basedpyright>=1.39.9",
     "ruff>=0.16.1",
-    "poethepoet>=0.48.0",
     # testing
     "pytest>=9.1.1",
     "pytest-cov>=7.1.0",
@@ -37,6 +36,7 @@ dev = [
     "cookit[all]",
     ## plugins
     "nonebot-plugin-bawiki-revive[all]",
+    "nonebot-plugin-cnrail",
     "nonebot-plugin-picmenu-next[config-parsers, rjieba]", # some deps need to build, lazy to install env
     "nonebot-plugin-picstatus",
     ## private
@@ -55,6 +55,7 @@ members = ["external/*", "plugins/*", "private"]
 [tool.uv.sources]
 cookit = { workspace = true }
 nonebot-plugin-bawiki-revive = { workspace = true }
+nonebot-plugin-cnrail = { workspace = true }
 nonebot-plugin-picmenu-next = { workspace = true }
 nonebot-plugin-picstatus = { workspace = true }
 nb2-workspace-private = { workspace = true }
