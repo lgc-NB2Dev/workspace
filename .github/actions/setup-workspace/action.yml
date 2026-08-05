@@ -6,15 +6,15 @@ inputs:
     description: Optional path of the plugin submodule within the workspace.
     # Defaults to plugins/<current repository name>.
     required: false
-    default: ""
+    default: ''
   plugin-extras:
     description: Comma-separated extras that replace those inferred from the workspace requirement.
     required: false
-    default: ""
+    default: ''
   extra-dev-dependencies:
     description: Additional development dependency specifications, one per line.
     required: false
-    default: ""
+    default: ''
   workspace-repository:
     description: Repository containing the workspace.
     required: false
@@ -69,6 +69,11 @@ runs:
           --submodule-path "$SUBMODULE_PATH" \
           --plugin-extras "$PLUGIN_EXTRAS" \
           --extra-dev-dependencies "$EXTRA_DEV_DEPENDENCIES"
+
+    - name: Sync dependencies
+      working-directory: ${{ steps.paths.outputs.workspace-directory }}
+      shell: bash
+      run: uv sync
 
     - id: paths
       shell: bash
