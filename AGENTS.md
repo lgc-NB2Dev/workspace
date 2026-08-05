@@ -10,14 +10,13 @@
 ```bash
 uv sync -U  # install and update workspace dependencies
 
-# test, type check, lint, format
-poe test [...]      # pytest
 poe check [...]     # basedpyright
 poe lint [...]      # ruff check
 poe lint-fix [...]  # ruff check --fix --unsafe-fixes
-poe format          # ruff format
-poe prettier          # pnpm prettier -cw .
-poe format-all          # ruff format && pnpm prettier -cw . (no path args)
+poe format [...]    # ruff format
+poe prettier [...]  # pnpm prettier -cw .
+poe format-all      # ruff format && pnpm prettier -cw . (no path args)
+poe test [...]      # pytest
 
 poe switch          # switch submodules to main/master
 poe pull            # pull submodules and root workspace
@@ -103,8 +102,6 @@ For workspace initialization, refer to `README.md`.
 ## Gotchas
 
 ATTENTION: If you encounter a pitfall that might be reusable, you MUST record it in the corresponding `AGENTS.md` file as early as possible. (If there's no, copy one from `others/nonebot-plugin-template`.)
-
-- `poe format` is a shell task and accepts no path args; for scoped formatting, run `ruff format <paths>` and `pnpm.cmd prettier -cw <paths>` manually.
 
 ### NoneBot Plugin Loading
 

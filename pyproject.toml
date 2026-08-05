@@ -64,7 +64,9 @@ nb2-workspace-private = { workspace = true }
 lint.cmd = "ruff check"
 lint-fix.cmd = "ruff check --fix --unsafe-fixes"
 check.cmd = "basedpyright"
-format.shell = "ruff format && pnpm prettier -cw ."
+format.cmd = "ruff format"
+prettier.cmd = "pnpm prettier -cw ."
+format-all.shell = "ruff format && pnpm prettier -cw ."
 test.cmd = "pytest"
 
 pull.script = "scripts.pull:main"
