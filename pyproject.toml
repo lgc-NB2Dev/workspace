@@ -3,7 +3,7 @@ name = "nb2-workspace"
 version = "0"
 authors = [{ name = "LgCuwukii", email = "lgc2333@126.com" }]
 dependencies = []
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 classifiers = ["Private :: Do Not Upload"]
 
@@ -11,7 +11,7 @@ classifiers = ["Private :: Do Not Upload"]
 dev = [
     # pip
     "setuptools>=83.0.0",
-    "pip>=26.2",
+    "pip>=26.2.1",
     # tools
     "basedpyright>=1.39.9",
     "ruff>=0.16.1",

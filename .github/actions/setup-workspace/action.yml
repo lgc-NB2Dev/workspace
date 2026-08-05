@@ -1,0 +1,77 @@
+name: Setup Workspace
+description: Check out a minimal workspace for testing a plugin submodule.
+
+inputs:
+  submodule-path:
+    description: Optional path of the plugin submodule within the workspace.
+    # Defaults to plugins/<current repository name>.
+    required: false
+    default: ""
+  plugin-extras:
+    description: Comma-separated extras that replace those inferred from the workspace requirement.
+    required: false
+    default: ""
+  extra-dev-dependencies:
+    description: Additional development dependency specifications, one per line.
+    required: false
+    default: ""
+  workspace-repository:
+    description: Repository containing the workspace.
+    required: false
+    default: lgc-NB2Dev/workspace
+  workspace-ref:
+    description: Workspace branch, tag, or commit to check out.
+    required: false
+    default: main
+  workspace-directory:
+    description: Relative directory in which to check out the workspace.
+    required: false
+    default: .
+
+outputs:
+  workspace-directory:
+    description: Absolute path to the prepared workspace.
+    value: ${{ steps.paths.outputs.workspace-directory }}
+
+runs:
+  using: composite
+  steps:
+    - name: Check out workspace
+      uses: actions/checkout@v7
+      with:
+        repository: ${{ inputs.workspace-repository }}
+        ref: ${{ inputs.workspace-ref }}
+        path: ${{ inputs.workspace-directory }}
+        fetch-depth: 1
+
+    - name: Check out triggering plugin revision
+      uses: actions/checkout@v7
+      with:
+        repository: ${{ github.repository }}
+        ref: ${{ github.sha }}
+        path: ${{ format('{0}/{1}', inputs.workspace-directory, inputs.submodule-path || format('plugins/{0}', github.event.repository.name)) }}
+        fetch-depth: 1
+        persist-credentials: false
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v9.0.0
+
+    - name: Prepare minimal workspace
+      shell: bash
+      env:
+        WORKSPACE_DIRECTORY: ${{ github.workspace }}/${{ inputs.workspace-directory }}
+        SUBMODULE_PATH: ${{ inputs.submodule-path || format('plugins/{0}', github.event.repository.name) }}
+        PLUGIN_EXTRAS: ${{ inputs.plugin-extras }}
+        EXTRA_DEV_DEPENDENCIES: ${{ inputs.extra-dev-dependencies }}
+      run: |
+        uv run "${{ github.action_path }}/prepare_workspace.py" \
+          --workspace "$WORKSPACE_DIRECTORY" \
+          --submodule-path "$SUBMODULE_PATH" \
+          --plugin-extras "$PLUGIN_EXTRAS" \
+          --extra-dev-dependencies "$EXTRA_DEV_DEPENDENCIES"
+
+    - id: paths
+      shell: bash
+      env:
+        WORKSPACE_DIRECTORY: ${{ github.workspace }}/${{ inputs.workspace-directory }}
+      run: echo "workspace-directory=$WORKSPACE_DIRECTORY" >> "$GITHUB_OUTPUT"
