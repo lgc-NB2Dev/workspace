@@ -178,8 +178,8 @@ select = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"**/tests/**" = [
-    "INP001", # no __init__.py
+"**/tests*/**" = [
+    # "INP001", # no __init__.py
     "ARG001", # arg not used
 ]
 "typings/skia/*" = [

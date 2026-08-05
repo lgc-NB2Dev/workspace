@@ -88,9 +88,13 @@ For workspace initialization, refer to `README.md`.
 
 - Before implementing a feature or fixing a bug, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Docs, tests, config changes do not need to do this.
 
-- DO NOT import NoneBot plugin modules at test module top level. NoneBug tests that touch NoneBot plugins must load and import inside the test function. Put `from nonebot import require` inside the test, call `require("plugin_name")` for every plugin dependency needed by that test, then local-import the target module below those `require()` calls.
+- Organize `tests/` like `node.spec.ts`: each source file must have one correspondingly named test module.
 
 - Every testcase function should have a short description as its docstring.
+
+- Fixtures may establish prerequisite state, such as ensuring a NoneBot plugin is loaded. Do not use fixtures that return values which cannot be precisely type-hinted, such as modules, as test function arguments; import those values locally instead for better type support.
+
+- DO NOT import NoneBot plugin modules at test module top level. NoneBug tests that touch NoneBot plugins must load and import inside the test function. Put `from nonebot import require` inside the test, call `require("plugin_name")` for every plugin dependency needed by that test, then local-import the target module below those `require()` calls.
 
 ### Preferred Libraries
 
