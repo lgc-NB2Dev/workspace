@@ -110,6 +110,8 @@ ATTENTION: If you encounter a pitfall that might be reusable, you MUST record it
 
 - When importing a NoneBot plugin during local inspection, scripts, or tests loaded in `bot.py` style, initialize NoneBot first, then use `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.
 
+- Standalone NoneBot inspection scripts loading localstore-dependent plugins must configure localstore paths (or set `LOCALSTORE_USE_CWD=True`) before `nonebot.load_plugin()`; otherwise Cookit rejects the platform-default storage directory.
+
 ### Python Typing
 
 - For Python 3.10 `ParamSpec` type-alias specialization, import `Callable` from `typing`; `collections.abc.Callable` raises `TypeError`. Keep a scoped Ruff `UP035` suppression because its auto-fix reverses this compatibility requirement.
