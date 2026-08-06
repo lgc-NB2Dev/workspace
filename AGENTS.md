@@ -87,7 +87,8 @@ For workspace initialization, refer to `README.md`.
 
 - Before implementing a feature or fixing production code, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Changes solely to docs, tests, or config do not need this confirmation.
 
-- Organize `tests/` like `node.spec.ts`: each source file must have one correspondingly named test module.
+- Organize `tests*/` like node `.spec.ts` structure: each source file must have one correspondingly named test module.
+- If the only test file for a module grows too large, it may be split into a directory named after the source module; files inside may use any `test_*.py` names.
 
 - Every testcase function should have a short description as its docstring.
 
@@ -108,6 +109,10 @@ ATTENTION: If you encounter a pitfall that might be reusable, you MUST record it
 - Inside a NoneBot plugin, never directly import another NoneBot plugin module before loading it. Call `from nonebot import require` and `require("plugin_name")` first, then put imports depend on that plugin below the `require()` call. DO NOT use return value of `require()` as the imported module, it lacks type hints and documented as unrecommended operation.
 
 - When importing a NoneBot plugin during local inspection, scripts, or tests loaded in `bot.py` style, initialize NoneBot first, then use `nonebot.load_plugin()` instead of importing the plugin module directly; see the NoneBot plugin loading docs for details.
+
+### Python Typing
+
+- For Python 3.10 `ParamSpec` type-alias specialization, import `Callable` from `typing`; `collections.abc.Callable` raises `TypeError`. Keep a scoped Ruff `UP035` suppression because its auto-fix reverses this compatibility requirement.
 
 ### Testing
 
