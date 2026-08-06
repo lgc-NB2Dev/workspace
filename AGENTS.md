@@ -85,7 +85,7 @@ For workspace initialization, refer to `README.md`.
 
 ### Testing Rules
 
-- Before implementing a feature or fixing a bug, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Docs, tests, config changes do not need to do this.
+- Before implementing a feature or fixing production code, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Changes solely to docs, tests, or config do not need this confirmation.
 
 - Organize `tests/` like `node.spec.ts`: each source file must have one correspondingly named test module.
 
