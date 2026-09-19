@@ -1,9 +1,9 @@
-# AGENTS.md
+# lgc-NB2Dev/workspace AGENTS.md
 
 ## First
 
 - For docs mainly for AI (like `AGENTS.md`), you MUST keep them concise and token efficient.
-- Before editing a sub-project, check whether it has its own `AGENTS.md`. Sub-project `AGENTS.md` instructions override this file. Override: This workspace IS `lgc-NB2Dev/workspace`, skip sub-project working root check.
+- Before editing a sub-project, check whether it has its own `AGENTS.md`. Sub-project `AGENTS.md` instructions override this file. Override: Skip sub-project working root check in `AGENTS.md`.
 
 ## Commands
 
@@ -33,15 +33,21 @@ For workspace initialization, refer to `README.md`.
 
 ## Workspace Structure
 
-- `external/`: External dependency projects.
-  - `cookit/`: Project unrelated utility library.
-- `plugins/`: NoneBot plugins under development. Simply `ls` it for a complete plugin list. It's token efficient rather than `rg`.
-- `others/`: Plugin source code not related repos.
-- `scripts/`: Workspace utility scripts.
-- `typings/`: Type stubs for libraries that not have them.
-- `private/`: Local private config and debug projects.
-  - `test-nb2/`: NoneBot2 instance for plugin debugging.
-  - `references/`: Local clone of reference repositories.
+```text
+external/cookit/            Project-unrelated utility library
+plugins/                    NoneBot plugins under development; `ls` for the full list, cheaper than `rg`
+others/                     Plugin source code not related repos
+  nonebot-plugin-template/  Base template for new plugin repos
+  readme/                   Org profile README
+scripts/                    Workspace utility scripts (docs index generation, submodule pull/switch/up)
+typings/                    Stubs for libraries that do not ship them (skia, thefuzz)
+private/                    Private config and debug projects, not a submodule
+  test-nb2/                 NoneBot2 instance for plugin debugging
+  references/               Depth-1 clones of reference repos (nonebot2, plugin-htmlkit, …)
+docs/                       Generated NoneBot2 docs index (`poe docs-index`)
+temp/                       Scratch space for intermediate files, gitignored
+pyproject.toml              Workspace environment (uv) and `poe` tasks
+```
 
 ### Structure Rules
 
@@ -79,14 +85,14 @@ For workspace initialization, refer to `README.md`.
 
 - Never run `pdm lock` in a legacy plugin: it creates a local `.venv`; migrate it and run uv from the workspace root.
 
-### Git
-
-- Do not create a new branch if user does not explicitly asked.
-
 ### Docs
 
-- Read skill `domain-modeling` first when you touch `CONTEXT.md` or `docs/adr/`. Ask user to install it from GitHub `mattpocock/skills` if missing.
+- `CONTEXT.md` is the domain glossary: canonical terms and one-line definitions, nothing else.
+- `docs/adr/` holds one file per decision, numbered; add one when a decision is hard to reverse and would look arbitrary without the reason.
+- Follow the `domain-modeling` skill for both (ask user to install it from GitHub `mattpocock/skills` if missing).
+
 - Do not modify old ADRs (excluding their front-matter) unless user explicitly asks.
+- If there are references between ADRs, bidirectional references must be established in the frontmatter to facilitate understanding of the decision chain.
 
 ### Testing Rules
 
@@ -95,11 +101,17 @@ For workspace initialization, refer to `README.md`.
 - Organize `tests*/` like node `.spec.ts` structure: each source file must have one correspondingly named test module.
 - If the only test file for a module grows too large, it may be split into a directory named after the source module; files inside may use any `test_*.py` names.
 
+- Reusable test scaffolding — fakes, mocks, transport stubs and shared helpers — lives under `tests*/utils/`, one module per concern; test modules import from there instead of redefining it or importing each other.
+
 - Every testcase function should have a short description as its docstring.
 
 - Fixtures may establish prerequisite state, such as ensuring a NoneBot plugin is loaded. Do not use fixtures that return values which cannot be precisely type-hinted, such as modules, as test function arguments; import those values locally instead for better type support.
 
 - DO NOT import NoneBot plugin modules at test module top level. NoneBug tests that touch NoneBot plugins must load and import inside the test function. Put `from nonebot import require` inside the test, call `require("plugin_name")` for every plugin dependency needed by that test, then local-import the target module below those `require()` calls.
+
+### Git
+
+- Do not create a new branch if user does not explicitly asked.
 
 ### Preferred Libraries
 
