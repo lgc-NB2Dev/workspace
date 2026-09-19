@@ -104,6 +104,8 @@ pyproject.toml              Workspace environment (uv) and `poe` tasks
 
 - Reusable test scaffolding — fakes, mocks, transport stubs and shared helpers — lives under `tests*/utils/`, one module per concern; test modules import from there instead of redefining it or importing each other.
 
+- Tests may exercise module internals: `SLF001` is ignored for `**/tests*/**` in the Ruff config, and constructing Pydantic models by alias needs a `dict[str, Any]` local before `**` unpacking because pyright checks inline alias kwargs.
+
 - Every testcase function should have a short description as its docstring.
 
 - Fixtures may establish prerequisite state, such as ensuring a NoneBot plugin is loaded. Do not use fixtures that return values which cannot be precisely type-hinted, such as modules, as test function arguments; import those values locally instead for better type support.
@@ -133,6 +135,12 @@ ATTENTION: If you encounter a pitfall that might be reusable, you MUST record it
 ### Python Typing
 
 - For Python 3.10 `ParamSpec` type-alias specialization, import `Callable` from `typing`; `collections.abc.Callable` raises `TypeError`. Keep a scoped Ruff `UP035` suppression because its auto-fix reverses this compatibility requirement.
+
+### Pydantic
+
+- Cross-version model config: use `populate_by_name` on pydantic v2 (valid across all 2.x) and `allow_population_by_field_name` on v1. `validate_by_alias` / `validate_by_name` exist from pydantic 2.11 only, and v1 forwards an unknown config key to `type()` and raises `TypeError` at import.
+- The workspace basedpyright config pins `defineConstant = { PYDANTIC_V2 = true }`, so `if PYDANTIC_V2:` v1 branches are pruned from type checking: `poe check` cannot catch a wrong v1 key. Only a test run against `pydantic<2` (as the plugin CI matrices do) guards that branch.
+- `Annotated[str, HttpUrl]` silently degrades to a plain `str` on both v1 and v2 (the metadata is not a validator); annotate the field as `HttpUrl` directly, or the field accepts any string.
 
 ### Testing
 

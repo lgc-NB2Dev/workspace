@@ -186,6 +186,7 @@ select = [
 "**/tests*/**" = [
     # "INP001", # no __init__.py
     "ARG001", # arg not used
+    "SLF001", # private member accessed: tests exercise module internals
 ]
 "typings/skia/*" = [
     "A002",
