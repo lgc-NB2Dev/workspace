@@ -89,6 +89,7 @@ pyproject.toml              Workspace environment (uv) and `poe` tasks
 
 - `CONTEXT.md` is the domain glossary: canonical terms and one-line definitions, nothing else.
 - `docs/adr/` holds one file per decision, numbered; add one when a decision is hard to reverse and would look arbitrary without the reason.
+- Weigh every decision for whether it deserves an ADR, and ask the user before taking it: state the choice, the alternatives, and your ADR verdict, then wait for the answer. Nothing gets decided silently.
 - Follow the `domain-modeling` skill for both (ask user to install it from GitHub `mattpocock/skills` if missing).
 
 - Do not modify old ADRs (excluding their front-matter) unless user explicitly asks.
