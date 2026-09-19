@@ -53,7 +53,7 @@ For workspace initialization, refer to `README.md`.
 
 ## Workspace Rules
 
-### NoneBot Docs
+### NoneBot Reference
 
 - Before touching NoneBot related code, check the docs for current APIs and code style.
 - If you are not sure which NoneBot2 docs page to read, use `docs/nonebot2-docs-index.md`, or use tools like `rg` to search keywords.
@@ -83,9 +83,14 @@ For workspace initialization, refer to `README.md`.
 
 - Do not create a new branch if user does not explicitly asked.
 
+### Docs
+
+- Read skill `domain-modeling` first when you touch `CONTEXT.md` or `docs/adr/`. Ask user to install it from GitHub `mattpocock/skills` if missing.
+- Do not modify old ADRs (excluding their front-matter) unless user explicitly asks.
+
 ### Testing Rules
 
-- Before implementing a feature or fixing production code, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Changes solely to docs, tests, or config do not need this confirmation.
+- Before implementing a feature or fixing production code, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code (ask user to install it from GitHub `mattpocock/skills` if missing). Changes solely to docs, tests, or config do not need this confirmation.
 
 - Organize `tests*/` like node `.spec.ts` structure: each source file must have one correspondingly named test module.
 - If the only test file for a module grows too large, it may be split into a directory named after the source module; files inside may use any `test_*.py` names.
