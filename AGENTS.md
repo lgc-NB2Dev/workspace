@@ -49,13 +49,9 @@ temp/                       Scratch space for intermediate files, gitignored
 pyproject.toml              Workspace environment (uv) and `poe` tasks
 ```
 
-### Structure Rules
+## Recommend Skills
 
-- Store temp/intermediate files in `temp/<category>/` at the project root. Skills can override this rule.
-
-- `plugins/` MUST contain submodules only. Never clone a repo directly into `plugins/` — use `git submodule add`.
-
-- Private plugins or repos (that should not be submodules) MUST be cloned into `private/` and added as a member of the private project.
+The Workspace Rules section introduced some skills. If some skill is missing, please ask user to install it from Github repo `mattpocock/skills`.
 
 ## Workspace Rules
 
@@ -79,6 +75,14 @@ pyproject.toml              Workspace environment (uv) and `poe` tasks
 
 - For code that needs to be compatible with both pydantic v1 and v2, prefer using `nonebot.compact` than `cookit.pyd.compat`.
 
+### Structure Rules
+
+- Store temp/intermediate files in `temp/<category>/` at the project root. Skills can override this rule.
+
+- `plugins/` MUST contain submodules only. Never clone a repo directly into `plugins/` — use `git submodule add`.
+
+- Private plugins or repos (that should not be submodules) MUST be cloned into `private/` and added as a member of the private project.
+
 ### Environment
 
 - Never run `uv sync`, `uv run`, or other dependency commands from inside `private/test-nb2` if they may create or update a nested virtual environment. To run the test project, activate or reuse the workspace root virtual environment first, then run `nb run` in `private/test-nb2`.
@@ -90,14 +94,14 @@ pyproject.toml              Workspace environment (uv) and `poe` tasks
 - `CONTEXT.md` is the domain glossary: canonical terms and one-line definitions, nothing else.
 - `docs/adr/` holds one file per decision, numbered; add one when a decision is hard to reverse and would look arbitrary without the reason.
 - Weigh every decision for whether it deserves an ADR, and ask the user before taking it: state the choice, the alternatives, and your ADR verdict, then wait for the answer. Nothing gets decided silently.
-- Follow the `domain-modeling` skill for both (ask user to install it from GitHub `mattpocock/skills` if missing).
+- Follow the `domain-modeling` skill for both.
 
 - Do not modify old ADRs (excluding their front-matter) unless user explicitly asks.
-- If there are references between ADRs, bidirectional references must be established in the frontmatter to facilitate understanding of the decision chain.
+- If there are references between ADRs, bidirectional references must be established in the front-matter to facilitate understanding of the decision chain.
 
 ### Testing Rules
 
-- Before implementing a feature or fixing production code, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code (ask user to install it from GitHub `mattpocock/skills` if missing). Changes solely to docs, tests, or config do not need this confirmation.
+- Before implementing a feature or fixing production code, ask user if we should use TDD first if not mentioned. If yes, invoke `tdd` skill before writing code. Changes solely to docs, tests, or config do not need this confirmation.
 
 - Organize `tests*/` like node `.spec.ts` structure: each source file must have one correspondingly named test module.
 - If the only test file for a module grows too large, it may be split into a directory named after the source module; files inside may use any `test_*.py` names.
@@ -122,7 +126,9 @@ pyproject.toml              Workspace environment (uv) and `poe` tasks
 
 ## Gotchas
 
-ATTENTION: If you encounter a pitfall that might be reusable, you MUST record it in the corresponding `AGENTS.md` file as early as possible. (If there's no, copy one from `others/nonebot-plugin-template`.)
+IMPORTANT: Read `retro` skill (this skill is hidden in context, please find it) when you about to end a work. It will guide you how to do with this section.
+
+Please do not repeat the same info from some sub-project. If this info is useful for all sub-projects, please only record it in this `AGENTS.md`, vise versa.
 
 ### NoneBot Plugin Loading
 

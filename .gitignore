@@ -14,5 +14,7 @@ uv.lock
 
 .agents/skills/*
 .claude/skills/*
+!.agents/skills/wait-what
+!.claude/skills/wait-what
 
 docs/nonebot2-docs-index.md
