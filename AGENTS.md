@@ -146,7 +146,7 @@ Please do not repeat the same info from some sub-project. If this info is useful
 
 - Cross-version model config: use `populate_by_name` on pydantic v2 (valid across all 2.x) and `allow_population_by_field_name` on v1. `validate_by_alias` / `validate_by_name` exist from pydantic 2.11 only, and v1 forwards an unknown config key to `type()` and raises `TypeError` at import.
 - The workspace basedpyright config pins `defineConstant = { PYDANTIC_V2 = true }`, so `if PYDANTIC_V2:` v1 branches are pruned from type checking: `poe check` cannot catch a wrong v1 key. Only a test run against `pydantic<2` (as the plugin CI matrices do) guards that branch.
-- `Annotated[str, HttpUrl]` silently degrades to a plain `str` on both v1 and v2 — unknown `Annotated` metadata is ignored without any warning, so the field accepts anything. Annotating `HttpUrl` directly does validate, but the value becomes a URL object (not a `str`; `httpx.URL` rejects it) and `UrlConstraints` refuses to annotate `str` (pydantic 2.12+). To keep a `str` field validated, use a `field_validator` that runs `type_validate_python(HttpUrl, v)`.
+- `Annotated[str, HttpUrl]` silently degrades to a plain `str` on both v1 and v2 — unknown `Annotated` metadata is ignored without any warning, so the field accepts anything. Annotating `HttpUrl` directly does validate, but the value is no longer a `str` on any v2 release (a `str` subclass on v1, a wrapper object from 2.0 on, `httpx.URL` rejects it) and `UrlConstraints` refuses to annotate `str` (pydantic 2.12+). To keep a `str` field validated, use a `field_validator` that runs `type_validate_python(HttpUrl, v)`.
 
 ### Testing
 
