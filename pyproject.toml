@@ -76,7 +76,9 @@ docs-index.script = "scripts.docs_index:main"
 
 [tool.poe.tasks.up]
 script = "scripts.up:main"
-args = [{ name = "msg", positional = true, default = "up" }]
+args = [
+    { name = "msg", positional = true, default = "chore: update submodules, configurations, etc" },
+]
 
 [tool.poe.tasks.run]
 cmd = "python -m nb_cli run"
